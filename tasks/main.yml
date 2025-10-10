@@ -3,13 +3,13 @@
   ansible.builtin.file:
     path: "{{ fabmc_install_dir }}"
     state: directory
-    mode: 0755
+    mode: "0755"
 
 - name: Ensure sub directories existence
   ansible.builtin.file:
     path: "{{ item }}"
     state: directory
-    mode: 0755
+    mode: "0755"
   loop:
     - "{{ fabmc_install_dir }}/bin"
     - "{{ fabmc_install_dir }}/workspace"
@@ -23,7 +23,7 @@
   ansible.builtin.get_url:
     url: "https://meta.fabricmc.net/v2/versions/loader/{{ fabmc_minecraft_version }}/{{ fabmc_fabric_loader_version }}/{{ fabmc_installer_version }}/server/jar"
     dest: "{{ fabmc_install_dir }}/bin/server.jar"
-    mode: 0644
+    mode: "0644"
   when: not minecraft_server_launcher_version_jar_file.stat.exists
 
 - name: Get the status of Minecraft Server Launcher jar file
@@ -44,7 +44,7 @@
     remote_src: true
     src: "{{ fabmc_install_dir }}/bin/server.jar"
     dest: "{{ fabmc_install_dir }}/bin/minecraft_server_launcher.{{ fabmc_minecraft_version }}-{{ fabmc_fabric_loader_version }}-{{ fabmc_installer_version }}.jar"
-    mode: 0644
+    mode: "0644"
   when: not minecraft_server_launcher_version_jar_file.stat.exists and minecraft_server_launcher_jar_file.stat.exists
 
 - name: Delete Minecraft Server Launcher jar file
@@ -68,5 +68,5 @@
     content: |
       java {{ fabmc_java_opts }} -jar {{ fabmc_install_dir }}/bin/minecraft_server_launcher.jar nogui
     dest: "{{ fabmc_install_dir }}/bin/start.sh"
-    mode: 0755
+    mode: "0755"
   when: not minecraft_start_script_file.stat.exists
