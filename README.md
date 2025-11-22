@@ -1,6 +1,6 @@
-<img align="right" src="https://raw.github.com/cliffano/ansible-role-fabricmc/main/avatar.jpg" alt="Avatar"/>
+<img align="right" src="https://raw.github.com/littlegodzillalaboratory/ansible-role-fabricmc/main/avatar.jpg" alt="Avatar"/>
 
-[![Build Status](https://github.com/cliffano/ansible-role-fabricmc/workflows/CI/badge.svg)](https://github.com/cliffano/ansible-role-fabricmc/actions?query=workflow%3ACI)
+[![Build Status](https://github.com/littlegodzillalaboratory/ansible-role-fabricmc/workflows/CI/badge.svg)](https://github.com/littlegodzillalaboratory/ansible-role-fabricmc/actions?query=workflow%3ACI)
 [![Security Status](https://snyk.io/test/github/cliffano/ansible-role-fabricmc/badge.svg)](https://snyk.io/test/github/cliffano/ansible-role-fabricmc)
 <br/>
 
