@@ -1,0 +1,9 @@
+ansible-compat
+ansible-lint
+conflog
+docker
+molecule
+PyYAML
+pytest
+pytest-testinfra
+yamllint
