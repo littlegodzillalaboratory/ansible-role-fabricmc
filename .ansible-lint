@@ -1,2 +1,8 @@
+---
 skip_list:
   - 'name[template]'
+
+exclude_paths:
+  - .ansible
+  - .git
+  - .venv
