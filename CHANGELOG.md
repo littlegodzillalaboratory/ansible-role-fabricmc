@@ -7,9 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+- Add fabmc_server_properties configuration for setting server.properties values
+- Add systemd service support
+- Add noble to supported Ubuntu platform
+- Add status, start-log, conf, log utility aliases
+- Add shebang to start shell script
+- Add fabmc_env_path configuration for setting systemd service environment PATH
+- Add fabmc_eula_accepted configuration
+
 ### Changed
 - Use MDH as Makefile standard
 - Shift Github ID and Galaxy namespace to littlegodzillalaboratory
+- Restructure Molecule files to work with latest Molecule 25.9.0
+- Change molecule config to use role namespace and name instead of workspace
 
 ## 0.10.0 - 2025-02-22
 ### Added

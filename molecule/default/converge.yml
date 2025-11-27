@@ -5,4 +5,4 @@
   tasks:
     - name: "Include workspace"
       ansible.builtin.include_role:
-        name: "workspace"
+        name: "littlegodzillalaboratory.fabricmc"

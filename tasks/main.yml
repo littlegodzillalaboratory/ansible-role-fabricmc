@@ -39,7 +39,7 @@
 #     msg: "Downloaded Minecraft Server Launcher jar file checksum {{ minecraft_server_launcher_jar_file.stat.checksum }} does not match the expected checksum {{ minecraft_versions[fabmc_minecraft_version]['sha1'] }}"
 #   when: not minecraft_server_launcher_version_jar_file.stat.exists and minecraft_server_launcher_jar_file.stat.checksum != minecraft_versions[fabmc_minecraft_version]['sha1']
 
-- name: "Copy Minecraft Server Launcher jar file as Minecraft Server Launcher {{ fabmc_minecraft_version }} jar file"
+- name: "Copy downloaded Minecraft Server Launcher jar file as Minecraft Server Launcher {{ fabmc_minecraft_version }} jar file"
   ansible.builtin.copy:
     remote_src: true
     src: "{{ fabmc_install_dir }}/bin/server.jar"
@@ -47,16 +47,43 @@
     mode: "0644"
   when: not minecraft_server_launcher_version_jar_file.stat.exists and minecraft_server_launcher_jar_file.stat.exists
 
-- name: Delete Minecraft Server Launcher jar file
+- name: Delete downloadedMinecraft Server Launcher jar file
   ansible.builtin.file:
     path: "{{ fabmc_install_dir }}/bin/server.jar"
     state: absent
+
+- name: "Get the status of Minecraft Server Launcher jar file"
+  ansible.builtin.stat:
+    path: "{{ fabmc_install_dir }}/bin/minecraft_server_launcher.jar"
+  register: minecraft_server_launcher_jar_file
+
+- name: "Ensure Minecraft Server Launcher jar file or symlink does not exist"
+  ansible.builtin.file:
+    path: "{{ fabmc_install_dir }}/bin/minecraft_server_launcher.jar"
+    state: absent
+  when: not minecraft_server_launcher_jar_file.stat.exists
 
 - name: Create symbolic link for Minecraft Server Launcher jar file
   ansible.builtin.file:
     src: "{{ fabmc_install_dir }}/bin/minecraft_server_launcher.{{ fabmc_minecraft_version }}-{{ fabmc_fabric_loader_version }}-{{ fabmc_installer_version }}.jar"
     dest: "{{ fabmc_install_dir }}/bin/minecraft_server_launcher.jar"
     state: link
+
+# Minecraft server would add any missing properties with default values
+# hence it's not necessary to specify all properties in fabmc_server_properties.
+- name: "Set Minecraft server configuration values"
+  ansible.builtin.lineinfile:
+    path: "{{ fabmc_install_dir }}/workspace/server.properties"
+    regexp: '^{{ item.key }}='
+    line: '{{ item.key }}={{ item.value }}'
+    create: yes
+    mode: "0644"
+  loop: "{{ fabmc_server_properties | dict2items }}"
+
+- name: "Get the status of Minecraft Server service file"
+  ansible.builtin.stat:
+    path: "/etc/systemd/system/{{ fabmc_install_id }}.service"
+  register: minecraft_service_file
 
 - name: Get the status of Minecraft Server Launcher start script file
   ansible.builtin.stat:
@@ -66,7 +93,77 @@
 - name: Create Minecraft Server Launcher start script
   ansible.builtin.copy:
     content: |
+      #!/bin/bash
       java {{ fabmc_java_opts }} -jar {{ fabmc_install_dir }}/bin/minecraft_server_launcher.jar nogui
     dest: "{{ fabmc_install_dir }}/bin/start.sh"
     mode: "0755"
   when: not minecraft_start_script_file.stat.exists
+
+- name: "Create Minecraft Server service file"
+  become: yes
+  ansible.builtin.copy:
+    content: |
+      [Unit]
+      Description=Minecraft Java
+      After=network.target
+
+      [Service]
+      ExecStart={{ fabmc_install_dir }}/bin/start.sh
+      Environment=PATH={{ fabmc_env_path }}
+      WorkingDirectory={{ fabmc_install_dir }}/workspace/
+      Restart=on-failure
+      RestartSec=10s
+      User={{ fabmc_os_user }}
+
+      [Install]
+      WantedBy=multi-user.target
+    dest: "/etc/systemd/system/{{ fabmc_install_id }}.service"
+    mode: "0644"
+  when: not minecraft_service_file.stat.exists
+
+- name: "Check init system"
+  ansible.builtin.command: ps -p 1 -o comm=
+  changed_when: false
+  register: init_system_check
+
+- name: "Enable Mincraft Server service with systemd"
+  become: yes
+  ansible.builtin.systemd:
+    name: "{{ fabmc_install_id }}.service"
+    enabled: yes
+    state: stopped
+  when: init_system_check.stdout.strip() == "systemd"
+
+- name: "Accept Minecraft EULA"
+  ansible.builtin.lineinfile:
+    path: "{{ fabmc_install_dir }}/workspace/eula.txt"
+    regexp: '^eula=true'
+    line: 'eula=true'
+    create: yes
+    mode: "0644"
+  when: fabmc_eula_accepted
+
+- name: "Create aliases for Minecraft Server generic utilities"
+  ansible.builtin.include_role:
+    name: ansible-roles.bash_aliases
+  vars:
+    bash_aliases:
+      - alias: "{{ fabmc_install_id }}-conf"
+        command: "vi {{ fabmc_install_dir }}/workspace/server.properties"
+      - alias: "{{ fabmc_install_id }}-log"
+        command: "tail -f {{ fabmc_install_dir }}/workspace/logs/latest.log"
+
+- name: "Create aliases for Minecraft Server systemd utilities"
+  ansible.builtin.include_role:
+    name: ansible-roles.bash_aliases
+  vars:
+    bash_aliases:
+      - alias: "{{ fabmc_install_id }}-start"
+        command: "systemctl start {{ fabmc_install_id }}.service"
+      - alias: "{{ fabmc_install_id }}-stop"
+        command: "systemctl stop {{ fabmc_install_id }}.service"
+      - alias: "{{ fabmc_install_id }}-status"
+        command: "systemctl status {{ fabmc_install_id }}.service"
+      - alias: "{{ fabmc_install_id }}-start-log"
+        command: "journalctl -u {{ fabmc_install_id }}"
+  when: init_system_check.stdout.strip() == "systemd"

@@ -1,5 +1,6 @@
 ---
-dependencies: []
+dependencies:
+  - name: ansible-roles.bash_aliases
 
 galaxy_info:
   namespace: littlegodzillalaboratory
@@ -9,8 +10,10 @@ galaxy_info:
   license: "license (MIT)"
   min_ansible_version: 10.3.0
   galaxy_tags:
-    - todo
+    - minecraft
+    - fabricmc
   platforms:
     - name: Ubuntu
       versions:
         - jammy
+        - noble
