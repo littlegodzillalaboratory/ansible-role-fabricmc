@@ -4,7 +4,7 @@ fabmc_fabric_loader_version: '0.16.10'
 fabmc_installer_version: '1.0.1'
 fabmc_install_dir: /opt/fabricmc
 fabmc_install_id: fabricmc
-fabmc_os_user: minecraft
+fabmc_os_user: fabricmc
 fabmc_env_path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 fabmc_java_opts: -Xmx2048M -Xms1024M
 fabmc_eula_accepted: true
