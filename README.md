@@ -21,30 +21,63 @@ Use the role in your playbook:
         fabmc_fabric_loader_version: '0.16.10'
         fabmc_installer_version: '1.0.1'
         fabmc_install_dir: /opt/fabricmc
+        fabmc_install_id: minecraft-java
+        fabmc_os_user: minecraft
         fabmc_java_opts: -Xmx2048M -Xms1024M
+        fabmc_eula_accepted: true
+        fabmc_server_properties:
+          motd: "A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC"
 
       roles:
-        - cliffano.fabricmc
+        - littlegodzillalaboratory.fabricmc
 
-For convenience, add aliases for starting and stopping the server, editing server.properties, and tailing the server log:
+Or alternatively, as a task using import role:
 
-    alias fabricmc-start='cd <fabmc_install_dir>/workspace && nohup <fabmc_install_dir>/bin/start.sh > /var/log/fabricmc/fabricmc.log &'
-    alias fabricmc-stop='pkill java' # temporary, will have to handle specific java process from fabricmc-start PID
-    alias fabricmc-conf='vi <fabmc_install_dir>/workspace/server.properties'
-    alias fabricmc-log='tail -f <fabmc_install_dir>/workspace/logs/latest.log'
+      tasks:
+
+        - ansible.builtin.import_role:
+            name: littlegodzillalaboratory.fabricmc
+          vars:
+            fabmc_minecraft_version: '1.21.4'
+            fabmc_fabric_loader_version: '0.16.10'
+            fabmc_installer_version: '1.0.1'
+            fabmc_install_dir: /opt/fabricmc
+            fabmc_install_id: minecraft-java
+            fabmc_os_user: minecraft
+            fabmc_java_opts: -Xmx2048M -Xms1024M
+            fabmc_eula_accepted: true
+            fabmc_server_properties:
+              motd: "A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC"
+
+On machines with systemd, a `<fabmc_install_id>` service will be provisioned so you can use systemctl to manage the server.
+
+    systemctl start <fabmc_install_id>.service
+    systemctl stop <fabmc_install_id>.service
+    systemctl status <fabmc_install_id>.service
+
+The following aliases are also provisioned to simplify the maintenance of FabricMC server:
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| <fabmc_install_id>-conf | `vi <fabmc_install_dir>/workspace/server.properties` | Open up server.properties using `vi` |
+| <fabmc_install_id>-log | `tail -f <fabmc_install_dir>/workspace/logs/latest.log` | Tail the latest server log |
+| <fabmc_install_id>-start | `systemctl start <fabmc_install_id>.service` | Start the server |
+| <fabmc_install_id>-stop | `systemctl stop <fabmc_install_id>.service` | Stop the server |
+| <fabmc_install_id>-status | `systemctl status <fabmc_install_id>.service` | Check the status of the server |
+| <fabmc_install_id>-start-log | `journalctl -u <fabmc_install_id>` | Show the server start log |
 
 Config
 ------
 
-When the server is started the very first time, you'll encounter a warning message about EULA:
-
-    [11:54:56] [main/WARN]: Failed to load eula.txt
-    [11:54:56] [main/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
-
-Open the configuration file at `<fabmc_install_dir>/workspace/server.properties`:
-
-    #By changing the setting below to TRUE you are indicating your agreement to our EULA (https://aka.ms/MinecraftEULA).
-    #Sat Feb 15 11:54:56 UTC 2025
-    eula=false
-
-and then replace `eula=false` with `eula=true`.
+| Variable | Description | Default | Example |
+|----------|-------------|---------|---------|
+| fabmc_minecraft_version | [Supported Minecraft version number](https://github.com/littlegodzillalaboratory/ansible-role-minecraft-java/blob/main/vars/main.yml#L2) | `1.21` |  `1.21.10` |
+| fabmc_fabric_loader_version | [Fabric loader version number](https://maven.fabricmc.net/net/fabricmc/fabric-loader/) | `0.16.10` |  `1.18.1` |
+| fabmc_installer_version | [Fabric installer version number](https://maven.fabricmc.net/net/fabricmc/fabric-installer/) | `1.0.1` |  `1.1.0` |
+| fabmc_install_id | Minecraft Fabric mod loader installation ID, useful to distinguish multiple installations on the same machine | `fabricmc` | `fabricmc-1` |
+| fabmc_install_dir | Minecraft Fabric mod loader installation directory | `/opt/fabricmc` | `/some/other/path` |
+| fabmc_os_user | System user which the Java process runs under | `fabricmc` | `someuser` |
+| fabmc_env_path | To be used as the [environment PATH](https://en.wikipedia.org/wiki/PATH_(variable)) which the FabricMC server runs with. Must have `java` command under one of the path values. | `/usr/local/sbin:/usr/local/bin:`<br/>`/usr/sbin:/usr/bin:/sbin:/bin` | `/home/someuser/.sdkman/candidates/java/current/bin:`<br/>`/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin` |
+| fabmc_java_opts | Server [Java options](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/jvm-options-java-parameters-command-line-environment-variable-list-xms-xmx-memory) | `-Xmx2048M -Xms1024M` | `-Xmx2048M -Xms1024M` |
+| fabmc_eula_accepted | Accept the Minecraft [EULA](https://nodecraft.com/support/games/minecraft/general/minecraft-eula) when set to true | `true` | `false` |
+| fabmc_server_properties | Minecraft [server properties](https://minecraft.fandom.com/wiki/Server.properties) key-value pairs. | `motd: "A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC"` | `difficulty: normal`<br/>`gamemode: survival`<br/>`hardcore: "false"` |
