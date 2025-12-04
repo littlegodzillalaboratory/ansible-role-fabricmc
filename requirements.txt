@@ -4,7 +4,9 @@
 #
 #    pip-compile
 #
-ansible-compat==25.11.0
+annotated-types==0.7.0
+    # via pydantic
+ansible-compat==25.12.0
     # via
     #   -r requirements.in
     #   ansible-lint
@@ -14,8 +16,10 @@ ansible-core==2.20.0
     #   ansible-compat
     #   ansible-lint
     #   molecule
-ansible-lint==25.11.0
+ansible-lint==25.12.0
     # via -r requirements.in
+anyio==4.12.0
+    # via httpx
 attrs==25.4.0
     # via
     #   jsonschema
@@ -25,14 +29,14 @@ black==25.11.0
 bracex==2.6
     # via wcmatch
 certifi==2025.11.12
-    # via requests
+    # via
+    #   httpcore
+    #   httpx
 cffi==2.0.0
     # via
     #   ansible-lint
     #   cryptography
-charset-normalizer==3.4.4
-    # via requests
-click==8.3.0
+click==8.3.1
     # via
     #   black
     #   click-help-colors
@@ -47,16 +51,20 @@ cryptography==46.0.3
     #   ansible-lint
 distro==1.9.0
     # via ansible-lint
-docker==7.1.0
-    # via -r requirements.in
 enrich==1.2.7
     # via molecule
 filelock==3.20.0
     # via ansible-lint
+h11==0.16.0
+    # via httpcore
+httpcore==1.0.9
+    # via httpx
+httpx==0.28.1
+    # via modrinth-api-wrapper
 idna==3.11
-    # via requests
-importlib-metadata==8.7.0
-    # via ansible-lint
+    # via
+    #   anyio
+    #   httpx
 iniconfig==2.3.0
     # via pytest
 jinja2==3.1.6
@@ -76,7 +84,9 @@ markupsafe==3.0.3
     # via jinja2
 mdurl==0.1.2
     # via markdown-it-py
-molecule==25.11.0
+modrinth-api-wrapper==1.0.0
+    # via -r requirements.in
+molecule==25.12.0
     # via -r requirements.in
 mypy-extensions==1.1.0
     # via black
@@ -101,6 +111,10 @@ pluggy==1.6.0
     #   pytest
 pycparser==2.23
     # via cffi
+pydantic==2.12.5
+    # via modrinth-api-wrapper
+pydantic-core==2.41.5
+    # via pydantic
 pygments==2.19.2
     # via
     #   pytest
@@ -127,21 +141,19 @@ referencing==0.37.0
     #   ansible-lint
     #   jsonschema
     #   jsonschema-specifications
-requests==2.32.5
-    # via docker
 resolvelib==1.2.1
     # via ansible-core
 rich==14.2.0
     # via
     #   enrich
     #   molecule
-rpds-py==0.28.0
+rpds-py==0.30.0
     # via
     #   jsonschema
     #   referencing
 ruamel-yaml==0.18.16
     # via ansible-lint
-ruamel-yaml-clib==0.2.14
+ruamel-yaml-clib==0.2.15
     # via
     #   ansible-lint
     #   ruamel-yaml
@@ -152,11 +164,14 @@ subprocess-tee==0.4.2
 toml==0.10.2
     # via conflog
 typing-extensions==4.15.0
-    # via referencing
-urllib3==2.5.0
     # via
-    #   docker
-    #   requests
+    #   anyio
+    #   pydantic
+    #   pydantic-core
+    #   referencing
+    #   typing-inspection
+typing-inspection==0.4.2
+    # via pydantic
 wcmatch==10.1
     # via
     #   ansible-lint
@@ -165,5 +180,3 @@ yamllint==1.37.1
     # via
     #   -r requirements.in
     #   ansible-lint
-zipp==3.23.0
-    # via importlib-metadata
