@@ -61,4 +61,9 @@ update-to-main:
 update-to-version:
 	curl https://raw.githubusercontent.com/cliffano/mdh/$(TARGET_MDH_VERSION)/src/Makefile-mdh -o Makefile
 
-.PHONY: ci all clean rmdeps deps deps-upgrade lint test update-to-latest update-to-main update-to-version stage
+################################################################
+
+x-gen-vars-file:
+	$(call python_venv,python3 scripts/gen-vars-file.py)
+
+.PHONY: ci all clean rmdeps deps deps-upgrade lint test update-to-latest update-to-main update-to-version stage x-gen-vars-file

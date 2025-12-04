@@ -20,6 +20,7 @@ Use the role in your playbook:
         fabmc_minecraft_version: '1.21.4'
         fabmc_fabric_loader_version: '0.16.10'
         fabmc_installer_version: '1.0.1'
+        fabmc_fabric_api_version: '0.119.4+1.21.4'
         fabmc_install_dir: /opt/fabricmc
         fabmc_install_id: minecraft-java
         fabmc_os_user: minecraft
@@ -41,6 +42,7 @@ Or alternatively, as a task using import role:
             fabmc_minecraft_version: '1.21.4'
             fabmc_fabric_loader_version: '0.16.10'
             fabmc_installer_version: '1.0.1'
+            fabmc_fabric_api_version: '0.119.4+1.21.4'
             fabmc_install_dir: /opt/fabricmc
             fabmc_install_id: minecraft-java
             fabmc_os_user: minecraft
@@ -74,6 +76,7 @@ Config
 | fabmc_minecraft_version | [Supported Minecraft version number](https://github.com/littlegodzillalaboratory/ansible-role-minecraft-java/blob/main/vars/main.yml#L2) | `1.21` |  `1.21.10` |
 | fabmc_fabric_loader_version | [Fabric loader version number](https://maven.fabricmc.net/net/fabricmc/fabric-loader/) | `0.16.10` |  `1.18.1` |
 | fabmc_installer_version | [Fabric installer version number](https://maven.fabricmc.net/net/fabricmc/fabric-installer/) | `1.0.1` |  `1.1.0` |
+| fabmc_fabric_api_version | [Fabric API version number](https://modrinth.com/mod/fabric-api) | `0.119.4+1.21.4` |  `0.105.4+1.21.2` |
 | fabmc_install_id | Minecraft Fabric mod loader installation ID, useful to distinguish multiple installations on the same machine | `fabricmc` | `fabricmc-1` |
 | fabmc_install_dir | Minecraft Fabric mod loader installation directory | `/opt/fabricmc` | `/some/other/path` |
 | fabmc_os_user | System user which the Java process runs under | `fabricmc` | `someuser` |

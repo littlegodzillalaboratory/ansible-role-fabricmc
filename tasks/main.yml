@@ -13,6 +13,7 @@
   loop:
     - "{{ fabmc_install_dir }}/bin"
     - "{{ fabmc_install_dir }}/workspace"
+    - "{{ fabmc_install_dir }}/workspace/mods"
 
 - name: "Get the status of Minecraft Server Launcher {{ fabmc_minecraft_version }} Fabric Loader {{ fabmc_fabric_loader_version }} Installer {{ fabmc_installer_version }} jar file"
   ansible.builtin.stat:
@@ -68,6 +69,30 @@
     src: "{{ fabmc_install_dir }}/bin/minecraft_server_launcher.{{ fabmc_minecraft_version }}-{{ fabmc_fabric_loader_version }}-{{ fabmc_installer_version }}.jar"
     dest: "{{ fabmc_install_dir }}/bin/minecraft_server_launcher.jar"
     state: link
+
+- name: "Get the status of Fabric API {{ fabmc_fabric_api_version }} jar file"
+  ansible.builtin.stat:
+    path: "{{ fabmc_install_dir }}/workspace/mods/fabric-api-{{ fabmc_fabric_api_version }}.jar"
+  register: fabric_api_version_jar_file
+
+- name: Download Fabric API jar file
+  ansible.builtin.get_url:
+    url: "{{ fabric_api_versions[fabmc_fabric_api_version]['url'] }}"
+    dest: "{{ fabmc_install_dir }}/workspace/mods/fabric-api-{{ fabmc_fabric_api_version }}.jar"
+    mode: "0644"
+  when: not fabric_api_version_jar_file.stat.exists
+
+- name: Get the status of downloaded Fabric API jar file
+  ansible.builtin.stat:
+    path: "{{ fabmc_install_dir }}/workspace/mods/fabric-api-{{ fabmc_fabric_api_version }}.jar"
+    checksum_algorithm: sha1
+  register: fabric_api_jar_file
+  when: not fabric_api_version_jar_file.stat.exists
+
+- name: Fail if downloaded Fabric API jar file checksum does not match
+  ansible.builtin.fail:
+    msg: "Downloaded Fabric API jar file checksum {{ fabric_api_jar_file.stat.checksum }} does not match the expected checksum {{ fabric_api_versions[fabmc_fabric_api_version]['sha1'] }}"
+  when: not fabric_api_version_jar_file.stat.exists and fabric_api_jar_file.stat.checksum != fabric_api_versions[fabmc_fabric_api_version]['sha1']
 
 # Minecraft server would add any missing properties with default values
 # hence it's not necessary to specify all properties in fabmc_server_properties.

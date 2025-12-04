@@ -1,1 +1,3152 @@
 ---
+fabric_api_versions:
+  0.1.0.36:
+    sha1: 1a20db10637d8f6c1a7f011708cece3fe60e15f9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.0.36/fabric-0.1.0.36.jar
+  0.1.0.42:
+    sha1: 16ccb6619130e78b0bfc440afa3cf88461a86311
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.0.42/fabric-0.1.0.42.jar
+  0.1.0.46:
+    sha1: ad23b74adc0ba6881b22d3b1f4e308e713d1820d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.0.46/fabric-0.1.0.46.jar
+  0.1.1.47:
+    sha1: 27c3382be00e3801ca00db24e39dd893630089e1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.47/fabric-0.1.1.47.jar
+  0.1.1.49:
+    sha1: 754d32f7c699a89c3a1ca7e071408660b661b323
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.49/fabric-0.1.1.49.jar
+  0.1.1.50:
+    sha1: 71c60eea2e4e24f87ff6919aaa0d384d35ced7d9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.50/fabric-0.1.1.50.jar
+  0.1.1.51:
+    sha1: 70ab9ada37437cd1c67ebfa140bdd627a351f6ad
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.51/fabric-0.1.1.51.jar
+  0.1.1.52:
+    sha1: 0e1a4b95024314d2dac37ab3c7223571d6bc71ac
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.52/fabric-0.1.1.52.jar
+  0.1.1.53:
+    sha1: 439a7d2f2ea40e2f0c4583c53bff7718c2b551d6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.53/fabric-0.1.1.53.jar
+  0.1.1.54:
+    sha1: 8908a5ec8f9b4025e01cca6773ce8b746f485bbe
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.54/fabric-0.1.1.54.jar
+  0.1.1.55:
+    sha1: 9a636fc2502fbafa4046aae602a6c55fca828fe6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.55/fabric-0.1.1.55.jar
+  0.1.1.56:
+    sha1: 5bfd00e028eb5c59596299036d087f94656805cf
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.56/fabric-0.1.1.56.jar
+  0.1.1.57:
+    sha1: c2b9afda964f2066ddcb7a7f6586e81491359221
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.57/fabric-0.1.1.57.jar
+  0.1.1.58:
+    sha1: 6849e99c83170782dedda299d97989a44e8a716b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.58/fabric-0.1.1.58.jar
+  0.1.1.60:
+    sha1: 50ef600fe32e16732482a913160c09fe4d2c925c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.60/fabric-0.1.1.60.jar
+  0.1.1.61:
+    sha1: ef4a475d9d7d7b10b0a4d90dab611758921cf48b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.1.61/fabric-0.1.1.61.jar
+  0.1.2.62:
+    sha1: 284844848cf5273a5148e6ae1b3b26cecec6be91
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.2.62/fabric-0.1.2.62.jar
+  0.1.2.63:
+    sha1: a812e98a1ed89d8c2ab6fa53e54807273a7e4146
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.2.63/fabric-0.1.2.63.jar
+  0.1.2.64:
+    sha1: 9090597dfcf18fe91afcf27bc0526b116ddfac0d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.2.64/fabric-0.1.2.64.jar
+  0.1.3.66:
+    sha1: 3d7f620f4b597a31dd114bd4ec8a57228fa6f767
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.3.66/fabric-0.1.3.66.jar
+  0.1.3.67:
+    sha1: 904a2edca9afbfa1c3eb779c4f3c88018d43c820
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.3.67/fabric-0.1.3.67.jar
+  0.1.3.68:
+    sha1: 3fec320fcedadc2b3ca83d0d1522e06ff60ea871
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.3.68/fabric-0.1.3.68.jar
+  0.1.4.69:
+    sha1: d746b6551ec1409adf6f91e25eb15ab5cefe29f3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.4.69/fabric-0.1.4.69.jar
+  0.1.4.71:
+    sha1: 58e73dec872c290596c4f5e78341c797bf9938a0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.4.71/fabric-0.1.4.71.jar
+  0.1.4.72:
+    sha1: 1071ba628becd9451a21d5c471e4b0adec81cecb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.4.72/fabric-0.1.4.72.jar
+  0.1.4.73:
+    sha1: 0a54cd328a990fdcfa5c31ac0968d0b9b08a25ec
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.4.73/fabric-0.1.4.73.jar
+  0.1.4.74:
+    sha1: 20290a5a8ba67f09103cebb65e961a8ed43a6b0c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.4.74/fabric-0.1.4.74.jar
+  0.1.4.75:
+    sha1: 868989c7c64800da5d0ed246039f66cfbc21ab74
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.4.75/fabric-0.1.4.75.jar
+  0.1.4.76:
+    sha1: 4bb28a92011629409e785e087dcdda07a7077358
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.4.76/fabric-0.1.4.76.jar
+  0.1.4.77:
+    sha1: f4c666354763382e6b8c7190d5877263434f8a7a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.4.77/fabric-0.1.4.77.jar
+  0.1.4.78:
+    sha1: 196d63cab95877632299ff4b1fd76200250e5204
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.4.78/fabric-0.1.4.78.jar
+  0.1.4.79:
+    sha1: 256f9019c33e7a03db9b59f95d83dcf775a48acf
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.4.79/fabric-0.1.4.79.jar
+  0.1.5.80:
+    sha1: bb168d47a82d87667d589877fbfbdc26384bbae6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.5.80/fabric-0.1.5.80.jar
+  0.1.5.81:
+    sha1: 033337165d286bebcbc48798f63d8d08d8ee0b3e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.5.81/fabric-0.1.5.81.jar
+  0.1.5.82:
+    sha1: 92b32af723d3a635503249b6e149ab6d5055de51
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.5.82/fabric-0.1.5.82.jar
+  0.1.5.83:
+    sha1: fa8223dffcf4976d6220d4e591060d4ef6afa1f6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.5.83/fabric-0.1.5.83.jar
+  0.1.5.84:
+    sha1: 1d54cbb99f91141310e407e584fa9a210772886f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.5.84/fabric-0.1.5.84.jar
+  0.1.5.85:
+    sha1: b5edf53274858d7439895b7efc6f1805edf2d877
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.5.85/fabric-0.1.5.85.jar
+  0.1.5.86:
+    sha1: 1d5f8c39e0a5322df2dadb42c51a3d9c83e63bc1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.5.86/fabric-0.1.5.86.jar
+  0.1.5.87:
+    sha1: fe92a99f8308f7ccbe463ff69a5644d8a855d9d9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.5.87/fabric-0.1.5.87.jar
+  0.1.5.88:
+    sha1: e6bcbb263c5f139b25156040943b729f4234f93c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.1.5.88/fabric-0.1.5.88.jar
+  0.10.0+build.305-1.15:
+    sha1: 5bef14e1a8820b1ae3a48b1fcc59506acc3c8a1c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.0%2Bbuild.305-1.15/fabric-api-0.10.0%2Bbuild.305-1.15.jar
+  0.10.0+build.335-1.16:
+    sha1: 373687b39fb70f4a98f3f2ed33566e06884db0d3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.0%2Bbuild.335-1.16/fabric-api-0.10.0%2Bbuild.335-1.16.jar
+  0.10.1+build.306-1.15:
+    sha1: 1b12d130cf9604b09bc6b9d623040d1bcdc9cf31
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.1%2Bbuild.306-1.15/fabric-api-0.10.1%2Bbuild.306-1.15.jar
+  0.10.1+build.307-1.15:
+    sha1: a107b19e47419b449418b2b7f4b89ab8543f937e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.1%2Bbuild.307-1.15/fabric-api-0.10.1%2Bbuild.307-1.15.jar
+  0.10.1+build.336-1.16:
+    sha1: 2c95d1b31c2ff486870249104df3e4ec9721f561
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.1%2Bbuild.336-1.16/fabric-api-0.10.1%2Bbuild.336-1.16.jar
+  0.10.10+build.347-1.16:
+    sha1: 933ddb18c8346f37c037e2024c549b98e518005d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.10%2Bbuild.347-1.16/fabric-api-0.10.10%2Bbuild.347-1.16.jar
+  0.10.11+build.348-1.16:
+    sha1: 56ab5e2cf7f6a064052ec952caccd0cb72267b5f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.11%2Bbuild.348-1.16/fabric-api-0.10.11%2Bbuild.348-1.16.jar
+  0.10.2+build.337-1.16:
+    sha1: 1cdef232af95150a545fbaed7c517189c2addd97
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.2%2Bbuild.337-1.16/fabric-api-0.10.2%2Bbuild.337-1.16.jar
+  0.10.3+build.338-1.16:
+    sha1: 181cf961a8fc6e2e5e0f36e1172cb0b7cb850091
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.3%2Bbuild.338-1.16/fabric-api-0.10.3%2Bbuild.338-1.16.jar
+  0.10.4+build.340-1.16:
+    sha1: 1761eae395ad158be21100ce1910857b06874b3a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.4%2Bbuild.340-1.16/fabric-api-0.10.4%2Bbuild.340-1.16.jar
+  0.10.5+build.341-1.16:
+    sha1: 5a5b6f58b1c068d62c16ee9eaa203e73040d1e10
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.5%2Bbuild.341-1.16/fabric-api-0.10.5%2Bbuild.341-1.16.jar
+  0.10.6+build.342-1.16:
+    sha1: e4d717c68dd01c414bf36658cd09b766ef9704fb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.6%2Bbuild.342-1.16/fabric-api-0.10.6%2Bbuild.342-1.16.jar
+  0.10.7+build.309-1.15:
+    sha1: 18419f13c9f5ee96b6570a1deedc88ebf5953f1b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.7%2Bbuild.309-1.15/fabric-api-0.10.7%2Bbuild.309-1.15.jar
+  0.10.7+build.344-1.16:
+    sha1: 0ca717aec83e381b1606661248c2a39b88fb65dc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.7%2Bbuild.344-1.16/fabric-api-0.10.7%2Bbuild.344-1.16.jar
+  0.10.8+build.310-1.15:
+    sha1: 55116968dba55eb5641090cd3fc84a97d73e9f86
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.8%2Bbuild.310-1.15/fabric-api-0.10.8%2Bbuild.310-1.15.jar
+  0.10.8+build.345-1.16:
+    sha1: 87c5329ba14e6c000afc0433c10587c9a01c03b2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.8%2Bbuild.345-1.16/fabric-api-0.10.8%2Bbuild.345-1.16.jar
+  0.10.9+build.346-1.16:
+    sha1: 3437fb560bfc8e8683d3d3dfb1b9886394071eca
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.10.9%2Bbuild.346-1.16/fabric-api-0.10.9%2Bbuild.346-1.16.jar
+  0.100.0+1.20.6:
+    sha1: b5ae408855e08e91650b5791cdc6fee478494534
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/IdbZAPPF/fabric-api-0.100.0%2B1.20.6.jar
+  0.100.0+1.21:
+    sha1: ffa4bcf88d72748671538c871e31c4af84a2082d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/vOCP22mm/fabric-api-0.100.0%2B1.21.jar
+  0.100.1+1.21:
+    sha1: 63848b365c036a89e4aba51d14d6dc8301e32b27
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/HXzEJYgV/fabric-api-0.100.1%2B1.21.jar
+  0.100.2+1.20.6:
+    sha1: 605ddd5311a420c716877ba7e12e1e8217b17ee3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/MiIndOKP/fabric-api-0.100.2%2B1.20.6.jar
+  0.100.2+1.21:
+    sha1: af16ef0e1d7b8fe169df92322a5c563059cbe6b8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/IHIHC1yO/fabric-api-0.100.2%2B1.21.jar
+  0.100.3+1.21:
+    sha1: 4243a5c9f936ee5c2404dc2c9e27bf119955da49
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1cXs6RWI/fabric-api-0.100.3%2B1.21.jar
+  0.100.4+1.20.6:
+    sha1: bfadb1bd7a159fa2b3c9833c32716db1db7c4a02
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/GT0R5Mz7/fabric-api-0.100.4%2B1.20.6.jar
+  0.100.4+1.21:
+    sha1: 4bf00b19252fc7c2f618340c5c50be430a230d5e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/oIVA3FbL/fabric-api-0.100.4%2B1.21.jar
+  0.100.5+1.21:
+    sha1: 00e90d988d4432935c3de2f17deacb3edc57390f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/mDmQIaOM/fabric-api-0.100.5%2B1.21.jar
+  0.100.6+1.21:
+    sha1: dd92d95977c960affefc6c29e3ee946ce7b4723a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Y0cpssyN/fabric-api-0.100.6%2B1.21.jar
+  0.100.7+1.21:
+    sha1: 9321e8a5beffaa116ea1833c4d7c00a100e7288f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/vMQdA5QJ/fabric-api-0.100.7%2B1.21.jar
+  0.100.8+1.20.6:
+    sha1: f8a4b3a551fc5bde9a2d3e4bcac9cb21a081c828
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ocg4hG3t/fabric-api-0.100.8%2B1.20.6.jar
+  0.100.8+1.21:
+    sha1: 8dfd41063b083147653ae8ab6699d93c22f8411f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/iS2jNAxk/fabric-api-0.100.8%2B1.21.jar
+  0.101.0+1.21:
+    sha1: 523e91b040171e60291641eff1296f7101c4da33
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/hpxN9iW3/fabric-api-0.101.0%2B1.21.jar
+  0.101.1+1.21:
+    sha1: 96156c17b9f9dfcb8cfad3022b47a74b5f840def
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/YF44uv1l/fabric-api-0.101.1%2B1.21.jar
+  0.101.2+1.21:
+    sha1: d9b45f2af22f8df22056287faf024f18a9d45da6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/EY5IAcV9/fabric-api-0.101.2%2B1.21.jar
+  0.101.2+1.21.1:
+    sha1: 13b0970d0c53c193c4fc3db9e4a848a34364f453
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/vEv7eHR6/fabric-api-0.101.2%2B1.21.1.jar
+  0.102.0+1.21:
+    sha1: 43035a1c6f506285a9910bc8038d1b1b925f8dd1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/oGwyXeEI/fabric-api-0.102.0%2B1.21.jar
+  0.102.0+1.21.1:
+    sha1: 669a75bcbba10bc3fa15f31733587cefb8779064
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/VAjB0MYF/fabric-api-0.102.0%2B1.21.1.jar
+  0.102.1+1.21.1:
+    sha1: c7d381d76c22ada6679ef9683da9384751db3874
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/bK6OgzFj/fabric-api-0.102.1%2B1.21.1.jar
+  0.102.2+1.21.2:
+    sha1: 99d1b2d3e6d3ed1e6094d06704a11f9a32b77aca
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/IRoJ7WpO/fabric-api-0.102.2%2B1.21.2.jar
+  0.102.3+1.21.2:
+    sha1: ed83268990bac362fd78a0a7728b31f323fdd5e3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/SKO3xQOq/fabric-api-0.102.3%2B1.21.2.jar
+  0.103.0+1.21.1:
+    sha1: a7cce732abba7fafbec33f9dc6c99d3dda6fff9a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/gQS3JbZO/fabric-api-0.103.0%2B1.21.1.jar
+  0.103.0+1.21.2:
+    sha1: 569b707908976bbb45bb421576a9c351a9173dc4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Ouxgt8PC/fabric-api-0.103.0%2B1.21.2.jar
+  0.103.1+1.21.2:
+    sha1: 680b6ead3c5a7c7d3242ce4fd16bc80d5caa0e3e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/BgRqXNlh/fabric-api-0.103.1%2B1.21.2.jar
+  0.103.2+1.21.2:
+    sha1: d03f097f31ad933cc21aaecd0a86c948c3c813ca
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/scwxz6w1/fabric-api-0.103.2%2B1.21.2.jar
+  0.104.0+1.21.1:
+    sha1: 013ddb81215c59899df00a7a98872c3aea53aca7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/qKPgBeHl/fabric-api-0.104.0%2B1.21.1.jar
+  0.104.0+1.21.2:
+    sha1: 2e2531e9264afe073cd51396a2d016e8b58b684b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/K9wocAyy/fabric-api-0.104.0%2B1.21.2.jar
+  0.104.1+1.21.2:
+    sha1: 1e095af1c61e343f046acd950b3c6be596303dd0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/RlElgomt/fabric-api-0.104.1%2B1.21.2.jar
+  0.104.2+1.21.2:
+    sha1: b3a1de212da7b59273451bbfb4a38f9ed037e6e7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/6p73lfAV/fabric-api-0.104.2%2B1.21.2.jar
+  0.105.0+1.21.1:
+    sha1: 09b6399db5f09a79b0ac5b7ecbbba2e3189b190a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/WTaAx4ah/fabric-api-0.105.0%2B1.21.1.jar
+  0.105.0+1.21.2:
+    sha1: 5fce55cae660c97322e9a8ff1f010b3606f205de
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/TwHWSyoo/fabric-api-0.105.0%2B1.21.2.jar
+  0.105.1+1.21.2:
+    sha1: 6e0f16a1578f5b8d06d8d641e5c3b837df15d2c7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Y2c6Fhq9/fabric-api-0.105.1%2B1.21.2.jar
+  0.105.2+1.21.2:
+    sha1: 675cbadba602399d899dd23c61eb99430a223425
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/RSbTCKnx/fabric-api-0.105.2%2B1.21.2.jar
+  0.105.3+1.21.2:
+    sha1: c49497530c6b86f2dff385ed22340f1595c1a814
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/5PFyUvrB/fabric-api-0.105.3%2B1.21.2.jar
+  0.105.4+1.21.2:
+    sha1: b6a43e75da12da2a3672ff0be134d85db6fe6208
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/rXcvWJT5/fabric-api-0.105.4%2B1.21.2.jar
+  0.106.0+1.21.1:
+    sha1: 208b7e1a7c436a28e26207e98bacd62b787c3f92
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/iFnYBUfS/fabric-api-0.106.0%2B1.21.1.jar
+  0.106.0+1.21.2:
+    sha1: a818a7fb1f7759482d65b0d03d4014812494a8de
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/c7d8lSzD/fabric-api-0.106.0%2B1.21.2.jar
+  0.106.1+1.21.2:
+    sha1: 4ad6afcfb5353bf9b8ee84d744963fbe31762a93
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/UEjZZNue/fabric-api-0.106.1%2B1.21.2.jar
+  0.106.1+1.21.3:
+    sha1: eca0f6294f4a0b5ad14783906d1f3224b232faa4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/dhD4I4lJ/fabric-api-0.106.1%2B1.21.3.jar
+  0.107.0+1.21.1:
+    sha1: ba0f27b37fe600d3e69953750d1909da88929a9d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/thGkUOxt/fabric-api-0.107.0%2B1.21.1.jar
+  0.107.0+1.21.3:
+    sha1: befdb622caba99ee1588bfd3b58d8502a7601d0f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/FjU3tsgY/fabric-api-0.107.0%2B1.21.3.jar
+  0.107.0+1.21.4:
+    sha1: 3455bc79dfb39e4a2368fa627276461a36863a23
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/k13PLvlF/fabric-api-0.107.0%2B1.21.4.jar
+  0.107.2+1.21.4:
+    sha1: 7a64fdfa6a03830b610859e0e5f6117cd6a6bf13
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/psnRjnnH/fabric-api-0.107.2%2B1.21.4.jar
+  0.107.3+1.21.3:
+    sha1: f85ae7337992345c209794f8695b55138d067ad7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/MawoBGbv/fabric-api-0.107.3%2B1.21.3.jar
+  0.107.3+1.21.4:
+    sha1: 8706d330b461274eb4de29829102cd52f7d5119a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/okJbgFs1/fabric-api-0.107.3%2B1.21.4.jar
+  0.108.0+1.21.1:
+    sha1: 79b23a653619972e7e58a910defdbc4d348a5ba0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/GcoFPm9u/fabric-api-0.108.0%2B1.21.1.jar
+  0.108.0+1.21.3:
+    sha1: 92bfd6b9964972d5c415102437a8142e71823ead
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/kwP1bhmH/fabric-api-0.108.0%2B1.21.3.jar
+  0.108.0+1.21.4:
+    sha1: a505ef5289392cb04f9bc03a85346fcb32820cf2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/iXqhjTJ9/fabric-api-0.108.0%2B1.21.4.jar
+  0.108.1+1.21.4:
+    sha1: c57b023ebd1201504a6c0609d7c2e24948ceeeb9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ytiI6Kpm/fabric-api-0.108.1%2B1.21.4.jar
+  0.109.0+1.21.1:
+    sha1: 35d3110bf44dc88f148d5feb13bfdae50268ba00
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/aHuj8q0Q/fabric-api-0.109.0%2B1.21.1.jar
+  0.109.0+1.21.3:
+    sha1: 5f6915e9f292809b1170546a8845e4062c1713ff
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Xhw2LuSh/fabric-api-0.109.0%2B1.21.3.jar
+  0.109.0+1.21.4:
+    sha1: c7a94aecefc7a9abe6667dca65e3bc66cfe0b0f2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/icCZ380j/fabric-api-0.109.0%2B1.21.4.jar
+  0.109.1+1.21.4:
+    sha1: cb6d53947f758bc0903351e2a3ca390bccff401b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/U4DXBluO/fabric-api-0.109.1%2B1.21.4.jar
+  0.11.0+build.311-1.15:
+    sha1: cfb60afde50aff538deb646364de4902d0b260a5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.0%2Bbuild.311-1.15/fabric-api-0.11.0%2Bbuild.311-1.15.jar
+  0.11.0+build.349-1.16:
+    sha1: 9ddc21266b2e05508855bff28b07d4f98699ad45
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.0%2Bbuild.349-1.16/fabric-api-0.11.0%2Bbuild.349-1.16.jar
+  0.11.1+build.312-1.15:
+    sha1: ebc62c3fc0bfb50e8ce01f2621533917f8894a1d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.1%2Bbuild.312-1.15/fabric-api-0.11.1%2Bbuild.312-1.15.jar
+  0.11.1+build.350-1.16:
+    sha1: 612d57ad40fe5cd19a6077a6d6cab1067cb35d32
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.1%2Bbuild.350-1.16/fabric-api-0.11.1%2Bbuild.350-1.16.jar
+  0.11.10+build.359-1.16:
+    sha1: ff2abab4ee2b79d0cbb7c3ed9d10d2485f57b35c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.10%2Bbuild.359-1.16/fabric-api-0.11.10%2Bbuild.359-1.16.jar
+  0.11.2+build.351-1.16:
+    sha1: 5626f0428eaf8bfde6e3517a5bdebee6322a994b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.2%2Bbuild.351-1.16/fabric-api-0.11.2%2Bbuild.351-1.16.jar
+  0.11.3+build.352-1.16:
+    sha1: c9d8d0a4bdc0368d7230b0148b4452aecbab62ae
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.3%2Bbuild.352-1.16/fabric-api-0.11.3%2Bbuild.352-1.16.jar
+  0.11.4+build.353-1.16:
+    sha1: b077d7354122a167f434da90c4efd8e25d8bce24
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.4%2Bbuild.353-1.16/fabric-api-0.11.4%2Bbuild.353-1.16.jar
+  0.11.5+build.354-1.16:
+    sha1: d94b60eeeed80ca94e435b05d137f2b6514e4947
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.5%2Bbuild.354-1.16/fabric-api-0.11.5%2Bbuild.354-1.16.jar
+  0.11.6+build.355-1.16:
+    sha1: 7b39d6c929d821c67cfc7c5f5eed690b71baa76a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.6%2Bbuild.355-1.16/fabric-api-0.11.6%2Bbuild.355-1.16.jar
+  0.11.7+build.356-1.16:
+    sha1: d5f62450fdfb24bcf6fab669b4626a0e22942267
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.7%2Bbuild.356-1.16/fabric-api-0.11.7%2Bbuild.356-1.16.jar
+  0.11.8+build.357-1.16:
+    sha1: f5d7ee609bb01e3867fc6ba7e2ffaee6c1be7855
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.8%2Bbuild.357-1.16/fabric-api-0.11.8%2Bbuild.357-1.16.jar
+  0.11.9+build.358-1.16:
+    sha1: 59b9889123e18d516e36216e1173f60e2afeb321
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.11.9%2Bbuild.358-1.16/fabric-api-0.11.9%2Bbuild.358-1.16.jar
+  0.110.0+1.21.1:
+    sha1: 2b7f7f96571285868e962e269762987e817094ff
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Zp9iAZdZ/fabric-api-0.110.0%2B1.21.1.jar
+  0.110.0+1.21.3:
+    sha1: 627f424ee9c7ef15ce83b744673511ca74dc6982
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/bQzqZbjS/fabric-api-0.110.0%2B1.21.3.jar
+  0.110.0+1.21.4:
+    sha1: d8d8fd6615434568fc4bf7da175c37b4c0e3a681
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/oHVAUBh9/fabric-api-0.110.0%2B1.21.4.jar
+  0.110.2+1.21.4:
+    sha1: 136e4d3aa6d061570f76ca153968720f0afc1778
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/X7o8njVT/fabric-api-0.110.2%2B1.21.4.jar
+  0.110.3+1.21.4:
+    sha1: b8e02ae21cd3a552329444a9ffb7ff71a687a134
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Eo1OlAPd/fabric-api-0.110.3%2B1.21.4.jar
+  0.110.4+1.21.4:
+    sha1: 28835e7b3cc530cae50bd21e2fedac8747eee8d6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/gKE8iGdG/fabric-api-0.110.4%2B1.21.4.jar
+  0.110.5+1.21.4:
+    sha1: 499c5c0874efc378c84c23298c05f58949341627
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Oh9IKZRD/fabric-api-0.110.5%2B1.21.4.jar
+  0.111.0+1.21.4:
+    sha1: b8e3e51ee9b56e05b942651de05ecaa811d40edc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/KEv54FjE/fabric-api-0.111.0%2B1.21.4.jar
+  0.112.0+1.21.3:
+    sha1: 2801ededf675476c687ca5c8e3b37bc0567369db
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/u5OfXb8f/fabric-api-0.112.0%2B1.21.3.jar
+  0.112.0+1.21.4:
+    sha1: fedab443fa2ffcf6e6d5764380280a7572f9a8b2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/kgg9d3no/fabric-api-0.112.0%2B1.21.4.jar
+  0.112.1+1.21.3:
+    sha1: 03b25dd40073c14e1b1265a807f0533540dcbb56
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/k4z4g5d5/fabric-api-0.112.1%2B1.21.3.jar
+  0.112.1+1.21.4:
+    sha1: a226fc59821819e2fd7e1f379c6499ec1fa453fd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/UU9QOoeP/fabric-api-0.112.1%2B1.21.4.jar
+  0.112.2+1.21.4:
+    sha1: 2e2900453b5d930eeb704fcd1f7d03b3a426d46c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/d6uc3lSM/fabric-api-0.112.2%2B1.21.4.jar
+  0.113.0+1.21.4:
+    sha1: df51e11eb19402b9c1f5e6c072d4a9c4b8e45903
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/15ijyoD6/fabric-api-0.113.0%2B1.21.4.jar
+  0.114.0+1.21.1:
+    sha1: 545047b690a33a593aa999c1fe5e2216e0493d36
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/biIRIp2X/fabric-api-0.114.0%2B1.21.1.jar
+  0.114.0+1.21.3:
+    sha1: 90df50fa153e2e34620e739ca496fbd1d4d8e0a0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Ybg4nYGj/fabric-api-0.114.0%2B1.21.3.jar
+  0.114.0+1.21.4:
+    sha1: 92a575c28beba884b856650408abd1000b662a3d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/5tj7y3PJ/fabric-api-0.114.0%2B1.21.4.jar
+  0.114.1+1.21.3:
+    sha1: d1ffd05bd3bea0949ada538fa3b1aead57053330
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/wLq4rGsB/fabric-api-0.114.1%2B1.21.3.jar
+  0.114.1+1.21.4:
+    sha1: aa4cf47e96a0610f1a1661039cf8cb173c97a7f1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/IrJDerMf/fabric-api-0.114.1%2B1.21.4.jar
+  0.114.1+1.21.5:
+    sha1: 404d246d535a3cf0d4b9d6f7e3b8c2f71dcc89b2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/aN7oPN6k/fabric-api-0.114.1%2B1.21.5.jar
+  0.114.2+1.21.4:
+    sha1: 028efe3be49878306366f01145004dc916056d75
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/8FAH9fuR/fabric-api-0.114.2%2B1.21.4.jar
+  0.114.3+1.21.4:
+    sha1: f7ab0eaecce72002338c55faf367bb065acc5d2d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/r5NCKSxv/fabric-api-0.114.3%2B1.21.4.jar
+  0.114.3+1.21.5:
+    sha1: bcc8a213faf32f798e0f6784db665b3a8edd85f8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/cPSAl6PV/fabric-api-0.114.3%2B1.21.5.jar
+  0.114.4+1.21.5:
+    sha1: de6a35a3738d08ef54e51f19be36a078cd9bf6a8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/2uoacSph/fabric-api-0.114.4%2B1.21.5.jar
+  0.115.0+1.21.1:
+    sha1: 41594bd81f1e60e364f76b2e2bfca10cfdcf91bd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/9YVrKY0Z/fabric-api-0.115.0%2B1.21.1.jar
+  0.115.0+1.21.4:
+    sha1: 3381437781e0a0681f2b80e158bda2c7176b2a36
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/S6sAWXmr/fabric-api-0.115.0%2B1.21.4.jar
+  0.115.0+1.21.5:
+    sha1: 51d948240aafed154f8c05d824aa38ad7911d7ba
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/CFIyvCbL/fabric-api-0.115.0%2B1.21.5.jar
+  0.115.1+1.21.1:
+    sha1: 551227e92766a97a76c949cbcd616ece7d603ec7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/aHOmYIWr/fabric-api-0.115.1%2B1.21.1.jar
+  0.115.1+1.21.4:
+    sha1: 291f1b55876161c6af568770414cee7bfe401547
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/UnrycCWP/fabric-api-0.115.1%2B1.21.4.jar
+  0.115.1+1.21.5:
+    sha1: 079a205dffe2afea251b2e7c545f6f8bc3ef4298
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/EsNijCEQ/fabric-api-0.115.1%2B1.21.5.jar
+  0.115.2+1.21.1:
+    sha1: 7141d70bff539dc873376d09371972714995d046
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/yygmVw1U/fabric-api-0.115.2%2B1.21.1.jar
+  0.115.2+1.21.5:
+    sha1: 3327c4da848806d807abcb36151132273acd612f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1cLcad9L/fabric-api-0.115.2%2B1.21.5.jar
+  0.115.3+1.21.1:
+    sha1: 2d183fa5f3af2078c31dc651d3ea5d560a58f2c0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/hZxPzoO7/fabric-api-0.115.3%2B1.21.1.jar
+  0.115.3+1.21.5:
+    sha1: 3c9c78e2c89e7ce4de81a30555bbb3675cd005b1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/GMblQSBo/fabric-api-0.115.3%2B1.21.5.jar
+  0.115.4+1.21.1:
+    sha1: 8212a511d62643c244af53ac863e4545836bab51
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/TMgpR77k/fabric-api-0.115.4%2B1.21.1.jar
+  0.115.5+1.21.1:
+    sha1: c035648492c1cf838cd13a60c29227b2a8d07254
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/X9NXysME/fabric-api-0.115.5%2B1.21.1.jar
+  0.115.6+1.21.1:
+    sha1: 1148b398767708be366ddc9988a357831cc456bb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/4AkOEqGy/fabric-api-0.115.6%2B1.21.1.jar
+  0.116.0+1.21.1:
+    sha1: 1e2d0ab58ff89b6730d7c251a7e1f1d952e18743
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/73Q31My7/fabric-api-0.116.0%2B1.21.1.jar
+  0.116.0+1.21.4:
+    sha1: affbf3c163a20b01c8d0b26d6af4c6a6b96e0566
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/EY9htrTl/fabric-api-0.116.0%2B1.21.4.jar
+  0.116.0+1.21.5:
+    sha1: 077d0cd53dd85036f5b0459683375323288ccc55
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/8fwtaP2G/fabric-api-0.116.0%2B1.21.5.jar
+  0.116.1+1.21.1:
+    sha1: bd8e174dcf695c94a7d8dfc8f86b2e557bad0faa
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/vtBTVr1F/fabric-api-0.116.1%2B1.21.1.jar
+  0.116.1+1.21.4:
+    sha1: 42f3ea93bbfac03f23af752593c95ddc6af863d6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/3WOjLgFJ/fabric-api-0.116.1%2B1.21.4.jar
+  0.116.1+1.21.5:
+    sha1: 3dd112dba6dbd5bcf057feb9ab7e8c797f3f226c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/drYbjsJz/fabric-api-0.116.1%2B1.21.5.jar
+  0.116.2+1.21.1:
+    sha1: deaa83622e9c506c5e2365036f3b2865ec6c1a30
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/VP2WqQA9/fabric-api-0.116.2%2B1.21.1.jar
+  0.116.3+1.21.1:
+    sha1: ed1fb2a7d9955e05d61e6a3357e38f74f9b7e500
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/jCGlnFJS/fabric-api-0.116.3%2B1.21.1.jar
+  0.116.4+1.21.1:
+    sha1: 39d1a6b6213d012649821ecc516ed5b5142478ef
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/19viawBV/fabric-api-0.116.4%2B1.21.1.jar
+  0.116.5+1.21.1:
+    sha1: 75f198a62690829b4bf38fc5cab80e04001a26f6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/gymiiTwJ/fabric-api-0.116.5%2B1.21.1.jar
+  0.116.6+1.21.1:
+    sha1: 10d5c7cf5fb309513b4f68b85b1e0d9dccbec9ac
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/9xIK4e8l/fabric-api-0.116.6%2B1.21.1.jar
+  0.116.7+1.21.1:
+    sha1: 79e9f3e82499fbae5bd667b96a79927ae68f90eb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/m6zu1K31/fabric-api-0.116.7%2B1.21.1.jar
+  0.117.0+1.21.4:
+    sha1: 317d879af820f3e88af10a7fb2707a193bf1f6bf
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/BYonCXDS/fabric-api-0.117.0%2B1.21.4.jar
+  0.117.0+1.21.5:
+    sha1: afbb28ad87239fab6fde5516f701eefe2c0504fa
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/dnWlv2xc/fabric-api-0.117.0%2B1.21.5.jar
+  0.117.1+1.21.5:
+    sha1: dbb28c944f2fe175e35516518e09e2e02b2abd03
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ztR0Lm1k/fabric-api-0.117.1%2B1.21.5.jar
+  0.117.2+1.21.5:
+    sha1: d2e7179bb9798df242752823223c3a84dbdecfc8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/OBoUK7BX/fabric-api-0.117.2%2B1.21.5.jar
+  0.117.3+1.21.5:
+    sha1: bd2522b6fade1219d9664c0b3c620831dac8a88b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/AQrEpNKf/fabric-api-0.117.3%2B1.21.5.jar
+  0.117.4+1.21.5:
+    sha1: efbe02d16f7b7b8e4a8c69b3a66b41efddeeb545
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/GqKtXrLR/fabric-api-0.117.4%2B1.21.5.jar
+  0.118.0+1.21.4:
+    sha1: ca9702e27078db7c2c9d28899a2c4bd136bd5e12
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ZNwYCTsk/fabric-api-0.118.0%2B1.21.4.jar
+  0.118.0+1.21.5:
+    sha1: e82abfe8ff3a19ca7ae6a26a70e978b838b61c3f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/X1IlgJfg/fabric-api-0.118.0%2B1.21.5.jar
+  0.118.1+1.21.5:
+    sha1: 31c2ed0d5c05aff83913158c36e9af159e1f65c2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/lcjnVPCJ/fabric-api-0.118.1%2B1.21.5.jar
+  0.118.2+1.21.5:
+    sha1: 8ad057162dfe31dfba4ead664993506f84ed8524
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/usLY6ngX/fabric-api-0.118.2%2B1.21.5.jar
+  0.118.3+1.21.5:
+    sha1: c36591ca2e08b77d2651e0e086d15c20ec8c19e5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/I09re1h6/fabric-api-0.118.3%2B1.21.5.jar
+  0.118.4+1.21.5:
+    sha1: ba257aee83e446faa2d787e525f378de8241b4fe
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/2mivyLFn/fabric-api-0.118.4%2B1.21.5.jar
+  0.118.5+1.21.4:
+    sha1: c41f25ea8cbfb7ed8861a2cbe632ae225983f200
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/IXeiAH6H/fabric-api-0.118.5%2B1.21.4.jar
+  0.118.5+1.21.5:
+    sha1: 0c746906897773d19fa1f2111ee9bd4b6e38dc4f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/tj2V7jtU/fabric-api-0.118.5%2B1.21.5.jar
+  0.118.6+1.21.5:
+    sha1: c85034251827dc9339ae068bd0a83fad3d0f405d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/flEannHL/fabric-api-0.118.6%2B1.21.5.jar
+  0.119.0+1.21.4:
+    sha1: 6519b5023ae1ae02a092ba0b9187931476dbaadc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/HbTXYTBz/fabric-api-0.119.0%2B1.21.4.jar
+  0.119.0+1.21.5:
+    sha1: cf0f5ca659e1479387e8842bcb096e36964bee23
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/yPK24EwP/fabric-api-0.119.0%2B1.21.5.jar
+  0.119.1+1.21.5:
+    sha1: 9ae175e569ad6485dc6a41da06a15bcc5cfee54a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Mjeis0MF/fabric-api-0.119.1%2B1.21.5.jar
+  0.119.10+1.21.6:
+    sha1: 7c7cf0bb735fb918360ce6679ad12e397190f14c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/wBJOgXWG/fabric-api-0.119.10%2B1.21.6.jar
+  0.119.10+25w14craftmine:
+    sha1: 6be0db4c6e24f57cce3e505929323b3601c8e92b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/MyA3WGr0/fabric-api-0.119.10%2B25w14craftmine.jar
+  0.119.2+1.21.4:
+    sha1: 7f0110e8a40a1697091cb65cc4ae08a15c0c4bee
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/bQZpGIz0/fabric-api-0.119.2%2B1.21.4.jar
+  0.119.2+1.21.5:
+    sha1: e404d67449e896ac71e991f13c310ca77e5b220f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1pvBRjVJ/fabric-api-0.119.2%2B1.21.5.jar
+  0.119.3+1.21.4:
+    sha1: 286516c48a4d822cd3f34aafd157fc8702490b58
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/sVqpGIb1/fabric-api-0.119.3%2B1.21.4.jar
+  0.119.3+1.21.5:
+    sha1: 19263fc0654e6a791e7971c225bd4ef232d0011e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/PqEW2QBo/fabric-api-0.119.3%2B1.21.5.jar
+  0.119.4+1.21.4:
+    sha1: 1c7871b6af04edc8b8f0dbad12606d67f6118a11
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/p96k10UR/fabric-api-0.119.4%2B1.21.4.jar
+  0.119.4+1.21.5:
+    sha1: cab96f4f3b2b128921009b49ba0fd795e7aeafce
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/sEWxVmfA/fabric-api-0.119.4%2B1.21.5.jar
+  0.119.5+1.21.5:
+    sha1: fd2ef43af82094bf208d68e948d77c65d038d857
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/MNJwZRWx/fabric-api-0.119.5%2B1.21.5.jar
+  0.119.6+1.21.5:
+    sha1: db043ba26edb0c58574f5379bdd550b5597dc551
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/rYSz5dRU/fabric-api-0.119.6%2B1.21.5.jar
+  0.119.7+25w14craftmine:
+    sha1: eebd9b6d7e79cd04840f16c8f4d51264eeae6073
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Vb450Hmx/fabric-api-0.119.7%2B25w14craftmine.jar
+  0.119.8+25w14craftmine:
+    sha1: 6d6bd66fc1eaca9482c39a87383b22d79015ff15
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/OvRqmoKW/fabric-api-0.119.8%2B25w14craftmine.jar
+  0.119.9+1.21.5:
+    sha1: 540ec3056b0a6bbe32b5eb92673908150737a9a3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/FZ4q3wQK/fabric-api-0.119.9%2B1.21.5.jar
+  0.119.9+25w14craftmine:
+    sha1: 189c9cad0e3d2938a36a0bcabe8d3a5958bf013d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1VY3O1sc/fabric-api-0.119.9%2B25w14craftmine.jar
+  0.12.0+build.254-1.14:
+    sha1: 66b6873e318bd130dcec8b74e8a41147a734a171
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.12.0%2Bbuild.254-1.14/fabric-api-0.12.0%2Bbuild.254-1.14.jar
+  0.12.0+build.313-1.15:
+    sha1: 3303becef5ac0c2916e5011034b027ab6708e245
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.12.0%2Bbuild.313-1.15/fabric-api-0.12.0%2Bbuild.313-1.15.jar
+  0.12.0+build.360-1.16:
+    sha1: 49abf943d81c2270be07fe0103f02f50197d9f75
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.12.0%2Bbuild.360-1.16/fabric-api-0.12.0%2Bbuild.360-1.16.jar
+  0.12.1+build.361-1.16:
+    sha1: 089128432aac56a3d3c8127aacd34fa3248d29ec
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.12.1%2Bbuild.361-1.16/fabric-api-0.12.1%2Bbuild.361-1.16.jar
+  0.12.2+build.362-1.16:
+    sha1: 01011d4eabed78860de45874d543aadca02b4b55
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.12.2%2Bbuild.362-1.16/fabric-api-0.12.2%2Bbuild.362-1.16.jar
+  0.12.3+build.363-1.16:
+    sha1: d97edb0410da53d9bbd17a1b046cacbfcdde76c7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.12.3%2Bbuild.363-1.16/fabric-api-0.12.3%2Bbuild.363-1.16.jar
+  0.12.4+build.365-1.16:
+    sha1: bdbc2c9d15b0e3f6b5034dad5de2d028b6ce814f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.12.4%2Bbuild.365-1.16/fabric-api-0.12.4%2Bbuild.365-1.16.jar
+  0.12.5+build.367-1.16:
+    sha1: 7b785535d52e78c462851f623a2efffe3544ce0a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.12.5%2Bbuild.367-1.16/fabric-api-0.12.5%2Bbuild.367-1.16.jar
+  0.120.0+1.21.5:
+    sha1: 6f0550011be20f056c30ef9ad73fa41964e4ffbb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ZOyJh09R/fabric-api-0.120.0%2B1.21.5.jar
+  0.120.0+1.21.6:
+    sha1: 2b0b17faad20e3a7e17cfd36b9d07eb51af43631
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/yHhlrptJ/fabric-api-0.120.0%2B1.21.6.jar
+  0.120.1+1.21.6:
+    sha1: 85a26bbc38be0648d03e585479a24a170c75800c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/AxIsRvDf/fabric-api-0.120.1%2B1.21.6.jar
+  0.120.2+1.21.6:
+    sha1: af9299bd60c7ebac3119fbd3c3b0301e68d8bd29
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/mihSzJJh/fabric-api-0.120.2%2B1.21.6.jar
+  0.121.0+1.21.5:
+    sha1: faa9cbf4596320bd20b630b9cc50ae9a5fb20505
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/hBmLTbVB/fabric-api-0.121.0%2B1.21.5.jar
+  0.121.0+1.21.6:
+    sha1: de8d7a9cbe893e78f961da3b1c22b4b3bcad9884
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/VgqYFpPF/fabric-api-0.121.0%2B1.21.6.jar
+  0.121.1+1.21.6:
+    sha1: 24c356d54cbfc3b4db04f3e2e658ae1533a4e08c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/HCpbeBw1/fabric-api-0.121.1%2B1.21.6.jar
+  0.121.2+1.21.6:
+    sha1: 74e0f541fc091be5c0537a952af9a8bfc6f9451b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/qhT9Az1B/fabric-api-0.121.2%2B1.21.6.jar
+  0.122.0+1.21.5:
+    sha1: fa3d36061151a633040070a4870b65268e52f6c9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/7KiXkbYC/fabric-api-0.122.0%2B1.21.5.jar
+  0.122.0+1.21.6:
+    sha1: 89fc5dc4dfca9382b9385aacb05db9c69d6c041e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/skQ0OcM0/fabric-api-0.122.0%2B1.21.6.jar
+  0.123.0+1.21.5:
+    sha1: 376d48c55f7fa60ae76d4e63d8408d98e3ae3769
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/VANXjcIV/fabric-api-0.123.0%2B1.21.5.jar
+  0.123.0+1.21.6:
+    sha1: 33dd0ce29542093d057cd2dc50f0873082973bd1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/kGZONSXN/fabric-api-0.123.0%2B1.21.6.jar
+  0.123.1+1.21.6:
+    sha1: 41dbd617d13607321934e09c1e8d78c73acb4e5f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/hCdmfsaX/fabric-api-0.123.1%2B1.21.6.jar
+  0.123.2+1.21.5:
+    sha1: 15c290aa08dd549b9534f182ba1490f781b693da
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/eqwcpPK5/fabric-api-0.123.2%2B1.21.5.jar
+  0.123.2+1.21.6:
+    sha1: 29598790ce6360754b2f5b3be8c44bd8cbdaee3e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/5zgbF679/fabric-api-0.123.2%2B1.21.6.jar
+  0.124.0+1.21.5:
+    sha1: b36682ee8711219919b6f48f3cba6b9f1d3146c4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/vcgUMTb2/fabric-api-0.124.0%2B1.21.5.jar
+  0.124.0+1.21.6:
+    sha1: e54e1b739c5d5a5d5102b144729520b3863bdbf0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/DtfNJboL/fabric-api-0.124.0%2B1.21.6.jar
+  0.124.1+1.21.6:
+    sha1: 34fb2e90582af24e6eef380433c55609311e1aba
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/PAvHzSHg/fabric-api-0.124.1%2B1.21.6.jar
+  0.124.2+1.21.5:
+    sha1: 501c7e6a5badeea15b266d25ca12b0a95e1e09ab
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/SQv5lrom/fabric-api-0.124.2%2B1.21.5.jar
+  0.124.2+1.21.6:
+    sha1: 7e94f9bef9917be21f75647c03c54d53d32c86ac
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/57QrUXtr/fabric-api-0.124.2%2B1.21.6.jar
+  0.124.3+1.21.6:
+    sha1: 93f8cb1748619e78f51f47899ed561192e7241a1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/cVx9o7IX/fabric-api-0.124.3%2B1.21.6.jar
+  0.124.4+1.21.6:
+    sha1: 7e55058938e056c8cb1fa000d070ce4e49af2e61
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/J0H8Digl/fabric-api-0.124.4%2B1.21.6.jar
+  0.125.0+1.21.5:
+    sha1: 96bfdd1ec1109a720f7cbe9a829116baa56aaf40
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/w6P5mySo/fabric-api-0.125.0%2B1.21.5.jar
+  0.125.0+1.21.6:
+    sha1: deb1a74608d7c0ced77616e396c00159aace523e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/7SBWrxrx/fabric-api-0.125.0%2B1.21.6.jar
+  0.125.1+1.21.6:
+    sha1: 596f5082b4eff8a88d0241eeac81003568303635
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/lkoxTot4/fabric-api-0.125.1%2B1.21.6.jar
+  0.125.2+1.21.6:
+    sha1: 6868774d9058435ffd8c3e5e171009dee727e99e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1IkOxieq/fabric-api-0.125.2%2B1.21.6.jar
+  0.125.3+1.21.5:
+    sha1: 4cde7cd29bd6b52fbd3fbfba7c1004526fe5e558
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1Hweb6k1/fabric-api-0.125.3%2B1.21.5.jar
+  0.125.3+1.21.6:
+    sha1: 90e89ffce581184584649e596f5d6190d77b3de5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/zMhuzBG4/fabric-api-0.125.3%2B1.21.6.jar
+  0.126.0+1.21.5:
+    sha1: 8eb7f4c933e3df9a917eef9f1166a7f3325e491c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/B41MB8lb/fabric-api-0.126.0%2B1.21.5.jar
+  0.126.0+1.21.6:
+    sha1: c012f28272a9bbd49f642fffff27d5d207b4c039
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/CUUxhvCY/fabric-api-0.126.0%2B1.21.6.jar
+  0.126.1+1.21.6:
+    sha1: 7d947c088ff81b94ea59e47fc1de43f9ee36d22a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/F2K8FjPM/fabric-api-0.126.1%2B1.21.6.jar
+  0.127.0+1.21.5:
+    sha1: 86d6f048293233bbd42422cfaf99f76966fa505e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/YozemL2T/fabric-api-0.127.0%2B1.21.5.jar
+  0.127.0+1.21.6:
+    sha1: 266b45294d1f5e17e344eaecf2e6a91f728bb9dc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/94CGZCTk/fabric-api-0.127.0%2B1.21.6.jar
+  0.127.1+1.21.5:
+    sha1: bef26a2bace523efb8f8d7d822566ea403985009
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/vNBWcMLP/fabric-api-0.127.1%2B1.21.5.jar
+  0.127.1+1.21.6:
+    sha1: ce93814aa26509d6251161c59ecea87372764b52
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/N3z6cNQv/fabric-api-0.127.1%2B1.21.6.jar
+  0.128.0+1.21.5:
+    sha1: 82a34b0f687cb9bdc0a8b983164ca8984e7ea926
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/EcYmlIw5/fabric-api-0.128.0%2B1.21.5.jar
+  0.128.0+1.21.6:
+    sha1: 1fecf6eec45de8bd315fbe23a03b86bc217accc2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/b2dnY6PN/fabric-api-0.128.0%2B1.21.6.jar
+  0.128.0+1.21.7:
+    sha1: fcc0aeccb90fe6d6361412e88753e46319d5633f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/eE3JyYGm/fabric-api-0.128.0%2B1.21.7.jar
+  0.128.1+1.21.5:
+    sha1: 69bc45a764558b1212d3f7953c7799373e20eda8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/aQqNHHfZ/fabric-api-0.128.1%2B1.21.5.jar
+  0.128.1+1.21.6:
+    sha1: 5e7c6d26be05fa9c13b3e03e482c43e85dff96c2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/r7pYmeRI/fabric-api-0.128.1%2B1.21.6.jar
+  0.128.1+1.21.7:
+    sha1: 9550cf6ec25c691d083fed87085509c2b1b7581a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/sLmbxWpX/fabric-api-0.128.1%2B1.21.7.jar
+  0.128.2+1.21.5:
+    sha1: 920dea0ac4ff08f539099215eace9fda3e3fb2e3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/kKEGlsne/fabric-api-0.128.2%2B1.21.5.jar
+  0.128.2+1.21.6:
+    sha1: b273a883a3864108453a5d5f0b9e4f0a870c9579
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/F5TVHWcE/fabric-api-0.128.2%2B1.21.6.jar
+  0.128.2+1.21.7:
+    sha1: cc4edcec406d1d80acba028b50cf51ad021ba0b4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/JIZogEYa/fabric-api-0.128.2%2B1.21.7.jar
+  0.129.0+1.21.7:
+    sha1: 60bb50ad1f7d316be9ba662e84089e1affdd44e6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/JntuF9Ul/fabric-api-0.129.0%2B1.21.7.jar
+  0.129.0+1.21.8:
+    sha1: 9be74f9c3120ffb9f38df8f4164392d69e6ba84e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/X2hTodix/fabric-api-0.129.0%2B1.21.8.jar
+  0.13.1+build.257-1.14:
+    sha1: e98ce4c977be8ee2118bfa1a585dd711897aff87
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.13.1%2Bbuild.257-1.14/fabric-api-0.13.1%2Bbuild.257-1.14.jar
+  0.13.1+build.316-1.15:
+    sha1: aa6a02c796294b1ca2ec3f24f216ac4279aeb25f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.13.1%2Bbuild.316-1.15/fabric-api-0.13.1%2Bbuild.316-1.15.jar
+  0.13.1+build.370-1.16:
+    sha1: 8e4c7cea3f78c83feb6d1e202c22de75f6d3622d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.13.1%2Bbuild.370-1.16/fabric-api-0.13.1%2Bbuild.370-1.16.jar
+  0.130.0+1.21.8:
+    sha1: 5d8c74464535d569991dcdacf9bb61203c6cd73a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/zhzhM2yQ/fabric-api-0.130.0%2B1.21.8.jar
+  0.130.0+1.21.9:
+    sha1: 2e6113fccbea7d92e05dc7495dd05f53ce9c438b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/jFOpRLqo/fabric-api-0.130.0%2B1.21.9.jar
+  0.131.0+1.21.8:
+    sha1: c76a1cd624d8ad517f307ad0fc8484c4b3eabe97
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ax9iQEs0/fabric-api-0.131.0%2B1.21.8.jar
+  0.131.0+1.21.9:
+    sha1: a7584f80b4e6bdcd62396d19b496e957c2f8e213
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/mOgCnMQW/fabric-api-0.131.0%2B1.21.9.jar
+  0.131.1+1.21.9:
+    sha1: 8590a74b9b63b0d201e509c5752e5dec4366de9e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ULzqBrem/fabric-api-0.131.1%2B1.21.9.jar
+  0.131.2+1.21.9:
+    sha1: 2155f8882d0f36d47904ebe8b8ba78fe4d152eb8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/eCi4LRFd/fabric-api-0.131.2%2B1.21.9.jar
+  0.131.3+1.21.9:
+    sha1: 63c25397c0274892b011bfe688ef9789e7c42a3b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/tpPpcFMY/fabric-api-0.131.3%2B1.21.9.jar
+  0.132.0+1.21.8:
+    sha1: 44c4a6479b5a40fa960a596d6320d98c39a11253
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/jjBL6OsN/fabric-api-0.132.0%2B1.21.8.jar
+  0.132.0+1.21.9:
+    sha1: ea9aefa46b6a7f4b6f0aff9929cdafaaae73aca4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1G9eZcQk/fabric-api-0.132.0%2B1.21.9.jar
+  0.132.1+1.21.9:
+    sha1: 2d4ea4741690c75a37b59f837f31eb6f9abec325
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/AGkgqBTc/fabric-api-0.132.1%2B1.21.9.jar
+  0.132.2+1.21.9:
+    sha1: 621ac480ea271767da6e8ca55cf84cd739777c60
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/MLV5nweV/fabric-api-0.132.2%2B1.21.9.jar
+  0.132.3+1.21.9:
+    sha1: 75c58283327102182d2d3b10965b1880f7719e38
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/l5NUMVJi/fabric-api-0.132.3%2B1.21.9.jar
+  0.133.0+1.21.8:
+    sha1: c4db5e258898acb6a1411e317077e7e217b2d4e2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Q8ssLFZp/fabric-api-0.133.0%2B1.21.8.jar
+  0.133.0+1.21.9:
+    sha1: 741a507c53afea444224de21107af46aa9296993
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/gjoJRErB/fabric-api-0.133.0%2B1.21.9.jar
+  0.133.1+1.21.9:
+    sha1: 89bcf76a3b93df205afbe8ac42e682a1f939df33
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/853MoLNM/fabric-api-0.133.1%2B1.21.9.jar
+  0.133.10+1.21.9:
+    sha1: 92f410f9af3b63e49ee286c1c0dd74774504cedd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/RpiukpFt/fabric-api-0.133.10%2B1.21.9.jar
+  0.133.11+1.21.9:
+    sha1: e438060204fb5f1afb40c7717a49dbedba051559
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/VjVhv4ua/fabric-api-0.133.11%2B1.21.9.jar
+  0.133.12+1.21.9:
+    sha1: 19546e59d7d150c05176a6ebb62a90f4a7fbb251
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Uamp1zEl/fabric-api-0.133.12%2B1.21.9.jar
+  0.133.13+1.21.9:
+    sha1: d1a3a3244c98685e89950e31cd599b1b4783c481
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/EuHNZTuZ/fabric-api-0.133.13%2B1.21.9.jar
+  0.133.14+1.21.9:
+    sha1: 1c8e58bd3e39e4235a2dd86a4f11de61014e83cd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/rWWImuoz/fabric-api-0.133.14%2B1.21.9.jar
+  0.133.2+1.21.8:
+    sha1: 73fe385bc47af4096ac9930bea83d2ed25f00c76
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/FrEcziOT/fabric-api-0.133.2%2B1.21.8.jar
+  0.133.3+1.21.8:
+    sha1: 12eddaaba0bae0acb6aaaa6d4228f4b42d8d3c9e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ccY0mQja/fabric-api-0.133.3%2B1.21.8.jar
+  0.133.4+1.21.8:
+    sha1: 84f003e075b7b7a4b3dbeffdf1796d3668db8f1c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/CF23l2iP/fabric-api-0.133.4%2B1.21.8.jar
+  0.133.4+1.21.9:
+    sha1: 4785bbecc6a7b082f1ead59fe3df2d416c5ca821
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/wY6xf39W/fabric-api-0.133.4%2B1.21.9.jar
+  0.133.5+1.21.9:
+    sha1: 260a836ad153c8e6033957156b19b65897afad1c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/R8EHRB5U/fabric-api-0.133.5%2B1.21.9.jar
+  0.133.6+1.21.9:
+    sha1: ac8cc0dd7fcb6b9425f4fd329f26d437d7661f51
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/nfRNGIDP/fabric-api-0.133.6%2B1.21.9.jar
+  0.133.7+1.21.9:
+    sha1: 4c72a8416a6fe0ef55f6059090e2af99c07b4d1f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Y1CT8wYv/fabric-api-0.133.7%2B1.21.9.jar
+  0.133.8+1.21.9:
+    sha1: 68eccded5ffc1c43be979e86228d54b1eb252ace
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/UQGBUljd/fabric-api-0.133.8%2B1.21.9.jar
+  0.133.9+1.21.9:
+    sha1: 3e11393946963050d53fb3d7771d41e57bc78c20
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/OfVCYAra/fabric-api-0.133.9%2B1.21.9.jar
+  0.134.0+1.21.8:
+    sha1: 868693748ce839331a3db4eec8603c70dfe98be5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/e9QZFLr0/fabric-api-0.134.0%2B1.21.8.jar
+  0.134.0+1.21.9:
+    sha1: 1f5ba40f85c96c4f8b661097d3e3f8906cc55c4f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/iHrvVvaM/fabric-api-0.134.0%2B1.21.9.jar
+  0.134.1+1.21.10:
+    sha1: c891b6e76d3134640cc5fa9394f1f47397888380
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/2diTWKwa/fabric-api-0.134.1%2B1.21.10.jar
+  0.135.0+1.21.10:
+    sha1: 68a4449ba6f5c7c06a97eac128a228694f736edb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/qNm2IWMn/fabric-api-0.135.0%2B1.21.10.jar
+  0.135.1+1.21.11:
+    sha1: 11f047416c9b906bbf835572f8fe4d9d9b8ff8e1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/6H0H3REk/fabric-api-0.135.1%2B1.21.11.jar
+  0.135.2+1.21.11:
+    sha1: 727fe4c6e4f90d392e47bd611d96169a1c14de7c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/4jg5xkQ9/fabric-api-0.135.2%2B1.21.11.jar
+  0.136.0+1.21.10:
+    sha1: 2eadebc564b8becce26215c17c6965371a2719d7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/lxeiLRwe/fabric-api-0.136.0%2B1.21.10.jar
+  0.136.0+1.21.11:
+    sha1: b02085abc597cb3f3a49e8b698a9ddae6eeb9f51
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/VLGhLmUs/fabric-api-0.136.0%2B1.21.11.jar
+  0.136.0+1.21.8:
+    sha1: ee07ecc1493280ccf1f3df59c554ae83a5e97df6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/RMahJx2I/fabric-api-0.136.0%2B1.21.8.jar
+  0.136.1+1.21.11:
+    sha1: fd503671a1fc199a0dd83a013340526f9c1e6b44
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/eopwKjuW/fabric-api-0.136.1%2B1.21.11.jar
+  0.136.1+1.21.8:
+    sha1: 56a377bdbf4d83a90d6863ca91b4776f7f09a46b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/g58ofrov/fabric-api-0.136.1%2B1.21.8.jar
+  0.136.2+1.21.11:
+    sha1: fa1922ea7c2073e8b01d6361ec00e7a1d9107e11
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ifvKw7qT/fabric-api-0.136.2%2B1.21.11.jar
+  0.136.3+1.21.11:
+    sha1: 76a212c049cf1b65c575d5eae865b33df5c2138e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/2glHKLYN/fabric-api-0.136.3%2B1.21.11.jar
+  0.137.0+1.21.10:
+    sha1: 76181785dc56a4721dcc85884a4e1f3ef4591fce
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/rhkWp6Ar/fabric-api-0.137.0%2B1.21.10.jar
+  0.137.0+1.21.11:
+    sha1: 390f709e70936ec558453ba19a5bd57a1f654112
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/3XXLCKOW/fabric-api-0.137.0%2B1.21.11.jar
+  0.138.0+1.21.10:
+    sha1: 46716909bfbfcb2c704831892d95907f8ba8edae
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/UuXf1NbU/fabric-api-0.138.0%2B1.21.10.jar
+  0.138.0+1.21.11:
+    sha1: cfc8d694795d2e49d62d39c40eb5643db73817e0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/eDonRHGR/fabric-api-0.138.0%2B1.21.11.jar
+  0.138.1+1.21.11:
+    sha1: d037649af20a9a9c0b9ee5aedad1893ec9305bdf
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Fqye5bSK/fabric-api-0.138.1%2B1.21.11.jar
+  0.138.2+1.21.11:
+    sha1: 932c2a41605a4e38bd6c2e98e0b0a9252398f725
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/zWChzPpc/fabric-api-0.138.2%2B1.21.11.jar
+  0.138.3+1.21.10:
+    sha1: 666a30970020ff45f90cd7c96781e62ca99193ae
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/dQ3p80zK/fabric-api-0.138.3%2B1.21.10.jar
+  0.138.3+1.21.11:
+    sha1: c056ee1908afc0aa1f365355d749dd6afc57fc3d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/xlYMLV5w/fabric-api-0.138.3%2B1.21.11.jar
+  0.138.4+1.21.11:
+    sha1: c14227682a3f22f6d803762631d4dde10c53cfb3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/tqCJtl48/fabric-api-0.138.4%2B1.21.11.jar
+  0.139.0+1.21.11:
+    sha1: 51a5464e2a90474fe96f639f3531b46874452fd2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/e79UstDF/fabric-api-0.139.0%2B1.21.11.jar
+  0.139.1+1.21.11:
+    sha1: 03d61c7f590bf34ac5c904a2805b703145f7723e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/QVugHxYg/fabric-api-0.139.1%2B1.21.11.jar
+  0.139.2+1.21.11:
+    sha1: de3a879944ffb557a45a5e63c8166743c835b94d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/rqG1ZEU6/fabric-api-0.139.2%2B1.21.11.jar
+  0.139.3+1.21.11:
+    sha1: a0dd32d7d45e6fc79657586617d6989489be181b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/tb1sLrgP/fabric-api-0.139.3%2B1.21.11.jar
+  0.139.4+1.21.11:
+    sha1: c0d3aa489c6c2f8806f236b3580e776da30a1c85
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/RDb9rvBm/fabric-api-0.139.4%2B1.21.11.jar
+  0.14.0+build.258-1.14:
+    sha1: eb328c67ed4e4788fc8763065cf2ab5516c5f744
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.14.0%2Bbuild.258-1.14/fabric-api-0.14.0%2Bbuild.258-1.14.jar
+  0.14.0+build.317-1.15:
+    sha1: d3ecfcd13ef4fc0110896217a0f9a1492fcec8c9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.14.0%2Bbuild.317-1.15/fabric-api-0.14.0%2Bbuild.317-1.15.jar
+  0.14.0+build.371-1.16:
+    sha1: d0b6b7b7e514971e86e6a3c1afcb7a051993b23c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.14.0%2Bbuild.371-1.16/fabric-api-0.14.0%2Bbuild.371-1.16.jar
+  0.14.1+build.372-1.16:
+    sha1: 8c4149bffe02ce5807a716ed70616daaf9c4327b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.14.1%2Bbuild.372-1.16/fabric-api-0.14.1%2Bbuild.372-1.16.jar
+  0.14.2+build.373-1.16:
+    sha1: 8559795219b2aea7b27d1bc3da625482dfe15200
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.14.2%2Bbuild.373-1.16/fabric-api-0.14.2%2Bbuild.373-1.16.jar
+  0.14.3+build.374-1.16:
+    sha1: 969cc23cb2143f57189c328ecc5f8f8c3a06693c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.14.3%2Bbuild.374-1.16/fabric-api-0.14.3%2Bbuild.374-1.16.jar
+  0.14.4+build.375-1.16:
+    sha1: 4f137c346c5a31417cdaaef61255a82428ba548a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.14.4%2Bbuild.375-1.16/fabric-api-0.14.4%2Bbuild.375-1.16.jar
+  0.14.5+build.376-1.16:
+    sha1: 88fb24ff791c461cc57247d7c13b9801a750fe58
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.14.5%2Bbuild.376-1.16/fabric-api-0.14.5%2Bbuild.376-1.16.jar
+  0.14.6+build.377-1.16:
+    sha1: 98f6bf88b53ad500edffd591973ebd3b4b2d98fb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.14.6%2Bbuild.377-1.16/fabric-api-0.14.6%2Bbuild.377-1.16.jar
+  0.15.0+build.259-1.14:
+    sha1: 45307a067399f775c5cd9c40f593792e198a1b74
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.15.0%2Bbuild.259-1.14/fabric-api-0.15.0%2Bbuild.259-1.14.jar
+  0.15.0+build.318-1.15:
+    sha1: 4fc4e45eba037f14fa4d2318e76433eaefd7cf13
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.15.0%2Bbuild.318-1.15/fabric-api-0.15.0%2Bbuild.318-1.15.jar
+  0.15.0+build.379-1.16:
+    sha1: 6841e077d06faee4bfc8fd169026a94a276c50e8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.15.0%2Bbuild.379-1.16/fabric-api-0.15.0%2Bbuild.379-1.16.jar
+  0.15.0+build.379-1.16.1:
+    sha1: b73f3e4b759b9a50e80084468633b77321307de1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.15.0%2Bbuild.379-1.16.1/fabric-api-0.15.0%2Bbuild.379-1.16.1.jar
+  0.15.1+build.260-1.14:
+    sha1: dee2680a07e77002e7d7e783bfb913aa03ca6a21
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.15.1%2Bbuild.260-1.14/fabric-api-0.15.1%2Bbuild.260-1.14.jar
+  0.15.1+build.319-1.15:
+    sha1: 3bc4c1dd24935ad7ee6f5fb38fca270ef9280eea
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.15.1%2Bbuild.319-1.15/fabric-api-0.15.1%2Bbuild.319-1.15.jar
+  0.15.1+build.380-1.16:
+    sha1: b59a3d3c294e75b28fc567c59a9de0bd06c539c2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.15.1%2Bbuild.380-1.16/fabric-api-0.15.1%2Bbuild.380-1.16.jar
+  0.15.1+build.380-1.16.1:
+    sha1: 2c3ed0c1c3d615871e0a90494b5f0fcc7f10eb44
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.15.1%2Bbuild.380-1.16.1/fabric-api-0.15.1%2Bbuild.380-1.16.1.jar
+  0.15.2+build.382-1.16:
+    sha1: 4d0b1eb0173d6f11e1f1e5dc6da81356fd9b07ef
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.15.2%2Bbuild.382-1.16/fabric-api-0.15.2%2Bbuild.382-1.16.jar
+  0.16.0+build.321-1.15:
+    sha1: deddbcb7648f2612c1477a618f72d60464b78b64
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.16.0%2Bbuild.321-1.15/fabric-api-0.16.0%2Bbuild.321-1.15.jar
+  0.16.0+build.384-1.16.1:
+    sha1: 17f4320a679768c5846972e123071c27230981f8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.16.0%2Bbuild.384-1.16.1/fabric-api-0.16.0%2Bbuild.384-1.16.1.jar
+  0.16.0+build.386-1.16:
+    sha1: f7e453f4342fdd3cbba98ca4e057efb9efb66d2d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.16.0%2Bbuild.386-1.16/fabric-api-0.16.0%2Bbuild.386-1.16.jar
+  0.16.1+build.387-1.16:
+    sha1: 070a3ea226950f2ee92fab6576709e662496d72f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.16.1%2Bbuild.387-1.16/fabric-api-0.16.1%2Bbuild.387-1.16.jar
+  0.16.2+build.261-1.14:
+    sha1: e58e5d7354a27af5875d1198e26cd9ed9820dcde
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.16.2%2Bbuild.261-1.14/fabric-api-0.16.2%2Bbuild.261-1.14.jar
+  0.16.2+build.322-1.15:
+    sha1: 5c3bb1277aace43245efa0ac55aacf90482017b7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.16.2%2Bbuild.322-1.15/fabric-api-0.16.2%2Bbuild.322-1.15.jar
+  0.16.2+build.385-1.16.1:
+    sha1: a0aa51d535c986fc3d7e9ea03c7303b810b7f767
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.16.2%2Bbuild.385-1.16.1/fabric-api-0.16.2%2Bbuild.385-1.16.1.jar
+  0.16.3+build.390-1.16:
+    sha1: beedfa34607878e9fb6377357316ed6a12cd30a9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.16.3%2Bbuild.390-1.16/fabric-api-0.16.3%2Bbuild.390-1.16.jar
+  0.16.4+build.392-1.16:
+    sha1: 2bb436e337dab6b6cc2d3aed09bded334d45fada
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.16.4%2Bbuild.392-1.16/fabric-api-0.16.4%2Bbuild.392-1.16.jar
+  0.17.0+build.323-1.15:
+    sha1: 55c758e7e2c4d44d565d10666c8eb8924a5f1293
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.17.0%2Bbuild.323-1.15/fabric-api-0.17.0%2Bbuild.323-1.15.jar
+  0.17.0+build.386-1.16.1:
+    sha1: 966fbd5e7f078a2409dbe8b06cac8579606dd2a5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.17.0%2Bbuild.386-1.16.1/fabric-api-0.17.0%2Bbuild.386-1.16.1.jar
+  0.17.0+build.393-1.16:
+    sha1: 1f964d93e8d4bd1594f6760204e4124cec0f5cc3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.17.0%2Bbuild.393-1.16/fabric-api-0.17.0%2Bbuild.393-1.16.jar
+  0.17.1+build.394-1.16:
+    sha1: 32b4eea9ad042cfd9d71aa5de931c8bb215cd57e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.17.1%2Bbuild.394-1.16/fabric-api-0.17.1%2Bbuild.394-1.16.jar
+  0.17.2+build.396-1.16:
+    sha1: cc0d4e391c1d1cdd0dda3be2071083f8090d2a99
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.17.2%2Bbuild.396-1.16/fabric-api-0.17.2%2Bbuild.396-1.16.jar
+  0.18.0+build.324-1.15:
+    sha1: 1a8c2ea52d113968d2a00294f854463ed89aa4d0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.18.0%2Bbuild.324-1.15/fabric-api-0.18.0%2Bbuild.324-1.15.jar
+  0.18.0+build.387-1.16.1:
+    sha1: f1213e4a181192dafbcd201c9f3989fe173e6548
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.18.0%2Bbuild.387-1.16.1/fabric-api-0.18.0%2Bbuild.387-1.16.1.jar
+  0.18.0+build.397-1.16:
+    sha1: 76a1247234f8c12fa34ca09ff29fe58c86bdeb88
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.18.0%2Bbuild.397-1.16/fabric-api-0.18.0%2Bbuild.397-1.16.jar
+  0.19.0+build.262-1.14:
+    sha1: 15109dde4f61b22db6579b6e4d51b6a388cb1112
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.19.0%2Bbuild.262-1.14/fabric-api-0.19.0%2Bbuild.262-1.14.jar
+  0.19.0+build.325-1.15:
+    sha1: 281f4360d1ac0c9585bd7a79766574ffbbfaa4c3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.19.0%2Bbuild.325-1.15/fabric-api-0.19.0%2Bbuild.325-1.15.jar
+  0.19.0+build.398-1.16:
+    sha1: bf29dfd9aa8a5dd753386aaed969a89398d735f9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.19.0%2Bbuild.398-1.16/fabric-api-0.19.0%2Bbuild.398-1.16.jar
+  0.2.0.89:
+    sha1: 64cd20c4955e642ac33c8c6e63f3b5f33d46f1e2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.0.89/fabric-0.2.0.89.jar
+  0.2.0.90:
+    sha1: 3f29e5be33ffb8d85beebd12bef09326c3b7a008
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.0.90/fabric-0.2.0.90.jar
+  0.2.0.91:
+    sha1: 0a44c78c6345465fe40f0e286d9de0b3b7c23155
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.0.91/fabric-0.2.0.91.jar
+  0.2.0.92:
+    sha1: 66f6c3513d84858e021ecd1537612357c373b25d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.0.92/fabric-0.2.0.92.jar
+  0.2.1.101:
+    sha1: 9d7457ca471357cc45287e219fda99656760dd67
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.1.101/fabric-0.2.1.101.jar
+  0.2.1.93:
+    sha1: 41a0de098404a0a0a73953040ba145aa6ed2b872
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.1.93/fabric-0.2.1.93.jar
+  0.2.1.94:
+    sha1: dc1e93ea116de117f812c8046ea41dfa72984d66
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.1.94/fabric-0.2.1.94.jar
+  0.2.1.95:
+    sha1: adb3688f9c87971bd990f53ac88968866ce00022
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.1.95/fabric-0.2.1.95.jar
+  0.2.1.96:
+    sha1: 874ce6a14bf395bc38f3bc668693f3ba3a95fa54
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.1.96/fabric-0.2.1.96.jar
+  0.2.1.97:
+    sha1: 2b0a7ce28511d854af7d5e89cc91e26eeca83f78
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.1.97/fabric-0.2.1.97.jar
+  0.2.1.98:
+    sha1: 0c315abb8c0c439f38ff1b7f31fc55092d9724e1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.1.98/fabric-0.2.1.98.jar
+  0.2.2.103:
+    sha1: 8a2f7de55014fd92d4ef445110f15107068b649f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.2.103/fabric-0.2.2.103.jar
+  0.2.3.104:
+    sha1: 8e15e857804cae059ce9401e1e05d3c4fd4605e8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.3.104/fabric-0.2.3.104.jar
+  0.2.3.105:
+    sha1: e8d084426a38f6fef9fd0119b22168475e6540e4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.3.105/fabric-0.2.3.105.jar
+  0.2.3.106:
+    sha1: 9a030b30feca49c09be77003d661808e955afd58
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.3.106/fabric-0.2.3.106.jar
+  0.2.3.107:
+    sha1: 83980d1801deaa3bc5312bc8cf2c054bedeb84af
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.3.107/fabric-0.2.3.107.jar
+  0.2.3.108:
+    sha1: 0c7f3c30c9c59a404979cdbb1fd2189f9d5351cb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.3.108/fabric-0.2.3.108.jar
+  0.2.3.109:
+    sha1: f600a7cbda76a78669d33824819c765b7b18c498
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.3.109/fabric-0.2.3.109.jar
+  0.2.3.110:
+    sha1: ede3adb433057e1c299c41420177a59ff1e51f03
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.3.110/fabric-0.2.3.110.jar
+  0.2.3.111:
+    sha1: 2baf507bf550a156ed7f03a86fa07331f81a3889
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.3.111/fabric-0.2.3.111.jar
+  0.2.4.113:
+    sha1: ac27c8b529e00016b45302cb72fdf425e7fd6e51
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.4.113/fabric-0.2.4.113.jar
+  0.2.5.114:
+    sha1: dc3d46b03a92a9ee0ce4713326383d45db0c7fd6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.5.114/fabric-0.2.5.114.jar
+  0.2.6.116:
+    sha1: b349e7e9b78ca868bba9be61816c97153d949240
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.6.116/fabric-0.2.6.116.jar
+  0.2.6.117:
+    sha1: 290d9c2f13c057d3efab4cf86f98c1b84fb72fb9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.6.117/fabric-0.2.6.117.jar
+  0.2.6.119:
+    sha1: 5dff8e7cd9f434e3052322444f738040bfa9da15
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.6.119/fabric-0.2.6.119.jar
+  0.2.6.120:
+    sha1: a6bc6bfe4374db077850bbb4c8b7f8050be5d87b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.6.120/fabric-0.2.6.120.jar
+  0.2.6.121:
+    sha1: 4f9246c2e4d4a194f9e572769072f32e6cf32a40
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.6.121/fabric-0.2.6.121.jar
+  0.2.7+build.122:
+    sha1: aa87f62220585d904aa781408bdd9d2208e9884b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.7%2Bbuild.122/fabric-0.2.7%2Bbuild.122.jar
+  0.2.7+build.123:
+    sha1: 903a3e9c9d72cab3fe50933acffd3a4d9af51a3a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.7%2Bbuild.123/fabric-0.2.7%2Bbuild.123.jar
+  0.2.7+build.124:
+    sha1: a1343bf0c410fbea46e9aa6194723a0f8d6ee4d7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.7%2Bbuild.124/fabric-0.2.7%2Bbuild.124.jar
+  0.2.7+build.125:
+    sha1: 6918ae922c572b4eb61031f7414e13ba797884a0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.7%2Bbuild.125/fabric-0.2.7%2Bbuild.125.jar
+  0.2.7+build.126:
+    sha1: 46aec91cc7f7276a8a4c48a948249e9f7da731e1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.7%2Bbuild.126/fabric-0.2.7%2Bbuild.126.jar
+  0.2.7+build.127:
+    sha1: 554edd4ffb7c05585acc8b7700f523e4b1fc0cde
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.2.7%2Bbuild.127/fabric-0.2.7%2Bbuild.127.jar
+  0.20.0+build.399-1.16:
+    sha1: 57e0b46bb3b9b63f264923c0932800554a73d280
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.20.0%2Bbuild.399-1.16/fabric-api-0.20.0%2Bbuild.399-1.16.jar
+  0.20.1+build.401-1.16:
+    sha1: 1ece8c2c619bef71a32f5932e32288659536647f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.20.1%2Bbuild.401-1.16/fabric-api-0.20.1%2Bbuild.401-1.16.jar
+  0.20.2+build.402-1.16:
+    sha1: 14b71526a8c655bde74f9d22f49648627883e490
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.20.2%2Bbuild.402-1.16/fabric-api-0.20.2%2Bbuild.402-1.16.jar
+  0.21.0+build.326-1.15:
+    sha1: d24373315d9d1d3234d0540f6a6af21330c63551
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.21.0%2Bbuild.326-1.15/fabric-api-0.21.0%2Bbuild.326-1.15.jar
+  0.21.0+build.407-1.16:
+    sha1: 466241e0e5954a05553c10f48904dd66894a1c12
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.21.0%2Bbuild.407-1.16/fabric-api-0.21.0%2Bbuild.407-1.16.jar
+  0.21.1+build.327-1.15:
+    sha1: ccae31bb7deff7347b2a90b5498be8a953f996b7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.21.1%2Bbuild.327-1.15/fabric-api-0.21.1%2Bbuild.327-1.15.jar
+  0.22.0+build.408-1.16:
+    sha1: c131d89d6badb19a018731f9cf93bc98e62e1976
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.22.0%2Bbuild.408-1.16/fabric-api-0.22.0%2Bbuild.408-1.16.jar
+  0.22.1+build.409-1.16:
+    sha1: e83aa580e472226c00208506b5d40c16700ac796
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.22.1%2Bbuild.409-1.16/fabric-api-0.22.1%2Bbuild.409-1.16.jar
+  0.23.0+build.264-1.14:
+    sha1: ad570dad673c0daf621c86ab31d9ab9a85f97cc4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.23.0%2Bbuild.264-1.14/fabric-api-0.23.0%2Bbuild.264-1.14.jar
+  0.23.0+build.328-1.15:
+    sha1: bb799dd3ff1a157b18177d02cf873d89a0957f63
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.23.0%2Bbuild.328-1.15/fabric-api-0.23.0%2Bbuild.328-1.15.jar
+  0.23.0+build.410-1.16:
+    sha1: 6ea0f41712363b376d03e79d9bc56e961a085c26
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.23.0%2Bbuild.410-1.16/fabric-api-0.23.0%2Bbuild.410-1.16.jar
+  0.23.1+1.14:
+    sha1: 7211b3e2acebfc780e0316a2132e2a00845c86c5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.23.1%2B1.14/fabric-api-0.23.1%2B1.14.jar
+  0.23.1+1.15:
+    sha1: 77eb02aa726a5ce6992768199ae1aa2a27fe126d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.23.1%2B1.15/fabric-api-0.23.1%2B1.15.jar
+  0.23.2+1.14:
+    sha1: e1e9315789d9bd348c18c352691d546f77e0c16f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.23.2%2B1.14/fabric-api-0.23.2%2B1.14.jar
+  0.24.0+build.411-1.16:
+    sha1: 05f42dbd5085cb6e11eef4b2deadd16cc97464a7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.24.0%2Bbuild.411-1.16/fabric-api-0.24.0%2Bbuild.411-1.16.jar
+  0.24.1+build.412-1.16:
+    sha1: 09305d8932313ea8ec4fcbe690ef8ee8109cb127
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.24.1%2Bbuild.412-1.16/fabric-api-0.24.1%2Bbuild.412-1.16.jar
+  0.24.2+build.413-1.16:
+    sha1: 1a7b9dbe93d91d26146423e46e5a72ef696cbba9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.24.2%2Bbuild.413-1.16/fabric-api-0.24.2%2Bbuild.413-1.16.jar
+  0.24.3+build.414-1.16:
+    sha1: 685d6ebe88232849817df49e631420d3868b1ba4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.24.3%2Bbuild.414-1.16/fabric-api-0.24.3%2Bbuild.414-1.16.jar
+  0.25.0+build.415-1.16:
+    sha1: a38d71e251d949697cc2475c43cc9d9ccf501d24
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.25.0%2Bbuild.415-1.16/fabric-api-0.25.0%2Bbuild.415-1.16.jar
+  0.25.1+build.416-1.16:
+    sha1: f778a9f7bcd93e3a140fe036749a419aefc0ac79
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.25.1%2Bbuild.416-1.16/fabric-api-0.25.1%2Bbuild.416-1.16.jar
+  0.25.3+1.17:
+    sha1: 629dc117b27f7a47f5d2c22596b7b0c69b4ffaa5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.25.3%2B1.17/fabric-api-0.25.3%2B1.17.jar
+  0.25.4+1.16:
+    sha1: 2602abc3bdcf122af087f6da53f58ecb82c0ba1f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.25.4%2B1.16/fabric-api-0.25.4%2B1.16.jar
+  0.25.4+1.17:
+    sha1: c0e741fb59c12b25296e770688520e140ecfcf3a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.25.4%2B1.17/fabric-api-0.25.4%2B1.17.jar
+  0.25.5+1.17:
+    sha1: 22fc54792c5ba4d92617d75807b6ea41bb69c93c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.25.5%2B1.17/fabric-api-0.25.5%2B1.17.jar
+  0.25.6+1.17:
+    sha1: 773c85fcf831c4e19f4b53cd2daddbb224389ee7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.25.6%2B1.17/fabric-api-0.25.6%2B1.17.jar
+  0.25.7+1.16:
+    sha1: 2b4b7bd190d63bc888cc10a2e51a96d5193f821a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.25.7%2B1.16/fabric-api-0.25.7%2B1.16.jar
+  0.25.7+1.17:
+    sha1: c1a4d5d238ec8d449d3eb0f0ac63c4b0eb7bf93f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.25.7%2B1.17/fabric-api-0.25.7%2B1.17.jar
+  0.26.0+1.16:
+    sha1: e490fdee1dedf1ae7ba9b5a5b258908be80cf153
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.26.0%2B1.16/fabric-api-0.26.0%2B1.16.jar
+  0.26.0+1.17:
+    sha1: 7e2e80db8d581db3258b4302e8ff52637034c261
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.26.0%2B1.17/fabric-api-0.26.0%2B1.17.jar
+  0.26.1+1.16:
+    sha1: d01017a19caba1e937342385544abe3143de0a55
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.26.1%2B1.16/fabric-api-0.26.1%2B1.16.jar
+  0.26.1+1.17:
+    sha1: acba2f696a0db45f8b202b4db6006c8c4711b67a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.26.1%2B1.17/fabric-api-0.26.1%2B1.17.jar
+  0.26.2+1.16:
+    sha1: 0f629ca647ff96dd69819abae5fcd5e45b868f15
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.26.2%2B1.16/fabric-api-0.26.2%2B1.16.jar
+  0.26.2+1.17:
+    sha1: 733ce6c4f78259bf64dc8fb9786c622c674c06dc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.26.2%2B1.17/fabric-api-0.26.2%2B1.17.jar
+  0.26.3+1.16:
+    sha1: 8ad5bae02b939623abd9e7037f4bf47c39f76a0a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.26.3%2B1.16/fabric-api-0.26.3%2B1.16.jar
+  0.26.3+1.17:
+    sha1: 0aeb0410ba0c83c56d85c2523ecdce1e02ad697c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.26.3%2B1.17/fabric-api-0.26.3%2B1.17.jar
+  0.26.4+1.17:
+    sha1: d54e7172670a82aac0402e51cd311fdcc06b58c7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.26.4%2B1.17/fabric-api-0.26.4%2B1.17.jar
+  0.27.0+1.16:
+    sha1: d48c9239f8021ad53c47e593051037f5b418499e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.27.0%2B1.16/fabric-api-0.27.0%2B1.16.jar
+  0.27.0+1.17:
+    sha1: 6790beaa9a4e45eb87bb61c0eb85dcf1137b0b4f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.27.0%2B1.17/fabric-api-0.27.0%2B1.17.jar
+  0.27.1+1.16:
+    sha1: 385eabe5a1a44dd11d686281016f39d07dc4ffc7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.27.1%2B1.16/fabric-api-0.27.1%2B1.16.jar
+  0.27.1+1.17:
+    sha1: f8cb98d11242b2112def670fd95b76c05f12c260
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.27.1%2B1.17/fabric-api-0.27.1%2B1.17.jar
+  0.27.2+1.17:
+    sha1: 34f9d836560d5ddbbcd7e253468acb314bea9db7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.27.2%2B1.17/fabric-api-0.27.2%2B1.17.jar
+  0.27.3+1.17:
+    sha1: f9b1015c3ac0aa41d72ab3707179a5db4aee2c1e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.27.3%2B1.17/fabric-api-0.27.3%2B1.17.jar
+  0.28.0+1.16:
+    sha1: 172b1a8c9469e488b7b985158475b71d77b67707
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.0%2B1.16/fabric-api-0.28.0%2B1.16.jar
+  0.28.0+1.17:
+    sha1: 5eae2f738335f2b4e7462f9cecd5ec7f23ebde63
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.0%2B1.17/fabric-api-0.28.0%2B1.17.jar
+  0.28.1+1.16:
+    sha1: d335e93a18c5f82b128cd8d0cd54e57635392cec
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.1%2B1.16/fabric-api-0.28.1%2B1.16.jar
+  0.28.1+1.17:
+    sha1: 059bd64715aa371762cf40c0dfdf3cea59c35f36
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.1%2B1.17/fabric-api-0.28.1%2B1.17.jar
+  0.28.2+1.17:
+    sha1: 3045ac1b11ce9c1b696a567f31136daebdb07a00
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.2%2B1.17/fabric-api-0.28.2%2B1.17.jar
+  0.28.3+1.16:
+    sha1: 09e37c76f54a69e28b8e30dd02a9b5d141489004
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.3%2B1.16/fabric-api-0.28.3%2B1.16.jar
+  0.28.3+1.17:
+    sha1: d2478ebea69d79e1002a86819f0cf007d2440b22
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.3%2B1.17/fabric-api-0.28.3%2B1.17.jar
+  0.28.4+1.14:
+    sha1: b6e2a7895b9b176f1841d3760f96e501dbd048c2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.4%2B1.14/fabric-api-0.28.4%2B1.14.jar
+  0.28.4+1.15:
+    sha1: 70d46b33ea8f0dbb9e0c039be82aea791920f6be
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.4%2B1.15/fabric-api-0.28.4%2B1.15.jar
+  0.28.4+1.16:
+    sha1: f13c9a9464b57135c6f51c0c2397e89c54f21a7c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.4%2B1.16/fabric-api-0.28.4%2B1.16.jar
+  0.28.4+1.17:
+    sha1: 87b6eb8559c37f4f699b902b6b61f333b4ecb4ef
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.4%2B1.17/fabric-api-0.28.4%2B1.17.jar
+  0.28.5+1.14:
+    sha1: c8fd8dfd6980778c4f1d420f148eac7231fe9a03
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.5%2B1.14/fabric-api-0.28.5%2B1.14.jar
+  0.28.5+1.15:
+    sha1: 83c53b84472e29c776ddf7d74518b2ea57d329ec
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.28.5%2B1.15/fabric-api-0.28.5%2B1.15.jar
+  0.29.0+1.16:
+    sha1: 2ea3d4b98dfdc086f392f72ac80a6b4798c8579b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.0%2B1.16/fabric-api-0.29.0%2B1.16.jar
+  0.29.0+1.17:
+    sha1: fb4c207f9b4bc47edbff4579a9bfd4f8ede7d798
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.0%2B1.17/fabric-api-0.29.0%2B1.17.jar
+  0.29.1+1.16:
+    sha1: 328afa15fd61368f29803ffcdc363b2a7e5734a1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.1%2B1.16/fabric-api-0.29.1%2B1.16.jar
+  0.29.1+1.17:
+    sha1: 2979e2a683b26a8bde8c947320946869e459a47f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.1%2B1.17/fabric-api-0.29.1%2B1.17.jar
+  0.29.2+1.16:
+    sha1: 8a5d6f184719ef865c8cdebb75f1ca7ad1230622
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.2%2B1.16/fabric-api-0.29.2%2B1.16.jar
+  0.29.2+1.17:
+    sha1: 72c42a03ef9cd4a3da345af5c4294155b51bb90f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.2%2B1.17/fabric-api-0.29.2%2B1.17.jar
+  0.29.3+1.16:
+    sha1: 9d823744956282c6877bdfa033e3eab4a50cccff
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.3%2B1.16/fabric-api-0.29.3%2B1.16.jar
+  0.29.3+1.17:
+    sha1: 1916818ea95be1812ece23b34e5ea43adb41e558
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.3%2B1.17/fabric-api-0.29.3%2B1.17.jar
+  0.29.4+1.16:
+    sha1: e597961bf85c5a78ef67d5ec607d00899267e62f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.4%2B1.16/fabric-api-0.29.4%2B1.16.jar
+  0.29.4+1.17:
+    sha1: 44ed90f639508d1fe56e149802e6ebfddad6ad22
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.4%2B1.17/fabric-api-0.29.4%2B1.17.jar
+  0.29.5+1.17:
+    sha1: 8fb7223eb7172cf7d739580193b0f87e5c585e45
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.29.5%2B1.17/fabric-api-0.29.5%2B1.17.jar
+  0.3.0+build.170:
+    sha1: ad1b298248b1cb6ead76d9b7b6cd382f8fe08835
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.170/fabric-api-0.3.0%2Bbuild.170.jar
+  0.3.0+build.171:
+    sha1: 78ea9ecd65be0ab9d6d9157372aa520d29d334f4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.171/fabric-api-0.3.0%2Bbuild.171.jar
+  0.3.0+build.172:
+    sha1: ea4e357ca84c320e8320b58752ed8174c6f6af32
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.172/fabric-api-0.3.0%2Bbuild.172.jar
+  0.3.0+build.173:
+    sha1: 74f2abd592c41af7e493625c9b4109096010c8d3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.173/fabric-api-0.3.0%2Bbuild.173.jar
+  0.3.0+build.174:
+    sha1: f5760464cd4623943f202e5b22863ecea2b8f800
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.174/fabric-api-0.3.0%2Bbuild.174.jar
+  0.3.0+build.175:
+    sha1: 13de1b3d8dcce7682334024848eefd718cc8b297
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.175/fabric-api-0.3.0%2Bbuild.175.jar
+  0.3.0+build.176:
+    sha1: f8dccf57752f0c2e51fbff919821b1f139935511
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.176/fabric-api-0.3.0%2Bbuild.176.jar
+  0.3.0+build.177:
+    sha1: 0c1e2ede0138ce5ac0f75bdff1a0a3b9c67d0160
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.177/fabric-api-0.3.0%2Bbuild.177.jar
+  0.3.0+build.178:
+    sha1: 1af675690a93aa267900292f63172edfc00347d9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.178/fabric-api-0.3.0%2Bbuild.178.jar
+  0.3.0+build.179:
+    sha1: 629bcc8ca1cc7b938af18ce1f74240afb012bb08
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.179/fabric-api-0.3.0%2Bbuild.179.jar
+  0.3.0+build.180:
+    sha1: c6a05de2e59d5ba0e91e4832061cbd2ae50e577a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.180/fabric-api-0.3.0%2Bbuild.180.jar
+  0.3.0+build.181:
+    sha1: bf451a7d3c86d41734deb117149dda3a58f0b925
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.181/fabric-api-0.3.0%2Bbuild.181.jar
+  0.3.0+build.183:
+    sha1: e9af61660f35eb386ace6cabace7436d31750827
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.183/fabric-api-0.3.0%2Bbuild.183.jar
+  0.3.0+build.184:
+    sha1: c68b0ca689f2c38081c25a7b6db8e9158c2303aa
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.184/fabric-api-0.3.0%2Bbuild.184.jar
+  0.3.0+build.185:
+    sha1: 43ceca71cab0c61ccc32fd8cda94b12eae9d49df
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.185/fabric-api-0.3.0%2Bbuild.185.jar
+  0.3.0+build.186:
+    sha1: 1248ed363edbfc56b1d69049d11ed6a70764375d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.186/fabric-api-0.3.0%2Bbuild.186.jar
+  0.3.0+build.187:
+    sha1: 336a6f57294336cf887a53015562a59bef5c512c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.187/fabric-api-0.3.0%2Bbuild.187.jar
+  0.3.0+build.188:
+    sha1: a9be3c2a53e2a1ebc313ea144a689d1c6078ab5b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.188/fabric-api-0.3.0%2Bbuild.188.jar
+  0.3.0+build.191:
+    sha1: d38a24f3c84f3bd9e61b6d1a821dd9edf59b4316
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.191/fabric-api-0.3.0%2Bbuild.191.jar
+  0.3.0+build.192:
+    sha1: 2a70bf52f9d7a2f9e4fc64d88b0bf20fad16708f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.192/fabric-api-0.3.0%2Bbuild.192.jar
+  0.3.0+build.194:
+    sha1: 46f01ef73be58eb53f2f1f2c54c233e9d88d6cdb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.194/fabric-api-0.3.0%2Bbuild.194.jar
+  0.3.0+build.196:
+    sha1: 904ba9e359ad4c354061de866d92c08337d6424f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.196/fabric-api-0.3.0%2Bbuild.196.jar
+  0.3.0+build.197:
+    sha1: 3f0760c5100fc4189d78248ccbe6038d6ce59b3d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.197/fabric-api-0.3.0%2Bbuild.197.jar
+  0.3.0+build.198:
+    sha1: 62d6b2f1baf0c165ff5cfdf0a21b4ba8bf40dc48
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.198/fabric-api-0.3.0%2Bbuild.198.jar
+  0.3.0+build.200:
+    sha1: 6fb444f7fd01c574cc59d393bcdaf25b0f4b120d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.200/fabric-api-0.3.0%2Bbuild.200.jar
+  0.3.0+build.206:
+    sha1: f138c4735196cdd25d76830a9471ec9082325b26
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.206/fabric-api-0.3.0%2Bbuild.206.jar
+  0.3.0+build.207:
+    sha1: ab6ef12996f99c726c1dac5ca15a96b079af9d57
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0%2Bbuild.207/fabric-api-0.3.0%2Bbuild.207.jar
+  0.3.0-pre+build.155:
+    sha1: 55b706a96e6b2b031d3019cfe0d4c04c6d97c007
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.155/fabric-api-0.3.0-pre%2Bbuild.155.jar
+  0.3.0-pre+build.156:
+    sha1: a7d12b627dd20d811fb3a63ba8325f3543acd3ff
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.156/fabric-api-0.3.0-pre%2Bbuild.156.jar
+  0.3.0-pre+build.157:
+    sha1: fc416c9868f2418067eefa9166a9749a2c34aa50
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.157/fabric-api-0.3.0-pre%2Bbuild.157.jar
+  0.3.0-pre+build.157a:
+    sha1: cb82d9938671906d54e584fe16aeef52c3f373fe
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.157a/fabric-api-0.3.0-pre%2Bbuild.157a.jar
+  0.3.0-pre+build.158:
+    sha1: 873774f50eedf94d18d22849b9c52735bae22ddd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.158/fabric-api-0.3.0-pre%2Bbuild.158.jar
+  0.3.0-pre+build.161:
+    sha1: 035a7e6efbd1c3dbbfb8b5a76788da9a345603c4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.161/fabric-api-0.3.0-pre%2Bbuild.161.jar
+  0.3.0-pre+build.162:
+    sha1: 08e85bd56cc153afa9cf7d617239b394f90e4cee
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.162/fabric-api-0.3.0-pre%2Bbuild.162.jar
+  0.3.0-pre+build.163:
+    sha1: df52e8e297041d0f8725e9585bb9a6bbbd11d462
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.163/fabric-api-0.3.0-pre%2Bbuild.163.jar
+  0.3.0-pre+build.164:
+    sha1: 5db3494e25f2bb0e8f4b174fe268550aee5e480f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.164/fabric-api-0.3.0-pre%2Bbuild.164.jar
+  0.3.0-pre+build.165:
+    sha1: 2eaf3b60dbc27a89e3ac530d59e174d3b69654f8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.165/fabric-api-0.3.0-pre%2Bbuild.165.jar
+  0.3.0-pre+build.166:
+    sha1: 112f845d7056e22a1beb5f2a747fdea1d006c84d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.166/fabric-api-0.3.0-pre%2Bbuild.166.jar
+  0.3.0-pre+build.167:
+    sha1: fa507907cb522f0e1a43f2d358d559f876873603
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.167/fabric-api-0.3.0-pre%2Bbuild.167.jar
+  0.3.0-pre+build.168:
+    sha1: 5b74e041192d0fe7bb551ed3e86845b1d8aed572
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.168/fabric-api-0.3.0-pre%2Bbuild.168.jar
+  0.3.0-pre+build.169:
+    sha1: 46f193305234322e4e4c299e011afb13063a23de
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.0-pre%2Bbuild.169/fabric-api-0.3.0-pre%2Bbuild.169.jar
+  0.3.1+build.208:
+    sha1: b5d2eca78d669d5e1b10ce16447aeeb4bfaa9aa0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.1%2Bbuild.208/fabric-api-0.3.1%2Bbuild.208.jar
+  0.3.2+build.212-1.15:
+    sha1: bcf414cfb02c5ac74b33129023a6ffcc273f828b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.212-1.15/fabric-api-0.3.2%2Bbuild.212-1.15.jar
+  0.3.2+build.213-1.15:
+    sha1: 9a993bcc37337a9f9ef5ec59d3392909d2a5c591
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.213-1.15/fabric-api-0.3.2%2Bbuild.213-1.15.jar
+  0.3.2+build.214-1.15:
+    sha1: 89e67eb6773f9d0539f444e912893d2aa55b2eed
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.214-1.15/fabric-api-0.3.2%2Bbuild.214-1.15.jar
+  0.3.2+build.215-1.15:
+    sha1: d422ee67d741282454c65b374ff8c975b0197df2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.215-1.15/fabric-api-0.3.2%2Bbuild.215-1.15.jar
+  0.3.2+build.216-1.14:
+    sha1: 5fa2f20a047ca9b8d66e9f25ab9a15c01ad1aee2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.216-1.14/fabric-api-0.3.2%2Bbuild.216-1.14.jar
+  0.3.2+build.217-1.15:
+    sha1: bfcb03c5660cd83694b70e3875d08c0154d0b346
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.217-1.15/fabric-api-0.3.2%2Bbuild.217-1.15.jar
+  0.3.2+build.218-1.14:
+    sha1: 5b9e011bdf203ee0a8ddd26c1b8c1a6a79ecb03d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.218-1.14/fabric-api-0.3.2%2Bbuild.218-1.14.jar
+  0.3.2+build.219-1.15:
+    sha1: 4e2ff4e27444d59d6917834acdf589200d4f7064
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.219-1.15/fabric-api-0.3.2%2Bbuild.219-1.15.jar
+  0.3.2+build.220-1.14:
+    sha1: 111a83214efa92073fee2e7733982c8104dc4869
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.220-1.14/fabric-api-0.3.2%2Bbuild.220-1.14.jar
+  0.3.2+build.221-1.15:
+    sha1: a947a691fc45ef1f6da9264f11e5c5d11d937f37
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.221-1.15/fabric-api-0.3.2%2Bbuild.221-1.15.jar
+  0.3.2+build.223-1.15:
+    sha1: e5c9acced143e6e03aab9f3ccccf8cf324c12556
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.223-1.15/fabric-api-0.3.2%2Bbuild.223-1.15.jar
+  0.3.2+build.224-1.14:
+    sha1: b49b021b4da3787a4a1b91624a52d8a51f483ffb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.224-1.14/fabric-api-0.3.2%2Bbuild.224-1.14.jar
+  0.3.2+build.225-1.15:
+    sha1: 3cbb91831d7214591670df37408e4dd82d4104fd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.225-1.15/fabric-api-0.3.2%2Bbuild.225-1.15.jar
+  0.3.2+build.226-1.14:
+    sha1: 4d227b065b994672bd66db610bb96634331ad547
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.226-1.14/fabric-api-0.3.2%2Bbuild.226-1.14.jar
+  0.3.2+build.227-1.15:
+    sha1: 58ba61d2a6e879bf26f78938489f5d4ce8ccb992
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.227-1.15/fabric-api-0.3.2%2Bbuild.227-1.15.jar
+  0.3.2+build.229-1.15:
+    sha1: b618cef632a8321bbba431e0df15018d6754b664
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.229-1.15/fabric-api-0.3.2%2Bbuild.229-1.15.jar
+  0.3.2+build.230-1.15:
+    sha1: b65dbd8c7ee14338436becf83e747dc6fb109bdd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.230-1.15/fabric-api-0.3.2%2Bbuild.230-1.15.jar
+  0.3.2+build.232-1.15:
+    sha1: b7d87d9538c9adb01a9ad35cee9900dd89fb8cd2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.232-1.15/fabric-api-0.3.2%2Bbuild.232-1.15.jar
+  0.3.2+build.233-1.14:
+    sha1: 3eec491549323052e274565f5625f4beaa2b9f63
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.2%2Bbuild.233-1.14/fabric-api-0.3.2%2Bbuild.233-1.14.jar
+  0.3.3+build.234-1.14:
+    sha1: 032a1d78aec2764128d27f40718924cae8931e1e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.3%2Bbuild.234-1.14/fabric-api-0.3.3%2Bbuild.234-1.14.jar
+  0.3.3+build.235-1.15:
+    sha1: 10d102e17a4e551c9daa1b605b7dd836264e7790
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.3%2Bbuild.235-1.15/fabric-api-0.3.3%2Bbuild.235-1.15.jar
+  0.3.4+build.236-1.15:
+    sha1: 94b08c04cde65684435c6bedf4e63c832cf0c055
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.4%2Bbuild.236-1.15/fabric-api-0.3.4%2Bbuild.236-1.15.jar
+  0.3.4+build.237-1.15:
+    sha1: 301aa78629ba3833358a0df7c532609ecbf89b57
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.4%2Bbuild.237-1.15/fabric-api-0.3.4%2Bbuild.237-1.15.jar
+  0.3.4+build.238-1.15:
+    sha1: 344ebaa22c6b689bb5439615c170749544f9eabd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.3.4%2Bbuild.238-1.15/fabric-api-0.3.4%2Bbuild.238-1.15.jar
+  0.30.0+1.16:
+    sha1: 04f51f98cd8e333300270be70f69fdcf96780668
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.30.0%2B1.16/fabric-api-0.30.0%2B1.16.jar
+  0.30.0+1.17:
+    sha1: 30d1eaa0d456a20d529092699d841cc1004c6c85
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.30.0%2B1.17/fabric-api-0.30.0%2B1.17.jar
+  0.30.1+1.17:
+    sha1: 0e131c5337e7ec92c27dd0bcf9a9dd0c46d7db14
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.30.1%2B1.17/fabric-api-0.30.1%2B1.17.jar
+  0.30.2+1.17:
+    sha1: c250cb2d9a4fa213980044d18e74363d8e3d9b9f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.30.2%2B1.17/fabric-api-0.30.2%2B1.17.jar
+  0.30.3+1.16:
+    sha1: 214f12a8e25e2a8e00ee12eda8466f5dbf202b07
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.30.3%2B1.16/fabric-api-0.30.3%2B1.16.jar
+  0.30.3+1.17:
+    sha1: 750af43fac0dee895fbace703afa715331c6e7ba
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.30.3%2B1.17/fabric-api-0.30.3%2B1.17.jar
+  0.30.4+1.17:
+    sha1: 7ec5f2c846d7136ec84d525cf1b97d1320fef1d8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.30.4%2B1.17/fabric-api-0.30.4%2B1.17.jar
+  0.30.5+1.17:
+    sha1: 5eb6e893b7dcafc3ab802f622ce213c220d52ccd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.30.5%2B1.17/fabric-api-0.30.5%2B1.17.jar
+  0.31.0+1.16:
+    sha1: cbf6b5bacbf165cc1c05ef1f69061617da8b9500
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.31.0%2B1.16/fabric-api-0.31.0%2B1.16.jar
+  0.31.0+1.17:
+    sha1: db6549b337fd23dd042803ccf071ea8cc4d27d55
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.31.0%2B1.17/fabric-api-0.31.0%2B1.17.jar
+  0.31.1+1.17:
+    sha1: 56ae26b6d1dec156a689801889163c2dc397e49d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.31.1%2B1.17/fabric-api-0.31.1%2B1.17.jar
+  0.31.2+1.17:
+    sha1: a1f5de2ca0527b866e050d37719929e94dec74d2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.31.2%2B1.17/fabric-api-0.31.2%2B1.17.jar
+  0.32.0+1.16:
+    sha1: a103a23a7dbb5460dc69f3e4faf3b1349f4163ba
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.0%2B1.16/fabric-api-0.32.0%2B1.16.jar
+  0.32.0+1.17:
+    sha1: bbd4a122f9bb3eaca0fa69f0d9d7c106a1bbf4ac
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.0%2B1.17/fabric-api-0.32.0%2B1.17.jar
+  0.32.1+1.17:
+    sha1: 9173a7da11f6b448a27574018023caa1351d38c1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.1%2B1.17/fabric-api-0.32.1%2B1.17.jar
+  0.32.2+1.17:
+    sha1: 0b905114d81db63b39d94b12df5baa5c5daafb67
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.2%2B1.17/fabric-api-0.32.2%2B1.17.jar
+  0.32.4+1.17:
+    sha1: efac518a984806ce4c0dd76e72f153e53333f9ab
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.4%2B1.17/fabric-api-0.32.4%2B1.17.jar
+  0.32.5+1.16:
+    sha1: ac24495cddfc0ce9f26bdaecd4a686b10ad330fd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.5%2B1.16/fabric-api-0.32.5%2B1.16.jar
+  0.32.5+1.17:
+    sha1: 7dff5fce944b6b2c06113ac7ac0a3abae8d1bfd3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.5%2B1.17/fabric-api-0.32.5%2B1.17.jar
+  0.32.6+1.17:
+    sha1: 7425712f67593304439b72283b691d970ba09d5e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.6%2B1.17/fabric-api-0.32.6%2B1.17.jar
+  0.32.7+1.17:
+    sha1: 963e33eda09145c2c679bf9e9886b2e05571ed3a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.7%2B1.17/fabric-api-0.32.7%2B1.17.jar
+  0.32.8+1.17:
+    sha1: d09fd83fb88423313e74902648eebd9b31d39417
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.8%2B1.17/fabric-api-0.32.8%2B1.17.jar
+  0.32.9+1.16:
+    sha1: 230936e18384bfb5ba7f229f2b9776a6b56c5add
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.9%2B1.16/fabric-api-0.32.9%2B1.16.jar
+  0.32.9+1.17:
+    sha1: c94cd5f1d58a9415c64857d1e3760695bf8e948f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.32.9%2B1.17/fabric-api-0.32.9%2B1.17.jar
+  0.33.0+1.16:
+    sha1: 7f20e318d9f244cbb7d0189b1c0103cb3f033969
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.33.0%2B1.16/fabric-api-0.33.0%2B1.16.jar
+  0.33.0+1.17:
+    sha1: 78eddaaaa4c6375db8cdfd8c586dac90c70acb99
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.33.0%2B1.17/fabric-api-0.33.0%2B1.17.jar
+  0.33.1+1.16:
+    sha1: 9f5b445fe1169ca4c7c5e4896c01998e54f433db
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.33.1%2B1.16/fabric-api-0.33.1%2B1.16.jar
+  0.33.1+1.17:
+    sha1: 699fa20881ca536c09d8819709b1f47b39c110a5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.33.1%2B1.17/fabric-api-0.33.1%2B1.17.jar
+  0.33.3+1.17:
+    sha1: 64c073fba1c14dac85576127d4af95b828bb8845
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.33.3%2B1.17/fabric-api-0.33.3%2B1.17.jar
+  0.33.4+1.17:
+    sha1: 08bab468350392bb999a496f971697c13cb8a20c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.33.4%2B1.17/fabric-api-0.33.4%2B1.17.jar
+  0.34.0+1.16:
+    sha1: 7e241ab46172ee59d53f3e9b4ea59003e3f08ffd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.0%2B1.16/fabric-api-0.34.0%2B1.16.jar
+  0.34.0+1.17:
+    sha1: 7a6354c8f2660f6f7c724b21a9172402b38e46f0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.0%2B1.17/fabric-api-0.34.0%2B1.17.jar
+  0.34.1+1.16:
+    sha1: 67897494826e3e2ab69f7cdbdbb5383fe83f5e59
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.1%2B1.16/fabric-api-0.34.1%2B1.16.jar
+  0.34.1+1.17:
+    sha1: fddaf119323b152eefc853f864b468e63b540cdd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.1%2B1.17/fabric-api-0.34.1%2B1.17.jar
+  0.34.10+1.17:
+    sha1: 9972f0a5da5eedd7c49ec0a05fe243e026151261
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.10%2B1.17/fabric-api-0.34.10%2B1.17.jar
+  0.34.2+1.16:
+    sha1: a338b9570eac540d5aac2d10108dd7ebca983ad0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.2%2B1.16/fabric-api-0.34.2%2B1.16.jar
+  0.34.2+1.17:
+    sha1: e6e97936f7ee47e35750db36b2e364f219a727e1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.2%2B1.17/fabric-api-0.34.2%2B1.17.jar
+  0.34.3+1.17:
+    sha1: 56933536a49eb16fee9469600a4d095bf8b3d4cf
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.3%2B1.17/fabric-api-0.34.3%2B1.17.jar
+  0.34.4+1.17:
+    sha1: f6e6e0ba1930f970ad58b0464d380c06f00f39dc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.4%2B1.17/fabric-api-0.34.4%2B1.17.jar
+  0.34.5+1.17:
+    sha1: ea70391c0c846d84b9a3347824c123b60939c051
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.5%2B1.17/fabric-api-0.34.5%2B1.17.jar
+  0.34.6+1.16:
+    sha1: aa8f7f6520535715c828dc1a54916996694f062e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.6%2B1.16/fabric-api-0.34.6%2B1.16.jar
+  0.34.6+1.17:
+    sha1: e2c2cc0989d9cc3249fce1077ba23b4a234b8bf5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.6%2B1.17/fabric-api-0.34.6%2B1.17.jar
+  0.34.7+1.16:
+    sha1: 4081ea7b168d3472a38c475c003f610b245ed66c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.7%2B1.16/fabric-api-0.34.7%2B1.16.jar
+  0.34.7+1.17:
+    sha1: cdf4e8d89786a7b06c681f4dc3b4c8d23cb35194
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.7%2B1.17/fabric-api-0.34.7%2B1.17.jar
+  0.34.8+1.17:
+    sha1: fe3080f05f490044ee2291ff23236befbc9d45bc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.8%2B1.17/fabric-api-0.34.8%2B1.17.jar
+  0.34.9+1.17:
+    sha1: 2a17585a604dbb707661830376d89679d0887c03
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.34.9%2B1.17/fabric-api-0.34.9%2B1.17.jar
+  0.35.0+1.16:
+    sha1: ed7fa5ca4100622589317a48ba3735712a8c1720
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.35.0%2B1.16/fabric-api-0.35.0%2B1.16.jar
+  0.35.0+1.17:
+    sha1: 2e9a788213045ca9b2dd1b2e25276bde1b91438d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.35.0%2B1.17/fabric-api-0.35.0%2B1.17.jar
+  0.35.1+1.16:
+    sha1: d72eb99dbe22fa3e95977ced0a13d98004ddb8df
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.35.1%2B1.16/fabric-api-0.35.1%2B1.16.jar
+  0.35.1+1.17:
+    sha1: 0c5f2047dae5780c64f1937916c41882c32aa287
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.35.1%2B1.17/fabric-api-0.35.1%2B1.17.jar
+  0.35.2+1.17:
+    sha1: af4a29e21a2cf87f120c76c09a1d2a3fa616bc49
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.35.2%2B1.17/fabric-api-0.35.2%2B1.17.jar
+  0.36.0+1.16:
+    sha1: 295808e3bb3ea8a3dc40c5cdb85c4b749cbf9adc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.36.0%2B1.16/fabric-api-0.36.0%2B1.16.jar
+  0.36.0+1.17:
+    sha1: f94fe86f10cdd6d846e1739c268ac1c12ab95b0b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.36.0%2B1.17/fabric-api-0.36.0%2B1.17.jar
+  0.36.1+1.17:
+    sha1: d86de3b28cee46c3829ca62c466a99dbf0a249ba
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.36.1%2B1.17/fabric-api-0.36.1%2B1.17.jar
+  0.37.0+1.16:
+    sha1: 863133f34f69486c053145632ec34c62a583880a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.37.0%2B1.16/fabric-api-0.37.0%2B1.16.jar
+  0.37.0+1.17:
+    sha1: 4895ab5fc267e933cac862e0e561b48766d0c7d2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.37.0%2B1.17/fabric-api-0.37.0%2B1.17.jar
+  0.37.1+1.16:
+    sha1: 51dd0b401538965de6ac6cfea359bf463364f892
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.37.1%2B1.16/fabric-api-0.37.1%2B1.16.jar
+  0.37.1+1.17:
+    sha1: e4f8c290c239558896ef34a546aab61f53c0e70c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.37.1%2B1.17/fabric-api-0.37.1%2B1.17.jar
+  0.37.2+1.16:
+    sha1: d2cd72631a58a9071c5efb5ead12aa0458b6c0de
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.37.2%2B1.16/fabric-api-0.37.2%2B1.16.jar
+  0.37.2+1.17:
+    sha1: 01ab25c26d007353937f4fb4be6ada45e0398f6a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.37.2%2B1.17/fabric-api-0.37.2%2B1.17.jar
+  0.37.2+1.18_experimental:
+    sha1: 6971039354ecd7c6913571651d742651d0cd9092
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.37.2%2B1.18_experimental/fabric-api-0.37.2%2B1.18_experimental.jar
+  0.38.0+1.16:
+    sha1: 30a7f05b7363b9f426c2624dbb561b40ccf459b9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.38.0%2B1.16/fabric-api-0.38.0%2B1.16.jar
+  0.38.0+1.17:
+    sha1: 2c0d4b07367b78fa581301135d7b2865cd930f80
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.38.0%2B1.17/fabric-api-0.38.0%2B1.17.jar
+  0.38.1+1.16:
+    sha1: 8ac3f30bbd5eadb36dc16c5198fa89f7e6569bba
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.38.1%2B1.16/fabric-api-0.38.1%2B1.16.jar
+  0.38.1+1.17:
+    sha1: c759e9efda151305d8c8ef11180cc7ec449f15a3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.38.1%2B1.17/fabric-api-0.38.1%2B1.17.jar
+  0.38.2+1.16:
+    sha1: aea09e5025ed81eb171c9faa14cb46f8d6542033
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.38.2%2B1.16/fabric-api-0.38.2%2B1.16.jar
+  0.38.2+1.17:
+    sha1: 868b801d081aceb686447d180921e0b9021aade1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.38.2%2B1.17/fabric-api-0.38.2%2B1.17.jar
+  0.39.0+1.16:
+    sha1: 80e06f4f6739924eadb61e38c5f6efa8efbe2099
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.39.0%2B1.16/fabric-api-0.39.0%2B1.16.jar
+  0.39.0+1.17:
+    sha1: ec0dde21584b67a5aafad3e0daaac9797f4dec5e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.39.0%2B1.17/fabric-api-0.39.0%2B1.17.jar
+  0.39.1+1.16:
+    sha1: 09f7e4051df1a959f27d2f204a6440858751f72d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.39.1%2B1.16/fabric-api-0.39.1%2B1.16.jar
+  0.39.1+1.17:
+    sha1: 091419bb2464aeccdcc23f436d78c0ea9d67cd83
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.39.1%2B1.17/fabric-api-0.39.1%2B1.17.jar
+  0.39.2+1.16:
+    sha1: 5be6ad311d0c9fe6310f25acaf800a9e7d8e7729
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.39.2%2B1.16/fabric-api-0.39.2%2B1.16.jar
+  0.39.2+1.17:
+    sha1: e8a79c4a878d160c78810fa875e81a79c39a2e91
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.39.2%2B1.17/fabric-api-0.39.2%2B1.17.jar
+  0.4.0+build.239-1.15:
+    sha1: 795078a761825dc9ee4ed1b573e17def0779f366
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.0%2Bbuild.239-1.15/fabric-api-0.4.0%2Bbuild.239-1.15.jar
+  0.4.0+build.240-1.14:
+    sha1: 6a386f448431d93ffe669d38360d7daa6c6b9642
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.0%2Bbuild.240-1.14/fabric-api-0.4.0%2Bbuild.240-1.14.jar
+  0.4.1+build.241-1.15:
+    sha1: d5cacc9319a13c8e7410d52bc4e825c75fa8d184
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.1%2Bbuild.241-1.15/fabric-api-0.4.1%2Bbuild.241-1.15.jar
+  0.4.1+build.242-1.15:
+    sha1: f86e6d6f7a4e64e5f3ba1f2523855bd73fe95fce
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.1%2Bbuild.242-1.15/fabric-api-0.4.1%2Bbuild.242-1.15.jar
+  0.4.1+build.245-1.14:
+    sha1: f66acfdffbb10cf6bd057ebf629075b6f24d5941
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.1%2Bbuild.245-1.14/fabric-api-0.4.1%2Bbuild.245-1.14.jar
+  0.4.10+build.259-1.15:
+    sha1: 8596e4c42d2027fd13793f66e83964a1d9d40bcb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.10%2Bbuild.259-1.15/fabric-api-0.4.10%2Bbuild.259-1.15.jar
+  0.4.11+build.260-1.15:
+    sha1: 5d2c351bfd1500951049dc12c3e72e75bb0cefca
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.11%2Bbuild.260-1.15/fabric-api-0.4.11%2Bbuild.260-1.15.jar
+  0.4.12+build.261-1.15:
+    sha1: 436ffece4f5c3758a7e3ad0e2731db9602afc4c5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.12%2Bbuild.261-1.15/fabric-api-0.4.12%2Bbuild.261-1.15.jar
+  0.4.13+build.263-1.15:
+    sha1: cfe7b757da4df187fdb51be2902fdc5e9272c05c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.13%2Bbuild.263-1.15/fabric-api-0.4.13%2Bbuild.263-1.15.jar
+  0.4.13+build.264-1.15:
+    sha1: a4596069269f9b91d4d713d8ff8f8ad87ce0f237
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.13%2Bbuild.264-1.15/fabric-api-0.4.13%2Bbuild.264-1.15.jar
+  0.4.14+build.266-1.15:
+    sha1: 50cb67a42cc01b4b92b7bcc41f92db39255f3864
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.14%2Bbuild.266-1.15/fabric-api-0.4.14%2Bbuild.266-1.15.jar
+  0.4.15+build.267-1.15:
+    sha1: 23bee8e3e7f052e8bb0e31fa0c6b8ce0367fe9d7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.15%2Bbuild.267-1.15/fabric-api-0.4.15%2Bbuild.267-1.15.jar
+  0.4.16+build.268-1.15:
+    sha1: f985848b94c4164f13bebd22d4233ae53e3ea9be
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.16%2Bbuild.268-1.15/fabric-api-0.4.16%2Bbuild.268-1.15.jar
+  0.4.16+build.269-1.15:
+    sha1: c59564789be84c9c69658366ad05adef5078a236
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.16%2Bbuild.269-1.15/fabric-api-0.4.16%2Bbuild.269-1.15.jar
+  0.4.18+build.271-1.15:
+    sha1: c733787fdfd098c116aee300dfd7308eeb171cab
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.18%2Bbuild.271-1.15/fabric-api-0.4.18%2Bbuild.271-1.15.jar
+  0.4.19+build.272-1.15:
+    sha1: 994c02e4758dad0c036431cc1deecb858ad64c2c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.19%2Bbuild.272-1.15/fabric-api-0.4.19%2Bbuild.272-1.15.jar
+  0.4.2+build.244-1.15:
+    sha1: ebeed81e9c6375c7c7cc0e13ad8fafab9d3c192e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.2%2Bbuild.244-1.15/fabric-api-0.4.2%2Bbuild.244-1.15.jar
+  0.4.2+build.246-1.14:
+    sha1: 60c5f0ecccab61a54e27f53ee69ef9fcdb6119fa
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.2%2Bbuild.246-1.14/fabric-api-0.4.2%2Bbuild.246-1.14.jar
+  0.4.20+build.273-1.15:
+    sha1: 344a1e60a486e71e9fd85011f5e6ad176c5a660c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.20%2Bbuild.273-1.15/fabric-api-0.4.20%2Bbuild.273-1.15.jar
+  0.4.23+build.276-1.15:
+    sha1: ffd92a6f791715ef4a9900a8017ab18281881bc8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.23%2Bbuild.276-1.15/fabric-api-0.4.23%2Bbuild.276-1.15.jar
+  0.4.24+build.279-1.15:
+    sha1: db3e28c0b84b4e1c792692891b0315cbeb5a4818
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.24%2Bbuild.279-1.15/fabric-api-0.4.24%2Bbuild.279-1.15.jar
+  0.4.25+build.282-1.15:
+    sha1: 3fc2583fe82795f207c6b106bb01e30bb4d77d0b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.25%2Bbuild.282-1.15/fabric-api-0.4.25%2Bbuild.282-1.15.jar
+  0.4.26+build.283-1.15:
+    sha1: dbebb7bff8b8037a85b9fe0062b8ac70a438195d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.26%2Bbuild.283-1.15/fabric-api-0.4.26%2Bbuild.283-1.15.jar
+  0.4.27+build.286-1.15:
+    sha1: b29fa5c45c02619c50cbd3cb51b637c1f7790a72
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.27%2Bbuild.286-1.15/fabric-api-0.4.27%2Bbuild.286-1.15.jar
+  0.4.28+build.288-1.15:
+    sha1: d89db0baa6515b6da8daa97532d81a5eb129df26
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.28%2Bbuild.288-1.15/fabric-api-0.4.28%2Bbuild.288-1.15.jar
+  0.4.29+build.290-1.15:
+    sha1: be06513452097bd4a4f2223dfa092cbb00c202c6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.29%2Bbuild.290-1.15/fabric-api-0.4.29%2Bbuild.290-1.15.jar
+  0.4.3+build.247-1.14:
+    sha1: b256d34ad083b98db3819785d653319e37848b3f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.3%2Bbuild.247-1.14/fabric-api-0.4.3%2Bbuild.247-1.14.jar
+  0.4.3+build.247-1.15:
+    sha1: ac72e8f33754f51461463ecb36859cccd8a890c8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.3%2Bbuild.247-1.15/fabric-api-0.4.3%2Bbuild.247-1.15.jar
+  0.4.30+build.291-1.15:
+    sha1: 0c935043f6deed58b8b6732d6a6c78ca3e73aa61
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.30%2Bbuild.291-1.15/fabric-api-0.4.30%2Bbuild.291-1.15.jar
+  0.4.30+build.294-1.16:
+    sha1: 1347a00a913e4f16ce4642c5a885bcc3fc3987f7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.30%2Bbuild.294-1.16/fabric-api-0.4.30%2Bbuild.294-1.16.jar
+  0.4.31+build.295-1.16:
+    sha1: 057580c2763375aac7779bc0ba6837cbcf169bb3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.31%2Bbuild.295-1.16/fabric-api-0.4.31%2Bbuild.295-1.16.jar
+  0.4.32+build.292-1.15:
+    sha1: 21df7abd5a9cb7ad6f48079be1da18bb0e447cdc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.32%2Bbuild.292-1.15/fabric-api-0.4.32%2Bbuild.292-1.15.jar
+  0.4.32+build.296-1.16:
+    sha1: db482c41dafcfc81d8c59a9cc76cc4f8165057a8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.32%2Bbuild.296-1.16/fabric-api-0.4.32%2Bbuild.296-1.16.jar
+  0.4.33+build.298-1.16:
+    sha1: fd77470826e8cc78b46d33346745675e9b6ebd56
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.33%2Bbuild.298-1.16/fabric-api-0.4.33%2Bbuild.298-1.16.jar
+  0.4.33+build.299-1.16:
+    sha1: 18b6a3a96a2250c32d3cec8f3b8eccfe879c460e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.33%2Bbuild.299-1.16/fabric-api-0.4.33%2Bbuild.299-1.16.jar
+  0.4.33+build.301-1.16:
+    sha1: 6ab93315d60b0c5f5f606dd40ec2840de7a30405
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.33%2Bbuild.301-1.16/fabric-api-0.4.33%2Bbuild.301-1.16.jar
+  0.4.34+build.303-1.16:
+    sha1: 6b3b40c7875435e600209ca6dec3a767892e2126
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.34%2Bbuild.303-1.16/fabric-api-0.4.34%2Bbuild.303-1.16.jar
+  0.4.4+build.248-1.15:
+    sha1: 3ff34a706ee3249c5e45c55079e31742e9c6bf0c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.4%2Bbuild.248-1.15/fabric-api-0.4.4%2Bbuild.248-1.15.jar
+  0.4.5+build.250-1.15:
+    sha1: 3b44685933618c5bad8d9f814cf2b0bee1c2193a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.5%2Bbuild.250-1.15/fabric-api-0.4.5%2Bbuild.250-1.15.jar
+  0.4.6+build.251-1.15:
+    sha1: cc3811cef57651c7463825f847a5801cf56ab846
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.6%2Bbuild.251-1.15/fabric-api-0.4.6%2Bbuild.251-1.15.jar
+  0.4.7+build.252-1.15:
+    sha1: 66570ad1167a380894ab58b6dae89d02ff95c3f0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.7%2Bbuild.252-1.15/fabric-api-0.4.7%2Bbuild.252-1.15.jar
+  0.4.8+build.255-1.15:
+    sha1: 1d5b524850629eee52ffd04cdbdfaad846e952a9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.8%2Bbuild.255-1.15/fabric-api-0.4.8%2Bbuild.255-1.15.jar
+  0.4.9+build.258-1.15:
+    sha1: 22446856d23827e6a5fd2dfcdb1dbb2ac6fba4e6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.4.9%2Bbuild.258-1.15/fabric-api-0.4.9%2Bbuild.258-1.15.jar
+  0.40.0+1.16:
+    sha1: cfd31a94dce94ad6d93eba7d5019e69b03b995f0
+    url: https://cdn.modrinth.com//data/P7dR8mSH/versions/0.40.0%2B1.16/fabric-api-0.40.0%2B1.16.jar
+  0.40.0+1.17:
+    sha1: 4eae6dea6e458b8222a94b36594cb3f72d9f0657
+    url: https://cdn.modrinth.com//data/P7dR8mSH/versions/0.40.0%2B1.17/fabric-api-0.40.0%2B1.17.jar
+  0.40.0+1.18_experimental:
+    sha1: 64cd760f2e49396ba9c8cde0998db7e06075d077
+    url: https://cdn.modrinth.com//data/P7dR8mSH/versions/0.40.0%2B1.18_experimental/fabric-api-0.40.0%2B1.18_experimental.jar
+  0.40.1+1.16:
+    sha1: 897029ea06c2a2fb013890c63dddc43fc39131e3
+    url: https://cdn.modrinth.com//data/P7dR8mSH/versions/0.40.1%2B1.16/fabric-api-0.40.1%2B1.16.jar
+  0.40.1+1.17:
+    sha1: 66b93dd5d4f0425d4479f3727a07735bfb256b5e
+    url: https://cdn.modrinth.com//data/P7dR8mSH/versions/0.40.1%2B1.17/fabric-api-0.40.1%2B1.17.jar
+  0.40.1+1.18_experimental:
+    sha1: e25528d67bac7fa837a23b07afd8bbacc2884306
+    url: https://cdn.modrinth.com//data/P7dR8mSH/versions/0.40.1%2B1.18_experimental/fabric-api-0.40.1%2B1.18_experimental.jar
+  0.40.2+1.18:
+    sha1: b8044e606571eda877bbbb231fd2f3ba3d42c0c6
+    url: https://cdn.modrinth.com//data/P7dR8mSH/versions/0.40.2%2B1.18/fabric-api-0.40.2%2B1.18.jar
+  0.40.3+1.18:
+    sha1: a8238e2107fa292457aff133315923b1a956af92
+    url: https://cdn.modrinth.com//data/P7dR8mSH/versions/0.40.3%2B1.18/fabric-api-0.40.3%2B1.18.jar
+  0.40.4+1.18:
+    sha1: d72579984b4b5602dddd74bb281ef9eb5bcda5ce
+    url: https://cdn.modrinth.com//data/P7dR8mSH/versions/0.40.4%2B1.18/fabric-api-0.40.4%2B1.18.jar
+  0.40.5+1.18:
+    sha1: c7932117755ac4106f2abbc4c4a14e1e4133b45f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.40.5%2B1.18/fabric-api-0.40.5%2B1.18.jar
+  0.40.6+1.16:
+    sha1: 4dc0f2bc177cb96610a5b11d17b46515467ae1b7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.40.6%2B1.16/fabric-api-0.40.6%2B1.16.jar
+  0.40.6+1.17:
+    sha1: e4f8a64c68beed158e227eb398e118d9156e36bc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.40.6%2B1.17/fabric-api-0.40.6%2B1.17.jar
+  0.40.6+1.18:
+    sha1: fdd3e80e7e7fd392488a6d2f9b2a3dc3351c65a0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.40.6%2B1.18/fabric-api-0.40.6%2B1.18.jar
+  0.40.7+1.18:
+    sha1: ad5174dc307b4559dce9142a11f4a4528db27b76
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.40.7%2B1.18/fabric-api-0.40.7%2B1.18.jar
+  0.40.8+1.17:
+    sha1: 8577c8f21d3e9b33f01e2b82f8bff5c63c043f61
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.40.8%2B1.17/fabric-api-0.40.8%2B1.17.jar
+  0.40.8+1.18:
+    sha1: eafa57aa34432c4c1d0e48dfbae9f533322e1549
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.40.8%2B1.18/fabric-api-0.40.8%2B1.18.jar
+  0.40.9+1.18:
+    sha1: eddf08945b7b19742c19ecbbfb9c0d6e68345f66
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.40.9%2B1.18/fabric-api-0.40.9%2B1.18.jar
+  0.41.0+1.17:
+    sha1: c7d4ae67aa66b7bbdaf532e2a705b538c4de9731
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.41.0%2B1.17/fabric-api-0.41.0%2B1.17.jar
+  0.41.0+1.18:
+    sha1: e33a588546331cb60fcb18b2fcc310eb54ec64cc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.41.0%2B1.18/fabric-api-0.41.0%2B1.18.jar
+  0.41.1+1.18:
+    sha1: 25104469cc7d8e116fa1cfdd28f1565e9947b3eb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.41.1%2B1.18/fabric-api-0.41.1%2B1.18.jar
+  0.41.2+1.18:
+    sha1: ac53e29f853e724316f05543a99e02bec660d60e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.41.2%2B1.18/fabric-api-0.41.2%2B1.18.jar
+  0.41.3+1.16:
+    sha1: 850334756710dc4dff476c05e1c03547ed5debed
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.41.3%2B1.16/fabric-api-0.41.3%2B1.16.jar
+  0.41.3+1.17:
+    sha1: 5620cfdfec5df00559fe9a78894dab9939959bbb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.41.3%2B1.17/fabric-api-0.41.3%2B1.17.jar
+  0.41.3+1.18:
+    sha1: b692b17e48b0b8a7702450329075567c34e8efdc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.41.3%2B1.18/fabric-api-0.41.3%2B1.18.jar
+  0.41.4+1.18:
+    sha1: 5495341844b7ce664a7000333b23556605784746
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.41.4%2B1.18/fabric-api-0.41.4%2B1.18.jar
+  0.42.0+1.16:
+    sha1: 54970c87bc1cf0bb93df57ec3a0b3bbb67c7ab0c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.0%2B1.16/fabric-api-0.42.0%2B1.16.jar
+  0.42.0+1.17:
+    sha1: e5fbbad5ac8adcbf2506735030fae1bb462a471e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.0%2B1.17/fabric-api-0.42.0%2B1.17.jar
+  0.42.0+1.18:
+    sha1: bde4a0c94b110a0e7fbc5fffef338efc60011df7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.0%2B1.18/fabric-api-0.42.0%2B1.18.jar
+  0.42.1+1.17:
+    sha1: 75e10e0ffed56e94c12c3fc1466e0d431ea3d5a8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.1%2B1.17/fabric-api-0.42.1%2B1.17.jar
+  0.42.1+1.18:
+    sha1: fc2bb0a063d63841a238bae67ff9a9c42c5bc06f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.1%2B1.18/fabric-api-0.42.1%2B1.18.jar
+  0.42.2+1.18:
+    sha1: 6af0b1fbd959d8bc0919127c1be6fe7e5f696414
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.2%2B1.18/fabric-api-0.42.2%2B1.18.jar
+  0.42.4+1.18:
+    sha1: 01096900394d1f731b726af3d1d87b9b6bd62fa7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.4%2B1.18/fabric-api-0.42.4%2B1.18.jar
+  0.42.5+1.18:
+    sha1: 968e7d8d95d1344ae95cd8ff11cf6317a28beeb4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.5%2B1.18/fabric-api-0.42.5%2B1.18.jar
+  0.42.6+1.18:
+    sha1: cfaa596f78882390c25d3e2daf7c06529225ec9b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.6%2B1.18/fabric-api-0.42.6%2B1.18.jar
+  0.42.7+1.18:
+    sha1: b0886e2dd6409e8790860af3dc4986b0aaf9032a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.7%2B1.18/fabric-api-0.42.7%2B1.18.jar
+  0.42.8+1.18:
+    sha1: 85545a80ed694243c4109bd5d2d2fddcfa8cdd37
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.8%2B1.18/fabric-api-0.42.8%2B1.18.jar
+  0.42.9+1.18:
+    sha1: b4fff864afc8b935bab661291816168f6207b210
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.42.9%2B1.18/fabric-api-0.42.9%2B1.18.jar
+  0.43.0+1.17:
+    sha1: ba0dd81e4e78f7da9e8de7269b9ff66a155c9cba
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.43.0%2B1.17/fabric-api-0.43.0%2B1.17.jar
+  0.43.0+1.18:
+    sha1: 7db95e751b6ffbd54f1938569828f4ce25f75293
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.43.0%2B1.18/fabric-api-0.43.0%2B1.18.jar
+  0.43.1+1.17:
+    sha1: 75544ae889fcedc2ef24816f891177f31ad3a393
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.43.1%2B1.17/fabric-api-0.43.1%2B1.17.jar
+  0.43.1+1.18:
+    sha1: 64c18d4e9378bfad2aa1e8c764e54725de1d7534
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.43.1%2B1.18/fabric-api-0.43.1%2B1.18.jar
+  0.44.0+1.17:
+    sha1: e3dfc16357b5e9037696c386143081c155ae8a76
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.44.0%2B1.17/fabric-api-0.44.0%2B1.17.jar
+  0.44.0+1.18:
+    sha1: 3bd3ad0e60c7f58761fdac6512b45ab3102d6eae
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.44.0%2B1.18/fabric-api-0.44.0%2B1.18.jar
+  0.45.0+1.17:
+    sha1: ab3f4fa83517b30c47bfc488e1c0177034c6ded8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.45.0%2B1.17/fabric-api-0.45.0%2B1.17.jar
+  0.45.0+1.18:
+    sha1: 23cca3b5a4f57adbd46dbdcf198759932c001db1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.45.0%2B1.18/fabric-api-0.45.0%2B1.18.jar
+  0.45.1+1.17:
+    sha1: 77d94330c01ad50fc8ae43661be0af6dc1c969e5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.45.1%2B1.17/fabric-api-0.45.1%2B1.17.jar
+  0.45.1+1.18:
+    sha1: 2fc9ddbeac6eebc77c30f53d1d54a41a055c5c8c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.45.1%2B1.18/fabric-api-0.45.1%2B1.18.jar
+  0.45.2+1.17:
+    sha1: b151ff6dd0f7ab5ffb5d34b54d63c13886f0cd4f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.45.2%2B1.17/fabric-api-0.45.2%2B1.17.jar
+  0.45.2+1.18:
+    sha1: 4101b6e80e42fcf766d0c7a13555ff51593e492c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.45.2%2B1.18/fabric-api-0.45.2%2B1.18.jar
+  0.46.0+1.17:
+    sha1: feb4325821adddf3f7fb5d6759493297075e442c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.46.0%2B1.17/fabric-api-0.46.0%2B1.17.jar
+  0.46.0+1.18:
+    sha1: 2c13860bb9010c0d1e801bd6995c643bdba3a999
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.46.0%2B1.18/fabric-api-0.46.0%2B1.18.jar
+  0.46.1+1.17:
+    sha1: a7d86f36c5b27bdb0008a84c3ce91e2b095a2834
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.46.1%2B1.17/fabric-api-0.46.1%2B1.17.jar
+  0.46.1+1.18:
+    sha1: 9fbd31c83bde00d574e5def7b262beb4b2eb507b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.46.1%2B1.18/fabric-api-0.46.1%2B1.18.jar
+  0.46.2+1.18:
+    sha1: 54c9ee9ab6affaec8294f89569fbbf19113dc6dc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.46.2%2B1.18/fabric-api-0.46.2%2B1.18.jar
+  0.46.3+1.18:
+    sha1: bdaa6560dc8b2edb4139218a4634a8cfa89f065e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.46.3%2B1.18/fabric-api-0.46.3%2B1.18.jar
+  0.46.4+1.18:
+    sha1: 23859ea5555187d5f95441815929ab5b3b53f8fe
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.46.4%2B1.18/fabric-api-0.46.4%2B1.18.jar
+  0.46.5+1.19_experimental:
+    sha1: b509f83e318fee620a62312d2f7d997bbc7f0a14
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.46.5%2B1.19_experimental/fabric-api-0.46.5%2B1.19_experimental.jar
+  0.46.6+1.18:
+    sha1: c73a64983ee850cda3b98e6bff9831fa6e9260b6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.46.6%2B1.18/fabric-api-0.46.6%2B1.18.jar
+  0.46.6+1.19-experimental:
+    sha1: 4a049648e52d4b7dfd4a9488514153847b213541
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.46.6%2B1.19-experimental/fabric-api-0.46.6%2B1.19-experimental.jar
+  0.47.0+1.18.2:
+    sha1: 7680cd587d90d6b23f6cb8835f57758dcf369022
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.0%2B1.18.2/fabric-api-0.47.0%2B1.18.2.jar
+  0.47.1+1.18.2:
+    sha1: 9b5cd8c7caea11807deddbdb2cc19ff2fde32193
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.1%2B1.18.2/fabric-api-0.47.1%2B1.18.2.jar
+  0.47.10+1.18.2:
+    sha1: ff78c08167a3e4ea68c63dd17a2236662f98aefd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.10%2B1.18.2/fabric-api-0.47.10%2B1.18.2.jar
+  0.47.2+1.18.2:
+    sha1: f8ef137acc409c9c9914e949c54575bc833dfa47
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.2%2B1.18.2/fabric-api-0.47.2%2B1.18.2.jar
+  0.47.3+1.18.2:
+    sha1: 4502b5d017d97f1ff3519f522de352f94088bf86
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.3%2B1.18.2/fabric-api-0.47.3%2B1.18.2.jar
+  0.47.4+1.18.2:
+    sha1: c0ce686293d87f5eab68ee0c924d27c45ed527be
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.4%2B1.18.2/fabric-api-0.47.4%2B1.18.2.jar
+  0.47.5+1.18.2:
+    sha1: c361f36b0d4c4a36bf19992d5193fdfc95f3d6cf
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.5%2B1.18.2/fabric-api-0.47.5%2B1.18.2.jar
+  0.47.6+1.18.2:
+    sha1: 99876a30f43ea48695c77669f963667ecc6884ef
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.6%2B1.18.2/fabric-api-0.47.6%2B1.18.2.jar
+  0.47.7+1.18.2:
+    sha1: 93c4b3dc566805e6dcb7ece37898ca3dbb8f0f95
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.7%2B1.18.2/fabric-api-0.47.7%2B1.18.2.jar
+  0.47.8+1.18.2:
+    sha1: 62d527496132a2c88b3fc1bf29e80a315cdb7c2a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.8%2B1.18.2/fabric-api-0.47.8%2B1.18.2.jar
+  0.47.9+1.18.2:
+    sha1: 632969d52d4f0514d1d13eeb7560d0aa7f268460
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.47.9%2B1.18.2/fabric-api-0.47.9%2B1.18.2.jar
+  0.48.0+1.18.2:
+    sha1: cead4972f34ec8f2c97813b9824f2a2b02e8fde9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.48.0%2B1.18.2/fabric-api-0.48.0%2B1.18.2.jar
+  0.48.1+22w13oneblockatatime:
+    sha1: d6e4887f06714eef395e8fa69d27beb32f92e906
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.48.1%2B22w13oneblockatatime/fabric-api-0.48.1%2B22w13oneblockatatime.jar
+  0.49.0+1.19:
+    sha1: beafd9202efb4e97d9313f07bd5070fc4f60166f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.49.0%2B1.19/fabric-api-0.49.0%2B1.19.jar
+  0.49.1+1.19:
+    sha1: dfc32d93fa7358ffe82bbf79a0d98ac4a760b39e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.49.1%2B1.19/fabric-api-0.49.1%2B1.19.jar
+  0.49.2+1.19:
+    sha1: 1d4095be050eb6f0a8ba0073b5089be5f8700939
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.49.2%2B1.19/fabric-api-0.49.2%2B1.19.jar
+  0.49.3+1.19:
+    sha1: 27018e8b485375e6ab75855522e428d9066a61aa
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.49.3%2B1.19/fabric-api-0.49.3%2B1.19.jar
+  0.49.4+1.19:
+    sha1: 7a1e9fc2b3bcd91ed05684c74f1e4c02157efafb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.49.4%2B1.19/fabric-api-0.49.4%2B1.19.jar
+  0.49.5+1.19:
+    sha1: 4285a87fba30514394c0003f42eeefd11af4bb78
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.49.5%2B1.19/fabric-api-0.49.5%2B1.19.jar
+  0.49.6+1.19:
+    sha1: 236b1511fb5774d3b70cfeb7f54e1c92e50de28d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.49.6%2B1.19/fabric-api-0.49.6%2B1.19.jar
+  0.5.0+build.293-1.15:
+    sha1: 6367114b376d099de07b62e1b615793ed370f5e9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.0%2Bbuild.293-1.15/fabric-api-0.5.0%2Bbuild.293-1.15.jar
+  0.5.0+build.304-1.16:
+    sha1: 384c80f95382d2f16cae4da020dc142f870cfec1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.0%2Bbuild.304-1.16/fabric-api-0.5.0%2Bbuild.304-1.16.jar
+  0.5.1+build.294-1.15:
+    sha1: 82ae960050d74c1b4e71aed906db3e4a203e7778
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.1%2Bbuild.294-1.15/fabric-api-0.5.1%2Bbuild.294-1.15.jar
+  0.5.1+build.305-1.16:
+    sha1: dbb3ae626d1f952d5f8eba8a38c0b00c7594c5e2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.1%2Bbuild.305-1.16/fabric-api-0.5.1%2Bbuild.305-1.16.jar
+  0.5.10+build.320-1.16:
+    sha1: a09079ab49729a7a8bd9a63e10da2716f0db915c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.10%2Bbuild.320-1.16/fabric-api-0.5.10%2Bbuild.320-1.16.jar
+  0.5.11+build.322-1.16:
+    sha1: f1da2713ff554e589947e6046c7bbd24f095e6d5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.11%2Bbuild.322-1.16/fabric-api-0.5.11%2Bbuild.322-1.16.jar
+  0.5.12+build.249-1.14:
+    sha1: e31015885df910bd0d94ee4acc3c303c6cd8bc8d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.12%2Bbuild.249-1.14/fabric-api-0.5.12%2Bbuild.249-1.14.jar
+  0.5.12+build.296-1.15:
+    sha1: 47634e1976a270384b726e97c46cf5a3ab049065
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.12%2Bbuild.296-1.15/fabric-api-0.5.12%2Bbuild.296-1.15.jar
+  0.5.12+build.323-1.16:
+    sha1: b63d1ed9c989df7bd7337fdaae6bfd109988fc67
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.12%2Bbuild.323-1.16/fabric-api-0.5.12%2Bbuild.323-1.16.jar
+  0.5.13+build.297-1.15:
+    sha1: 56d8179b336cd540f08fd156454a02153c0cca2e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.13%2Bbuild.297-1.15/fabric-api-0.5.13%2Bbuild.297-1.15.jar
+  0.5.13+build.324-1.16:
+    sha1: 22b15c37090ceeb30f50e9bc12cf328d492c2834
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.13%2Bbuild.324-1.16/fabric-api-0.5.13%2Bbuild.324-1.16.jar
+  0.5.2+build.306-1.16:
+    sha1: 1ef31770973632b368383cde30b69c01c8efb44d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.2%2Bbuild.306-1.16/fabric-api-0.5.2%2Bbuild.306-1.16.jar
+  0.5.3+build.308-1.16:
+    sha1: 6d1a3c8a8d2581736350d4cd8783a0e2556865f6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.3%2Bbuild.308-1.16/fabric-api-0.5.3%2Bbuild.308-1.16.jar
+  0.5.4+build.310-1.16:
+    sha1: 6c3a25ccff64531e57899061fad2fc7ea8c8ae7d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.4%2Bbuild.310-1.16/fabric-api-0.5.4%2Bbuild.310-1.16.jar
+  0.5.5+build.311-1.16:
+    sha1: 1413d859ae1ec3f39871a1c3df50b6f580272187
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.5%2Bbuild.311-1.16/fabric-api-0.5.5%2Bbuild.311-1.16.jar
+  0.5.6+build.313-1.16:
+    sha1: d7a2717cae0b9e6f15875e374f712bc539eaa6a8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.6%2Bbuild.313-1.16/fabric-api-0.5.6%2Bbuild.313-1.16.jar
+  0.5.7+build.2-20w14infinite:
+    sha1: 3f7b772395f39c795eb40bcb6059b92b2b64382e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.7%2Bbuild.2-20w14infinite/fabric-api-0.5.7%2Bbuild.2-20w14infinite.jar
+  0.5.7+build.314-1.16:
+    sha1: dc8c702626f35fffa0e075de76aa102295b44ee6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.7%2Bbuild.314-1.16/fabric-api-0.5.7%2Bbuild.314-1.16.jar
+  0.5.8+build.316-1.16:
+    sha1: c53eec3684cb5656c5e4bb5ddf3fcef7b24ab306
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.8%2Bbuild.316-1.16/fabric-api-0.5.8%2Bbuild.316-1.16.jar
+  0.5.9+build.319-1.16:
+    sha1: d3d26d6388bd40590e260c89e3db7ffa0f9df3ee
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.5.9%2Bbuild.319-1.16/fabric-api-0.5.9%2Bbuild.319-1.16.jar
+  0.50.0+1.18.2:
+    sha1: 994c82605fb3fd247791456a8271abd3e6f17a6f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.50.0%2B1.18.2/fabric-api-0.50.0%2B1.18.2.jar
+  0.50.0+1.19:
+    sha1: a6a35e2692ff0cc5944320bbf14bd7060439940b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.50.0%2B1.19/fabric-api-0.50.0%2B1.19.jar
+  0.50.1+1.19:
+    sha1: 2fc8af6f816b7d5c4717f5d8b8d2d02116d7558b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.50.1%2B1.19/fabric-api-0.50.1%2B1.19.jar
+  0.51.0+1.18.2:
+    sha1: cf726880c79f58c63d4e7d290e414964c668c2b1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.51.0%2B1.18.2/fabric-api-0.51.0%2B1.18.2.jar
+  0.51.0+1.19:
+    sha1: 39e8e5fb1c7aee90836f6b0dfe200cb3d68957d1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.51.0%2B1.19/fabric-api-0.51.0%2B1.19.jar
+  0.51.1+1.18.2:
+    sha1: fe3c0fcd92a46632a69e5d17cc0f2b7a37c877f4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.51.1%2B1.18.2/fabric-api-0.51.1%2B1.18.2.jar
+  0.51.1+1.19:
+    sha1: 814b664d1ddeb2a9b48741ea300d72f9bc67ffa2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.51.1%2B1.19/fabric-api-0.51.1%2B1.19.jar
+  0.51.2+1.19:
+    sha1: 294d89214e1c5107316438b944da7e2db690638e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.51.2%2B1.19/fabric-api-0.51.2%2B1.19.jar
+  0.51.3+1.19:
+    sha1: 0a6e9410f5058bbcadaa2bd950b9d0b705acada8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.51.3%2B1.19/fabric-api-0.51.3%2B1.19.jar
+  0.52.0+1.19:
+    sha1: a920ff663427fff46f6b526dad101ceab0d9737d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.52.0%2B1.19/fabric-api-0.52.0%2B1.19.jar
+  0.52.1+1.19:
+    sha1: 198d843cf8f9ccef80f9c11ac02354d7542ff64d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.52.1%2B1.19/fabric-api-0.52.1%2B1.19.jar
+  0.52.2+1.19:
+    sha1: ab6a1c09bd02e5956109404b46333ffa69d16344
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.52.2%2B1.19/fabric-api-0.52.2%2B1.19.jar
+  0.52.3+1.19:
+    sha1: 8aa4d52db4794a8fa869559999c90e9d245bcbdf
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.52.3%2B1.19/fabric-api-0.52.3%2B1.19.jar
+  0.52.4+1.19:
+    sha1: f7e7126a0ae14637f32b122ee6d0ff68512bc683
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.52.4%2B1.19/fabric-api-0.52.4%2B1.19.jar
+  0.53.0+1.18.2:
+    sha1: 9763a1588fe73c36a4d15f98d974240ec7e5ad6b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.53.0%2B1.18.2/fabric-api-0.53.0%2B1.18.2.jar
+  0.53.0+1.19:
+    sha1: cf732f794c06ce1ef28b9c6357443c398bed39de
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.53.0%2B1.19/fabric-api-0.53.0%2B1.19.jar
+  0.53.1+1.19:
+    sha1: fda165e0f3fd686d99ad86dded778b53a7e08d5b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.53.1%2B1.19/fabric-api-0.53.1%2B1.19.jar
+  0.53.2+1.19:
+    sha1: 4e29c88b54d7555ad4921dde7612cec7461eb7c1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.53.2%2B1.19/fabric-api-0.53.2%2B1.19.jar
+  0.53.3+1.18.2:
+    sha1: 5ae8fbf0d452bf2caab0342797687f60dfe99a37
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.53.3%2B1.18.2/fabric-api-0.53.3%2B1.18.2.jar
+  0.53.3+1.19:
+    sha1: 34beed6fb2dd7d0cd6a654d527af043d5dd61f21
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.53.3%2B1.19/fabric-api-0.53.3%2B1.19.jar
+  0.53.4+1.18.2:
+    sha1: 2c9e471060f23a4b5ae49e3ccbf27fae1ad10a76
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.53.4%2B1.18.2/fabric-api-0.53.4%2B1.18.2.jar
+  0.53.4+1.19:
+    sha1: dc7dde26996a5c30687df981afc044ab72419256
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.53.4%2B1.19/fabric-api-0.53.4%2B1.19.jar
+  0.54.0+1.18.2:
+    sha1: bb41e2af744336c3c2c94a723fa7d73e37099aa0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.54.0%2B1.18.2/fabric-api-0.54.0%2B1.18.2.jar
+  0.54.0+1.19:
+    sha1: 337ee7968e63f3013f499f276c56117298adf359
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.54.0%2B1.19/fabric-api-0.54.0%2B1.19.jar
+  0.55.0+1.19:
+    sha1: ddcbf487c43aa87b7ec61de70d0a13fe39eefb80
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.55.0%2B1.19/fabric-api-0.55.0%2B1.19.jar
+  0.55.1+1.18.2:
+    sha1: bc53e100988e2e7535574a62bd78ea7152b959ef
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.55.1%2B1.18.2/fabric-api-0.55.1%2B1.18.2.jar
+  0.55.1+1.19:
+    sha1: 9a3ea1283f4d69669c5c969c626f62ff9ccac4d9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.55.1%2B1.19/fabric-api-0.55.1%2B1.19.jar
+  0.55.2+1.19:
+    sha1: 3c7028ef506551701e0bdc894e9c44c8e64f606b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.55.2%2B1.19/fabric-api-0.55.2%2B1.19.jar
+  0.55.3+1.19:
+    sha1: 3632c08137f87e86d8aaa6a613876eb234d1c5f1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.55.3%2B1.19/fabric-api-0.55.3%2B1.19.jar
+  0.56.0+1.18.2:
+    sha1: cda8c4d6c0ab42efbc2e5c10ad06cbab563bc728
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.56.0%2B1.18.2/fabric-api-0.56.0%2B1.18.2.jar
+  0.56.0+1.19:
+    sha1: 2a5fee56f601cb61b704ac0d8740ccde5b12a9c7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.56.0%2B1.19/fabric-api-0.56.0%2B1.19.jar
+  0.56.1+1.18.2:
+    sha1: f24fae6a7065a769692f7a0eea5369be0eb0aacf
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.56.1%2B1.18.2/fabric-api-0.56.1%2B1.18.2.jar
+  0.56.1+1.19:
+    sha1: 2315995af8670f7fdb8e66132de9b1aa2d3f146e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.56.1%2B1.19/fabric-api-0.56.1%2B1.19.jar
+  0.56.2+1.19:
+    sha1: 397faf4927eff0d6e25eb26f93c58b38effb1f54
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.56.2%2B1.19/fabric-api-0.56.2%2B1.19.jar
+  0.56.3+1.19:
+    sha1: aae0aee8ac19191abc7071468ca19d2e10344b3d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.56.3%2B1.19/fabric-api-0.56.3%2B1.19.jar
+  0.57.0+1.18.2:
+    sha1: 2b655ba701fe8b0f25b1dad246db01e9664dbf49
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.57.0%2B1.18.2/fabric-api-0.57.0%2B1.18.2.jar
+  0.57.0+1.19:
+    sha1: a9bd5c5701b1126276a175291e3bfe6e26c7cd2b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.57.0%2B1.19/fabric-api-0.57.0%2B1.19.jar
+  0.57.1+1.19.1:
+    sha1: 82d1e2b3b3986a477ba9f8543c24b6264c911462
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.57.1%2B1.19.1/fabric-api-0.57.1%2B1.19.1.jar
+  0.57.2+1.19.1:
+    sha1: 62b907bf308c3f23bcc1c010343017355066b728
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.57.2%2B1.19.1/fabric-api-0.57.2%2B1.19.1.jar
+  0.57.3+1.19.1:
+    sha1: e2bdcac3b4f896457907d49b78190db9e436e662
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.57.3%2B1.19.1/fabric-api-0.57.3%2B1.19.1.jar
+  0.58.0+1.18.2:
+    sha1: b9ab9ab267f8cdff525f9a8edb26435d3e2455f6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.58.0%2B1.18.2/fabric-api-0.58.0%2B1.18.2.jar
+  0.58.0+1.19:
+    sha1: 6d29acc99b293b2be7060df6d7c887812bd54e46
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.58.0%2B1.19/fabric-api-0.58.0%2B1.19.jar
+  0.58.0+1.19.1:
+    sha1: 76505024d03664aaa5747320cb76d754a3abbbc0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.58.0%2B1.19.1/fabric-api-0.58.0%2B1.19.1.jar
+  0.58.1+1.19.1:
+    sha1: fa72c04cc93faac1950901ef14f2fdfb7f56acc7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.58.1%2B1.19.1/fabric-api-0.58.1%2B1.19.1.jar
+  0.58.2+1.19.1:
+    sha1: 0e8f6f90054ffdeec06fdc71ffbba34465048155
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.58.2%2B1.19.1/fabric-api-0.58.2%2B1.19.1.jar
+  0.58.3+1.19.1:
+    sha1: 5c74c8684420fe371b491c963e5ea56bc8c5d840
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.58.3%2B1.19.1/fabric-api-0.58.3%2B1.19.1.jar
+  0.58.4+1.19.1:
+    sha1: 43d84a68c5ce306989afaaa391f198356847bbd7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.58.4%2B1.19.1/fabric-api-0.58.4%2B1.19.1.jar
+  0.58.5+1.19.1:
+    sha1: c758f5dfadf35a9ab4f7f688094d599e30b2cbdb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.58.5%2B1.19.1/fabric-api-0.58.5%2B1.19.1.jar
+  0.58.6+1.19.2:
+    sha1: 8e73d8015382496f93f5215fe6b16c41f1d230a2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.58.6%2B1.19.2/fabric-api-0.58.6%2B1.19.2.jar
+  0.59.0+1.18.2:
+    sha1: b2e9f40e773851f43328bd87a4eab7b625ea4f07
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/BC3dQECI/fabric-api-0.59.0%2B1.18.2.jar
+  0.59.0+1.19.2:
+    sha1: d2254514b5c41fae491839045769601c51c546db
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.59.0%2B1.19.2/fabric-api-0.59.0%2B1.19.2.jar
+  0.59.1+1.18.2:
+    sha1: 68f035b2ccf8922efed420d56517d030355c38e9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/gjysTPsx/fabric-api-0.59.1%2B1.18.2.jar
+  0.6.0+build.298-1.15:
+    sha1: 63c4fbe38fbaf1bdf3968d388248aabcf14814d8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.6.0%2Bbuild.298-1.15/fabric-api-0.6.0%2Bbuild.298-1.15.jar
+  0.6.0+build.325-1.16:
+    sha1: 22083429118c54370977344bf706ef4518b092f9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.6.0%2Bbuild.325-1.16/fabric-api-0.6.0%2Bbuild.325-1.16.jar
+  0.6.2+build.327-1.16:
+    sha1: abfb583c110ac487fe55b943199345202ee6e411
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.6.2%2Bbuild.327-1.16/fabric-api-0.6.2%2Bbuild.327-1.16.jar
+  0.60.0+1.19.2:
+    sha1: f50871a5552f12055b9d3f569ae4d1e914cda227
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.60.0%2B1.19.2/fabric-api-0.60.0%2B1.19.2.jar
+  0.61.0+1.19.2:
+    sha1: 33bcdba60c1f4b201f8033da1a287de970928101
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/XV9QDCar/fabric-api-0.61.0%2B1.19.2.jar
+  0.62.0+1.19.2:
+    sha1: 25a4d08f232706a10ef0835f3d5844ce2ddd2ad1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/uLpYu4FP/fabric-api-0.62.0%2B1.19.2.jar
+  0.63.0+1.19.2:
+    sha1: 2cb0e1c7db68751eb01a992d77284ac0c9353194
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/hjQL60eb/fabric-api-0.63.0%2B1.19.2.jar
+  0.64.0+1.19.2:
+    sha1: be9700fc86ae93f21b0a8775a5824eaaedff05a7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/9nx74dYD/fabric-api-0.64.0%2B1.19.2.jar
+  0.65.0+1.19.3:
+    sha1: 3db0320890632126193bebaab1dfaf7116ce396d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/lfbnci9q/fabric-api-0.65.0%2B1.19.3.jar
+  0.65.1+1.19.3:
+    sha1: 613407a5e99374827e330131e2222f0a9b6d43e5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/v5jQhQ10/fabric-api-0.65.1%2B1.19.3.jar
+  0.65.2+1.19.3:
+    sha1: 644be69a6fd8e7ca8d0bc2d2b8c638da5838b7c0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/yTwwfX8B/fabric-api-0.65.2%2B1.19.3.jar
+  0.65.3+1.19.3:
+    sha1: 2a1e4ac34bcb0eb7a75ec3ee3008bd1aa793a667
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Yq33fioO/fabric-api-0.65.3%2B1.19.3.jar
+  0.66.0+1.18.2:
+    sha1: 0aeb57c450e772396aba4aca1a079b7bc7d6a6f5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/yQIU5REa/fabric-api-0.66.0%2B1.18.2.jar
+  0.66.0+1.19.2:
+    sha1: bb8b91dde3d3140a3b8e83b0d2631d9e9e73e2ff
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/8rIblgME/fabric-api-0.66.0%2B1.19.2.jar
+  0.66.0+1.19.3:
+    sha1: 68070dc35121e78b9932958adb53210350cc2a80
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Uxjomqbn/fabric-api-0.66.0%2B1.19.3.jar
+  0.66.1+1.19.3:
+    sha1: 819dc59f7e3d0cddbdcaa07bce5ae516495f1102
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/IbqSWauI/fabric-api-0.66.1%2B1.19.3.jar
+  0.66.2+1.19.3:
+    sha1: 6a61ab8445231113fc82c874da0e75a107374109
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/w4AD78Aa/fabric-api-0.66.2%2B1.19.3.jar
+  0.66.3+1.19.3:
+    sha1: 6cfb9d593cedab89103c3dc8c54bc1cec79c161a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/hFVWjqsX/fabric-api-0.66.3%2B1.19.3.jar
+  0.66.4+1.19.3:
+    sha1: 8f0c22992b62991efd1ec4890ced46ad4188fcab
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/5GqVAvvY/fabric-api-0.66.4%2B1.19.3.jar
+  0.67.0+1.18.2:
+    sha1: 31174f7510f15ceddd3b449da4bffc0c2c589a4b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/YDlOLdpm/fabric-api-0.67.0%2B1.18.2.jar
+  0.67.0+1.19.2:
+    sha1: 7f8fe33471586644676caa2ff28a765228617b85
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/gugCMs27/fabric-api-0.67.0%2B1.19.2.jar
+  0.67.0+1.19.3:
+    sha1: eb2eee709528452b205ec7d884f73ea0f3567576
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/JDGZPBY3/fabric-api-0.67.0%2B1.19.3.jar
+  0.67.1+1.18.2:
+    sha1: 35757dd45ffeb7e3c362ac285e5a4281ffb521b3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/d6AIXpak/fabric-api-0.67.1%2B1.18.2.jar
+  0.67.1+1.19.2:
+    sha1: 1f21538bb3d1ef459627b37cbec84008f51be36d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/gdGDJ2bh/fabric-api-0.67.1%2B1.19.2.jar
+  0.67.1+1.19.3:
+    sha1: 0653f0413b06e96e59085a0147a5c8837c5a82e0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/4SE1VOoA/fabric-api-0.67.1%2B1.19.3.jar
+  0.67.2+1.19.3:
+    sha1: 3ef41c524a7fccdd4a643f6879d519ca90ef81cd
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/t5sg5W2X/fabric-api-0.67.2%2B1.19.3.jar
+  0.67.3+1.19.3:
+    sha1: 2c231cd0975a6833d72b4283673b7ed090556ef4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/7R87xyfz/fabric-api-0.67.3%2B1.19.3.jar
+  0.67.4+1.19.3:
+    sha1: ffbf7ca216179ae46ed33a52dd9985e0687b062c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/8GHkHEa9/fabric-api-0.67.4%2B1.19.3.jar
+  0.68.0+1.19.2:
+    sha1: bb4d02f261723dd81effd117df9437bfa20dc728
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/BXfHW8Ww/fabric-api-0.68.0%2B1.19.2.jar
+  0.68.0+1.19.3:
+    sha1: b6d2a46385c8bcd9a12c083dc2c82465fbcb05b7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/UYTSD4aj/fabric-api-0.68.0%2B1.19.3.jar
+  0.68.1+1.19.3:
+    sha1: dfa4f9fc54bafbf7b7d4912a75b775788cf3cf79
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/DTb2fq9B/fabric-api-0.68.1%2B1.19.3.jar
+  0.69.0+1.19.2:
+    sha1: 91ccd8078d374160dcbe176512b203fbd3a5e923
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/25Hm7c3j/fabric-api-0.69.0%2B1.19.2.jar
+  0.69.0+1.19.3:
+    sha1: 55218d39e4447c48bab24af539e182beb8ec148f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/U2QS5FNi/fabric-api-0.69.0%2B1.19.3.jar
+  0.69.1+1.19.3:
+    sha1: ee7af0180cb2680dbfd225338c8346af1dc78bc4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/pCfxz2JH/fabric-api-0.69.1%2B1.19.3.jar
+  0.7.0+build.330-1.16:
+    sha1: 849aaf20d89718dc1832e3596148b28ec9240f73
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.7.0%2Bbuild.330-1.16/fabric-api-0.7.0%2Bbuild.330-1.16.jar
+  0.7.1+build.301-1.15:
+    sha1: 70154f7b49821b2933423d1d6e3215f186714094
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.7.1%2Bbuild.301-1.15/fabric-api-0.7.1%2Bbuild.301-1.15.jar
+  0.7.1+build.331-1.16:
+    sha1: d6faf4006a9808db98f67d3a752bdc09f583b877
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.7.1%2Bbuild.331-1.16/fabric-api-0.7.1%2Bbuild.331-1.16.jar
+  0.70.0+1.19.2:
+    sha1: af9d3dc8c1adee121e284d3ca429abfd06f23374
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/mrB7EiW4/fabric-api-0.70.0%2B1.19.2.jar
+  0.70.0+1.19.3:
+    sha1: 4ec17c77c219cde1182079e3a7c3824ef70cf206
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/MtLQsb99/fabric-api-0.70.0%2B1.19.3.jar
+  0.71.0+1.19.2:
+    sha1: 3f2a4b23c5ee54e632c03c2af9b4817b7ca2dd3c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/QL74kcxU/fabric-api-0.71.0%2B1.19.2.jar
+  0.71.0+1.19.3:
+    sha1: 81a022bf1c9205caa654a99f6d1343686c79fd6d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/rcnGIuHL/fabric-api-0.71.0%2B1.19.3.jar
+  0.72.0+1.19.2:
+    sha1: 2c4c698167e23e30a5132a2ef3523a3b0e704352
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/qbOkGdTB/fabric-api-0.72.0%2B1.19.2.jar
+  0.72.0+1.19.3:
+    sha1: d89a3e956e4e42fd4c14f85975df948ab7a519eb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/vWbvdIxT/fabric-api-0.72.0%2B1.19.3.jar
+  0.72.1+1.19.4:
+    sha1: bf5d765d440e1a6d56659de772573a19186cbdd6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/3RABUs9m/fabric-api-0.72.1%2B1.19.4.jar
+  0.73.0+1.19.2:
+    sha1: ff72eca059050bb6d13dbc4e9f140a7e4749612e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/6XyLcjn4/fabric-api-0.73.0%2B1.19.2.jar
+  0.73.0+1.19.3:
+    sha1: f3635ab8d209b2ff5853c3b860d2f560564a2154
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/PbVeub96/fabric-api-0.73.0%2B1.19.3.jar
+  0.73.0+1.19.4:
+    sha1: e3722f625ae9af54e546e76d812738876d2a6b44
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/i7ZuGTZS/fabric-api-0.73.0%2B1.19.4.jar
+  0.73.1+1.19.4:
+    sha1: fac787baf33fc32b731c8b6bfdc3feb1edec8b16
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/jZGQj0SC/fabric-api-0.73.1%2B1.19.4.jar
+  0.73.2+1.19.2:
+    sha1: 7a351ef5e53b4e708172ea0e3b56527a2fd7ffce
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/wRYBRKfJ/fabric-api-0.73.2%2B1.19.2.jar
+  0.73.2+1.19.3:
+    sha1: 91bf7a32f56a74f188804bfef7e28663fecc6c8a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/WJ830YlF/fabric-api-0.73.2%2B1.19.3.jar
+  0.73.2+1.19.4:
+    sha1: 6f3cae0799a29bb350bd26d3c52d5ff9a8c5f263
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/7MPbPZS0/fabric-api-0.73.2%2B1.19.4.jar
+  0.73.3+1.19.4:
+    sha1: 57b0d082b54d7a37f6d3d43c3f1dae63d6ab3a81
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/soTZU9Bz/fabric-api-0.73.3%2B1.19.4.jar
+  0.73.4+1.19.4:
+    sha1: 9e685b781be30b06a897b6eb4c369e785f17bf2b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/HnvZbc6z/fabric-api-0.73.4%2B1.19.4.jar
+  0.73.5+1.19.4:
+    sha1: a4ec62a0befad517ee82c5d0601051dd29aa3b98
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/HJHzm5Yp/fabric-api-0.73.5%2B1.19.4.jar
+  0.74.0+1.19.3:
+    sha1: 119d1710004834d83f34d2b8519aebedba981979
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1ld37x4U/fabric-api-0.74.0%2B1.19.3.jar
+  0.74.0+1.19.4:
+    sha1: a31cd9c3090418c5c8268d51bf6d44ac7652b172
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/7rnoQ392/fabric-api-0.74.0%2B1.19.4.jar
+  0.74.1+1.19.4:
+    sha1: d800d0630873a688ecbc66bfcbceb69d1fe08262
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Sd7u3cNN/fabric-api-0.74.1%2B1.19.4.jar
+  0.74.2+1.19.4:
+    sha1: a801e1b4e9d2ee7bb43fbf1d24b37066c1453ef0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/3EgKhiTb/fabric-api-0.74.2%2B1.19.4.jar
+  0.75.0+1.18.2:
+    sha1: 4c1ce3254a7f899638886d4a482b7894dbfb82ed
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/CeVWqAVr/fabric-api-0.75.0%2B1.18.2.jar
+  0.75.0+1.19.2:
+    sha1: f088148f1fa5229902201c2e035c67442c90e276
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/VOZ8sKAb/fabric-api-0.75.0%2B1.19.2.jar
+  0.75.0+1.19.3:
+    sha1: 4cec62f99aaee7f3af765b225b264a2eb4326dc2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/IzS7xNr6/fabric-api-0.75.0%2B1.19.3.jar
+  0.75.0+1.19.4:
+    sha1: 829d1f68bc88e3b7c7e2e9ef75046e37384deb24
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/sqGaf7I2/fabric-api-0.75.0%2B1.19.4.jar
+  0.75.1+1.18.2:
+    sha1: f84b5b8c851c18f2dd3f9248c86cd0aa1fa7b494
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1cCEN67v/fabric-api-0.75.1%2B1.18.2.jar
+  0.75.1+1.19.2:
+    sha1: 8c39ce0a82cb2b5f9e909f47a61d7825e29ccf05
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/6iOab8Tp/fabric-api-0.75.1%2B1.19.2.jar
+  0.75.1+1.19.3:
+    sha1: f38287aa33a6eb509cfc8658e721110f90fc440f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/nOI7bsDO/fabric-api-0.75.1%2B1.19.3.jar
+  0.75.1+1.19.4:
+    sha1: bed7cb90f96ab4340993c99b063412e560cdca5a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/CMRcHhfl/fabric-api-0.75.1%2B1.19.4.jar
+  0.75.2+1.19.4:
+    sha1: 178de12cf03ea036654d16ff6caa34b746cd3ba0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/R98cmuxG/fabric-api-0.75.2%2B1.19.4.jar
+  0.75.3+1.19.4:
+    sha1: b736d5977d5c32f4049f9fb0d234f481d3d24b98
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/67xsScMW/fabric-api-0.75.3%2B1.19.4.jar
+  0.76.0+1.18.2:
+    sha1: 77a17c7a64ddc2084b3b7a425f5c7c1ad4b50a4c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/95QMsRyb/fabric-api-0.76.0%2B1.18.2.jar
+  0.76.0+1.19.2:
+    sha1: f29a349b29324338ebe3acaa2914637008be15f4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/hfsU4hXq/fabric-api-0.76.0%2B1.19.2.jar
+  0.76.0+1.19.3:
+    sha1: f89b9d8ad3a1864a62e0273374b79d6621f7c22f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/V7gqra8F/fabric-api-0.76.0%2B1.19.3.jar
+  0.76.0+1.19.4:
+    sha1: 3914550ad467d47a3e027a24bf2d51f5f68b2e5a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Pz1hLqTB/fabric-api-0.76.0%2B1.19.4.jar
+  0.76.1+1.19.2:
+    sha1: 1f4ea036c5cdc7931a663deb85abc279d00c81c5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/fO05PwUR/fabric-api-0.76.1%2B1.19.2.jar
+  0.76.1+1.19.3:
+    sha1: cede93b4316b47b58c9697788de9bde5373a7beb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/jyKnHEDY/fabric-api-0.76.1%2B1.19.3.jar
+  0.76.1+1.20:
+    sha1: bc25c2d96b0c332fc217ae2805c5d3d1178433eb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/P8odwADJ/fabric-api-0.76.1%2B1.20.jar
+  0.76.2+1.20:
+    sha1: 2f5f8d6ed491d2229ba35b6644e7dc0b5e1a4cce
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/AaOg5lro/fabric-api-0.76.2%2B1.20.jar
+  0.76.3+23w13a_or_b:
+    sha1: bd51ab0125a29c32cdf8227dbe826afc5d543026
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/TenXkoRu/fabric-api-0.76.3%2B23w13a_or_b.jar
+  0.77.0+1.18.2:
+    sha1: d312b2846af795ee5a99b1ec290f0e023fa48338
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/qk28POfr/fabric-api-0.77.0%2B1.18.2.jar
+  0.77.0+1.19.2:
+    sha1: 558cd912d95c9dec513eb87cc813d3a68aa93fa5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/6g95K303/fabric-api-0.77.0%2B1.19.2.jar
+  0.77.0+1.19.4:
+    sha1: b7b15b1f1fd5c2bcb31180093bf9e76d48824ebb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/9Oj5Kedy/fabric-api-0.77.0%2B1.19.4.jar
+  0.77.0+1.20:
+    sha1: 4ca0e9908e6b6930daaf14fa5c0d891221fa0d9f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/GobJMGkD/fabric-api-0.77.0%2B1.20.jar
+  0.77.1+1.20:
+    sha1: 39dddfb79def0a0505ba5983f0238c7eaa494f33
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/nENKf47R/fabric-api-0.77.1%2B1.20.jar
+  0.77.2+1.20:
+    sha1: 339cd969e9437b8868118d671fee04d248594bba
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/U5yOpfRr/fabric-api-0.77.2%2B1.20.jar
+  0.78.0+1.19.4:
+    sha1: 3e8df96145957b37ea547e523654f7319ea6a921
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/unERf4ZJ/fabric-api-0.78.0%2B1.19.4.jar
+  0.78.0+1.20:
+    sha1: 3d093fc06c410346935f2fd0de6c85e587595aaf
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ThzLBe5M/fabric-api-0.78.0%2B1.20.jar
+  0.78.1+1.20:
+    sha1: 8ba49f8cb94e62b19f290937745f9ff9d5eb2d35
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/E67zJhaF/fabric-api-0.78.1%2B1.20.jar
+  0.79.0+1.19.4:
+    sha1: 86c50d213d062f4fd47fa8b97131384f50a9ad95
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/qvrUMd9Z/fabric-api-0.79.0%2B1.19.4.jar
+  0.79.0+1.20:
+    sha1: bd48d9405fe404ade86504958af103774bb5d371
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/LMabW8IV/fabric-api-0.79.0%2B1.20.jar
+  0.79.1+1.20:
+    sha1: c35d95f0b5479daf6f8414ca7498208a0bd52db3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/xYrkbzlg/fabric-api-0.79.1%2B1.20.jar
+  0.79.2+1.20:
+    sha1: 21ce68302c1f6193a6decf6b7c7524953be07a4a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/OCKrSzAZ/fabric-api-0.79.2%2B1.20.jar
+  0.8.0+build.250-1.14:
+    sha1: f93da4356a9f25cc1c2f19e58961ad8691efdb5c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.8.0%2Bbuild.250-1.14/fabric-api-0.8.0%2Bbuild.250-1.14.jar
+  0.8.0+build.302-1.15:
+    sha1: e7d26e2067ceb236e3d879d8f6a9ebb967cba2c2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.8.0%2Bbuild.302-1.15/fabric-api-0.8.0%2Bbuild.302-1.15.jar
+  0.8.0+build.332-1.16:
+    sha1: 240574157651f3fe0e06b5d6fcb3c8ff4565de74
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.8.0%2Bbuild.332-1.16/fabric-api-0.8.0%2Bbuild.332-1.16.jar
+  0.8.1+build.251-1.14:
+    sha1: cc48544f4add9ed8e603e02312d78b5f2309cca0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.8.1%2Bbuild.251-1.14/fabric-api-0.8.1%2Bbuild.251-1.14.jar
+  0.8.2+build.252-1.14:
+    sha1: 1ad2d42a080aa762cd758273eefc9a3bf06689aa
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.8.2%2Bbuild.252-1.14/fabric-api-0.8.2%2Bbuild.252-1.14.jar
+  0.80.0+1.19.4:
+    sha1: d1e66307336d0c6b99e9457d2088d116183533fe
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/s5UrEfIY/fabric-api-0.80.0%2B1.19.4.jar
+  0.80.0+1.20:
+    sha1: dc41d6119d6783b014408f5158bcb8e6bbe2199b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/6mQyGxQ8/fabric-api-0.80.0%2B1.20.jar
+  0.80.1+1.20:
+    sha1: 0f22361adba630a01ed42b526af47ce6e6ad79fb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/o0y85XuU/fabric-api-0.80.1%2B1.20.jar
+  0.80.2+1.20:
+    sha1: c5a5de9b1876c165550e226283f503a87557d83a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/WM12byEn/fabric-api-0.80.2%2B1.20.jar
+  0.80.3+1.20:
+    sha1: 478cc470e5d37bf739f97f81deda87fcbdc4908b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/W7Sx4qvX/fabric-api-0.80.3%2B1.20.jar
+  0.81.0+1.19.4:
+    sha1: 2e6236d05242ae9bcb97f55ce21e6b4117b9267b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Xru23QG1/fabric-api-0.81.0%2B1.19.4.jar
+  0.81.0+1.20:
+    sha1: 8bce4eacff456818001e8049286be1677341de23
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/xMssmsXr/fabric-api-0.81.0%2B1.20.jar
+  0.81.1+1.19.4:
+    sha1: 15af0813d0522c2137bb4ed2cc46603843bc7169
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/qMk5NmAs/fabric-api-0.81.1%2B1.19.4.jar
+  0.81.1+1.20:
+    sha1: 0681fbf37f9f5dbb92e5135457d25996c6ea534e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/JxkMjQqZ/fabric-api-0.81.1%2B1.20.jar
+  0.81.2+1.20:
+    sha1: de0fad8d113a822ee7e415f7774f1a6bf3a0ca99
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/R0aqiP3n/fabric-api-0.81.2%2B1.20.jar
+  0.81.3+1.20:
+    sha1: 831d7383666f9b80fd2485336d0f44f0d395fb49
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/eONqge2p/fabric-api-0.81.3%2B1.20.jar
+  0.82.0+1.19.4:
+    sha1: 7e97964869f08b387a5d7627341302bcc0b827b1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/B7GygbYq/fabric-api-0.82.0%2B1.19.4.jar
+  0.82.0+1.20:
+    sha1: f99cecee96790a7e2fc17bb92a8745b8ccf574e7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/E6YKBZtg/fabric-api-0.82.0%2B1.20.jar
+  0.82.1+1.20:
+    sha1: 666c967eb2a182584805ffc4ae9a122b35eaad34
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/8aHBU22O/fabric-api-0.82.1%2B1.20.jar
+  0.83.0+1.19.4:
+    sha1: ca5542cce517c26b6672b26bccb527579dc6a5de
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/5U5Y73uW/fabric-api-0.83.0%2B1.19.4.jar
+  0.83.0+1.20:
+    sha1: 3b0bcacbb175ae6adbbb2af203fce3a37189e494
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/n2c5lxAo/fabric-api-0.83.0%2B1.20.jar
+  0.83.0+1.20.1:
+    sha1: 26ca3122ef4186e55fd853d29008275a0de81ff9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/rSrmGeeJ/fabric-api-0.83.0%2B1.20.1.jar
+  0.83.1+1.20.1:
+    sha1: 3616f70a677bd680c9fcced41a2117a9f099c550
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/K1pOTt6K/fabric-api-0.83.1%2B1.20.1.jar
+  0.84.0+1.19.4:
+    sha1: ad82141c6b16c3fc5665a914ad670fe070836452
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/MYvpypD6/fabric-api-0.84.0%2B1.19.4.jar
+  0.84.0+1.20.1:
+    sha1: b6df5dd417d08cfd8565e1ce1a8c1f39219c67fe
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/FLGCXPFi/fabric-api-0.84.0%2B1.20.1.jar
+  0.85.0+1.19.4:
+    sha1: 4a00eb2fccff6e20bfb0d93bf4aa12144bccb3de
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/zn7AQtxP/fabric-api-0.85.0%2B1.19.4.jar
+  0.85.0+1.20.1:
+    sha1: 02ae17b8122b176f2884cae49af440e27bee7161
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/hFdJG9fY/fabric-api-0.85.0%2B1.20.1.jar
+  0.86.0+1.19.4:
+    sha1: 486bd86884ee0b6e271aa2fffaa6c5f5da49a6ae
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/hZp3OTog/fabric-api-0.86.0%2B1.19.4.jar
+  0.86.0+1.20.1:
+    sha1: 830463f54d0ed45f8de5d5dd796846aaa287da12
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/P7fEfdSc/fabric-api-0.86.0%2B1.20.1.jar
+  0.86.1+1.19.4:
+    sha1: 6e82d053bb26959c7080f8a98f4f0f09568ffa26
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/uIYkhRbX/fabric-api-0.86.1%2B1.19.4.jar
+  0.86.1+1.20.1:
+    sha1: 4d7d8e74ec433f384e1e07b91556318802d0b565
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/XheZ9iGK/fabric-api-0.86.1%2B1.20.1.jar
+  0.86.1+1.20.2:
+    sha1: a8c1d47d6d5a60ca74acd38f18c9179fc5ecfa9c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/mQnPDt5N/fabric-api-0.86.1%2B1.20.2.jar
+  0.86.2+1.20.2:
+    sha1: 1d0a9195419578ceca63ccfef6720a95cb682818
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/sIo7d89K/fabric-api-0.86.2%2B1.20.2.jar
+  0.86.3+1.20.2:
+    sha1: 2dc7c62c027549e9e90638d3e7d6be1b950fc30d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/KIPTaPqJ/fabric-api-0.86.3%2B1.20.2.jar
+  0.87.0+1.19.4:
+    sha1: 240e4b81231005d72ccd62a068fc68e86bad87a0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/LKgVmlZB/fabric-api-0.87.0%2B1.19.4.jar
+  0.87.0+1.20.1:
+    sha1: 95fec63d338a8fbe5133a9a5054eca364c9017ba
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/lcnQpW9C/fabric-api-0.87.0%2B1.20.1.jar
+  0.87.0+1.20.2:
+    sha1: 6ddfe33b3aca7c98e043805d46e02c5fd944a2f6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/27G0kpIF/fabric-api-0.87.0%2B1.20.2.jar
+  0.87.1+1.19.4:
+    sha1: 84f19148833a29fadac9e0405596bcca502d3a53
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Y39HzGbx/fabric-api-0.87.1%2B1.19.4.jar
+  0.87.1+1.20.2:
+    sha1: 0450c1a25631cc166b0382dec0f45d56149a71a3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Tt0NzFL1/fabric-api-0.87.1%2B1.20.2.jar
+  0.87.2+1.19.4:
+    sha1: 586ac174c831da9fd35edce1e36eb14c7f878ce3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/nyAmoHlr/fabric-api-0.87.2%2B1.19.4.jar
+  0.87.2+1.20.2:
+    sha1: b3d9e85da3164758827a38514e755a9304dfc2ec
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/I3OHfQBA/fabric-api-0.87.2%2B1.20.2.jar
+  0.88.0+1.20.1:
+    sha1: 7702ece89db7e330d268c4bed611c3b9408fd112
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/r0FNcItN/fabric-api-0.88.0%2B1.20.1.jar
+  0.88.0+1.20.2:
+    sha1: 574e73b5d8ba3aa78a8dc17dac7d23e95aae293b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Jy5LrolV/fabric-api-0.88.0%2B1.20.2.jar
+  0.88.1+1.20.1:
+    sha1: e85c54a01f173f6cb5e533e66593ea5d65d462a1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/pYtlDijL/fabric-api-0.88.1%2B1.20.1.jar
+  0.88.1+1.20.2:
+    sha1: a32dfdb5201b7525cc44aae942b3fe8425bba938
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/B8hbaMOT/fabric-api-0.88.1%2B1.20.2.jar
+  0.88.2+1.20.2:
+    sha1: df734c97490ccaf63c796d0a29ce4320e4543da4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/QmY4nUvp/fabric-api-0.88.2%2B1.20.2.jar
+  0.88.3+1.20.2:
+    sha1: 8da113b58d3e75e2eda14a660629ba16dd892ddc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ROFwKb90/fabric-api-0.88.3%2B1.20.2.jar
+  0.88.4+1.20.2:
+    sha1: 43aa7019411070ef8bbc0a04228731bcd2f7c1e2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Wp5mH29T/fabric-api-0.88.4%2B1.20.2.jar
+  0.88.5+1.20.2:
+    sha1: 2354bad76498762a9eb30213a30c481ef8f9802e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/F40Zv8vc/fabric-api-0.88.5%2B1.20.2.jar
+  0.89.0+1.20.1:
+    sha1: 0bc5ff2d5df97e2c654789bd5e325d89f9ff883e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1sf8i9fy/fabric-api-0.89.0%2B1.20.1.jar
+  0.89.0+1.20.2:
+    sha1: 10fb444d9bd30be7d1c40a13445c92d545a6bbfb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/DnwAgNmV/fabric-api-0.89.0%2B1.20.2.jar
+  0.89.1+1.20.2:
+    sha1: c921011283ece35f2ead4bbf7d9aaf2270fbbd7a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/lRcC0FRh/fabric-api-0.89.1%2B1.20.2.jar
+  0.89.2+1.20.2:
+    sha1: a008c21963ee7ccf42a4693cb08bcb853079a722
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1Pj9mogm/fabric-api-0.89.2%2B1.20.2.jar
+  0.89.3+1.20.1:
+    sha1: feedfcbad9189ede02940f2a94fa811853df7d0d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/znrh6Yyo/fabric-api-0.89.3%2B1.20.1.jar
+  0.89.3+1.20.2:
+    sha1: de8d59b597ee5bbf1434e495c0cbc3772b1a414a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Hi8quJUM/fabric-api-0.89.3%2B1.20.2.jar
+  0.89.4+1.20.3:
+    sha1: 94fbaec9cbbc3dc308f1fefbf4e7e8ddff576b97
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/tzxGqDe8/fabric-api-0.89.4%2B1.20.3.jar
+  0.9.0+build.303-1.15:
+    sha1: a1f14159b97c87bb8d001bcd2643c7686585e94e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.9.0%2Bbuild.303-1.15/fabric-api-0.9.0%2Bbuild.303-1.15.jar
+  0.9.0+build.334-1.16:
+    sha1: 251f5e3f7b84b372e62d11fe75496ab50bf320af
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/0.9.0%2Bbuild.334-1.16/fabric-api-0.9.0%2Bbuild.334-1.16.jar
+  0.90.0+1.20.1:
+    sha1: 0d770660e6488f21c6e03426a509ced61c1c0519
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/tFw0iWAk/fabric-api-0.90.0%2B1.20.1.jar
+  0.90.0+1.20.2:
+    sha1: 57f3a073dc52365cb6f9b81dc360d1cd3a6c7cc7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Hk8zAzIB/fabric-api-0.90.0%2B1.20.2.jar
+  0.90.0+1.20.3:
+    sha1: 0384909de9a331b60ad15b98ebf4dc9bbe59e3b6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/gaXnTtGJ/fabric-api-0.90.0%2B1.20.3.jar
+  0.90.1+1.20.3:
+    sha1: 2e150369d9a355bebdd1487b55054d7686d42ddc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/837zpBLd/fabric-api-0.90.1%2B1.20.3.jar
+  0.90.10+1.20.3:
+    sha1: 90106ddc0e294a679d3c707a5b9c77e1d097ab1f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ejEanIXC/fabric-api-0.90.10%2B1.20.3.jar
+  0.90.11+1.20.3:
+    sha1: dd6c12839de3e7aaac690f2434f47a84b5d448ef
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Gy5s400X/fabric-api-0.90.11%2B1.20.3.jar
+  0.90.2+1.20.3:
+    sha1: 20fcef63dae3e9a50ddc15d39017235ea36228cc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/fgu4rome/fabric-api-0.90.2%2B1.20.3.jar
+  0.90.3+1.20.3:
+    sha1: e54c09b68df85b9772ba0f936e20c1c94502e28b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1SZKVmdh/fabric-api-0.90.3%2B1.20.3.jar
+  0.90.4+1.20.1:
+    sha1: 2a780521615c2d9fee783e04263a643f4beb2821
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/TpZ2i93f/fabric-api-0.90.4%2B1.20.1.jar
+  0.90.4+1.20.2:
+    sha1: 7d8e2c2729b32e6665e5f671740346ef98283875
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ZI1BEw1i/fabric-api-0.90.4%2B1.20.2.jar
+  0.90.4+1.20.3:
+    sha1: 5e59d4a6f61f3fabdf1a5c54c759fdcd0a853b57
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Og20ksSg/fabric-api-0.90.4%2B1.20.3.jar
+  0.90.5+1.20.3:
+    sha1: 642c1b5e0de0e733dcb96dd55c0848576e0d9229
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/jzcdFzPc/fabric-api-0.90.5%2B1.20.3.jar
+  0.90.6+1.20.3:
+    sha1: b5f07b6b65de2e0c3a407b6f7d4bf8e8e25e8a4a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/8PjIM8Rd/fabric-api-0.90.6%2B1.20.3.jar
+  0.90.7+1.20.1:
+    sha1: 78fa373ca432653de36e2e3c7056b2ef26f7164b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/JXpzzvU6/fabric-api-0.90.7%2B1.20.1.jar
+  0.90.7+1.20.2:
+    sha1: 63d54b41e3dbc3357bd3adc044db4f0df64df141
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/FhOnpSMY/fabric-api-0.90.7%2B1.20.2.jar
+  0.90.7+1.20.3:
+    sha1: 3eac3ddc37b9237f7a033c736f95181fe39f5993
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/BVLAIn5Q/fabric-api-0.90.7%2B1.20.3.jar
+  0.90.8+1.20.3:
+    sha1: 79d90bc1db1e516aa22b2b5faeb0c418f69803fb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/97By7e74/fabric-api-0.90.8%2B1.20.3.jar
+  0.90.9+1.20.3:
+    sha1: 348dd2b6ea9b063c8b25d1667d1263d502cda7fc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/DushQOTf/fabric-api-0.90.9%2B1.20.3.jar
+  0.91.0+1.20.1:
+    sha1: 7ffc72573fb45e172cbc28a71b05481ca7f049d1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/YblXfKtI/fabric-api-0.91.0%2B1.20.1.jar
+  0.91.0+1.20.2:
+    sha1: a2116afcae86c07a72467b1b33f4c8db27871f02
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/mAiJMJSa/fabric-api-0.91.0%2B1.20.2.jar
+  0.91.0+1.20.3:
+    sha1: f05aea85c4eeb6650dfb0580d9af23b8886761f7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/DfUQXHFa/fabric-api-0.91.0%2B1.20.3.jar
+  0.91.1+1.20.1:
+    sha1: 39063f50d93da965a8c3b884982457c9542dc448
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/X7fZBPdI/fabric-api-0.91.1%2B1.20.1.jar
+  0.91.1+1.20.2:
+    sha1: 7ac7ca8a9bf6fd8b6028e1d0426a6d36f36632f2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/qg6wQgub/fabric-api-0.91.1%2B1.20.2.jar
+  0.91.1+1.20.3:
+    sha1: f5441238d7e0a8ed39f2153a15b85c0112910867
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Yolngp3s/fabric-api-0.91.1%2B1.20.3.jar
+  0.91.1+1.20.4:
+    sha1: 7da732cac557b1ecc65b618fd9c79128c504c724
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Uppy4qHd/fabric-api-0.91.1%2B1.20.4.jar
+  0.91.2+1.20.2:
+    sha1: ab4b6a5a9252aa3bc3686b0df78b9637245efdc2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/fdestf2d/fabric-api-0.91.2%2B1.20.2.jar
+  0.91.2+1.20.4:
+    sha1: dd4e591b4d56fa6cd32f6e1b7f2b89361a20afe2
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/yGY1P8Yr/fabric-api-0.91.2%2B1.20.4.jar
+  0.91.3+1.20.2:
+    sha1: 4003ac2597805b19b81697dd225f5531d288828e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/E43lIzib/fabric-api-0.91.3%2B1.20.2.jar
+  0.91.3+1.20.4:
+    sha1: 97e7a40a02f291a618ab7a63d5bd08dbcb50995e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/JQ07mKWY/fabric-api-0.91.3%2B1.20.4.jar
+  0.91.4+1.20.2:
+    sha1: 1c7de623fb3c8b66f13ef6b917513c6e6c1b8c3a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/tWshyEgT/fabric-api-0.91.4%2B1.20.2.jar
+  0.91.4+1.20.5:
+    sha1: aa6e899af49e8dee8e5f70d06cf017c987a6912e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/SfxxnaeS/fabric-api-0.91.4%2B1.20.5.jar
+  0.91.5+1.20.2:
+    sha1: 1c74911ddad27d887b3ed92c1e649014579d9f6a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/p9GxFWDv/fabric-api-0.91.5%2B1.20.2.jar
+  0.91.6+1.20.2:
+    sha1: 7647a59c2b37c673948b0a35961eabac3a5eda96
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/8GVp7wDk/fabric-api-0.91.6%2B1.20.2.jar
+  0.92.0+1.20.1:
+    sha1: 3373057a5049e311557f8c9494b35ef2df88d984
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/YG53rBmj/fabric-api-0.92.0%2B1.20.1.jar
+  0.92.0+1.20.4:
+    sha1: 78d9a79977b8236711c7c4dd5b3e2704a03798fe
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/JMCwDuki/fabric-api-0.92.0%2B1.20.4.jar
+  0.92.0+1.20.5:
+    sha1: 73a68a9f1fde75e1f1b08ac26a2243a631db92e9
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ORqSdnJ8/fabric-api-0.92.0%2B1.20.5.jar
+  0.92.1+1.20.1:
+    sha1: 038ebcc315b5cf18c18f78f2447895dcb2ea9bac
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ba99D9Qf/fabric-api-0.92.1%2B1.20.1.jar
+  0.92.1+1.20.4:
+    sha1: cffd50fa41969c78215266ed1459b1b86eac401a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/cAJWRbQt/fabric-api-0.92.1%2B1.20.4.jar
+  0.92.1+1.20.5:
+    sha1: 7317ecabed3aae3f0ccd0177e99039abaa3fa517
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/5ngsQlW8/fabric-api-0.92.1%2B1.20.5.jar
+  0.92.2+1.20.1:
+    sha1: 625ee015ee426d9b677382a7bb661383d89c0807
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/P7uGFii0/fabric-api-0.92.2%2B1.20.1.jar
+  0.92.3+1.20.1:
+    sha1: 4fc46246c5e97514ffc563ca68338cf35d9976d0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/SKPWumQf/fabric-api-0.92.3%2B1.20.1.jar
+  0.92.4+1.20.1:
+    sha1: 42eb3922d3a37f0e7b3cbd2047bdaeb045c4bad4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/y1pF0uOZ/fabric-api-0.92.4%2B1.20.1.jar
+  0.92.5+1.20.1:
+    sha1: 3687efabc473ea26b3bf745e89aaaf413b639eb1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/PB9Kjpo3/fabric-api-0.92.5%2B1.20.1.jar
+  0.92.6+1.20.1:
+    sha1: 3ec0a88b64f252257df6287e9a1d47ed96331e5d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/UapVHwiP/fabric-api-0.92.6%2B1.20.1.jar
+  0.93.0+1.20.4:
+    sha1: afffbf8d8a7e913bddd7194bddc369c773045cd8
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/7HnviItK/fabric-api-0.93.0%2B1.20.4.jar
+  0.93.0+1.20.5:
+    sha1: f42df52f884ef3db37db25c31b2d0f1716668fff
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/nBKoUaUC/fabric-api-0.93.0%2B1.20.5.jar
+  0.93.1+1.20.4:
+    sha1: 71f4c9540efa8d4531ff366137cf930dc3cb31d0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/2sYBLn0C/fabric-api-0.93.1%2B1.20.4.jar
+  0.93.1+1.20.5:
+    sha1: 74c4e8c7f352311db7da6d2997c76a300988bd60
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/e3cgXQ6I/fabric-api-0.93.1%2B1.20.5.jar
+  0.94.0+1.20.4:
+    sha1: d047f81854ab1246511cf80bba8645fd2e8f5c27
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/jYPNoqlj/fabric-api-0.94.0%2B1.20.4.jar
+  0.94.0+1.20.5:
+    sha1: 48746de1ff80cb7bc19bad78256e9549ff31c24c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/92lczH6b/fabric-api-0.94.0%2B1.20.5.jar
+  0.94.1+1.20.4:
+    sha1: 4ff930dbd0df3b5d70d21daf4da688caa482ca2c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/XxkTbJzb/fabric-api-0.94.1%2B1.20.4.jar
+  0.95.0+1.20.4:
+    sha1: e072a9dd8fccc9ffe61196f3379439788109d048
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/cXkV2nJO/fabric-api-0.95.0%2B1.20.4.jar
+  0.95.1+1.20.4:
+    sha1: ffda830e5741660e14e1880e8d6b500acd6f58c5
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/TvatZFJI/fabric-api-0.95.1%2B1.20.4.jar
+  0.95.1+1.20.5:
+    sha1: 741770e7be5124065905bbeca6898abf1503667f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/cmnVMpqB/fabric-api-0.95.1%2B1.20.5.jar
+  0.95.2+1.20.5:
+    sha1: 457e771b8180a8667a2431cf172a1d03338f2177
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/f9JMbGv4/fabric-api-0.95.2%2B1.20.5.jar
+  0.95.3+1.20.4:
+    sha1: 4477a4eb5a9741501346b565ee7d3e0f534483c1
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/dBMtQPll/fabric-api-0.95.3%2B1.20.4.jar
+  0.95.3+1.20.5:
+    sha1: 734fb1df46fc8e87decfffe7990024fef065fa0e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/vEBS94Zq/fabric-api-0.95.3%2B1.20.5.jar
+  0.95.4+1.20.4:
+    sha1: f6d5bec4885374d8d7b35e745fff765069afe5dc
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/cpC3P6YE/fabric-api-0.95.4%2B1.20.4.jar
+  0.95.4+1.20.5:
+    sha1: 503e5b95f1ba492f6bc82f0274601a6bfc91529f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/fjL26nka/fabric-api-0.95.4%2B1.20.5.jar
+  0.95.5+1.20.5:
+    sha1: 55c325de2d0a798475d636978d536ce720387242
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/U8tA9DvG/fabric-api-0.95.5%2B1.20.5.jar
+  0.95.6+1.20.5:
+    sha1: b9f9f6a71b510c96002c982c30606c346b80e3ef
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/FFgraWZB/fabric-api-0.95.6%2B1.20.5.jar
+  0.96.0+1.20.4:
+    sha1: 4ba8c9dc57172d229985db2d37fff6f8a3e6ba44
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/bnOsLTYu/fabric-api-0.96.0%2B1.20.4.jar
+  0.96.0+1.20.5:
+    sha1: c3c95185dcc337bd48ad3bea294f258c41be757a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/DLrJPVCZ/fabric-api-0.96.0%2B1.20.5.jar
+  0.96.1+1.20.4:
+    sha1: ab747488a0ce1091ddf6a1d53326750488b8ca66
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/UgdmocrA/fabric-api-0.96.1%2B1.20.4.jar
+  0.96.1+1.20.5:
+    sha1: 01896dc7fe5911ceb7a954b6e56af2767f21e815
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/3O5raQ1L/fabric-api-0.96.1%2B1.20.5.jar
+  0.96.10+1.20.5:
+    sha1: 697e8bc5c412edcf7839b135346958eaed6d4feb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/nrGbafeF/fabric-api-0.96.10%2B1.20.5.jar
+  0.96.11+1.20.4:
+    sha1: 5537a4592773739e7279f3685445a84af49fde56
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/htRy7kbI/fabric-api-0.96.11%2B1.20.4.jar
+  0.96.11+1.20.5:
+    sha1: 77f56950bac35facd0c1dadc6aa40189b4d3220e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/AwBEF5aU/fabric-api-0.96.11%2B1.20.5.jar
+  0.96.12+1.20.5:
+    sha1: 80d57e57dc8ea2313d2118efb3bc76919aa4c452
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/O0ZgFsuV/fabric-api-0.96.12%2B1.20.5.jar
+  0.96.13+1.20.5:
+    sha1: 87e9cee776ced507a41d4441f11f1dc75fe95c8f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/A1IDokGa/fabric-api-0.96.13%2B1.20.5.jar
+  0.96.14+1.20.5:
+    sha1: 7236936589367fda389c6063f61bfad157e25ced
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/65jl2uF9/fabric-api-0.96.14%2B1.20.5.jar
+  0.96.14+24w14potato:
+    sha1: e4a57e3ff2939a1bbe47e57199e6d0488f376e34
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/WovL05Nr/fabric-api-0.96.14%2B24w14potato.jar
+  0.96.15+1.20.5:
+    sha1: 1f7f71c34863d35922751cbe75f09b0d1fc7fbf7
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/axDEQtMs/fabric-api-0.96.15%2B1.20.5.jar
+  0.96.2+1.20.5:
+    sha1: 8965fe723ee1b850fdbd87f89e0bd0118d350fcf
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/5FwMHnbp/fabric-api-0.96.2%2B1.20.5.jar
+  0.96.3+1.20.4:
+    sha1: b217f6c99f04527c025c8c36ef4efe41cb2aef2d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/Ca6gRk94/fabric-api-0.96.3%2B1.20.4.jar
+  0.96.3+1.20.5:
+    sha1: 291d5bce9543f1d0b258a065d2005506940aae4c
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/atH5wCfH/fabric-api-0.96.3%2B1.20.5.jar
+  0.96.4+1.20.4:
+    sha1: 60e9dbbf526882175fa86a719791878f631ab415
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/9p2sguD7/fabric-api-0.96.4%2B1.20.4.jar
+  0.96.4+1.20.5:
+    sha1: 1e40c3b8b7456f646b33088843172501be428236
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/t7ARQ1lQ/fabric-api-0.96.4%2B1.20.5.jar
+  0.96.5+1.20.5:
+    sha1: 5630d1d529ff61d9bf070a7b8d0217269484976e
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/oewq0SPx/fabric-api-0.96.5%2B1.20.5.jar
+  0.96.6+1.20.5:
+    sha1: c9f9e6381374b637cb419926f6e41438cb7cdce6
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/jYlYpyl9/fabric-api-0.96.6%2B1.20.5.jar
+  0.96.7+1.20.5:
+    sha1: 2316cb3f72fe92a993de10a6cd23f9962682f889
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/vgnJPkyY/fabric-api-0.96.7%2B1.20.5.jar
+  0.96.8+1.20.5:
+    sha1: 8810d50d47f58c12628f2e49e7a736ae2e0da025
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/2ovmmsss/fabric-api-0.96.8%2B1.20.5.jar
+  0.96.9+1.20.5:
+    sha1: 9aa5d2aa2dd0990b99be18d750f42e25ee20cdc4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/aOORgwbx/fabric-api-0.96.9%2B1.20.5.jar
+  0.97.0+1.20.4:
+    sha1: 006fcd4bd735279a7a9ad496578a0f4fda194918
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/xklQBMta/fabric-api-0.97.0%2B1.20.4.jar
+  0.97.0+1.20.5:
+    sha1: 3ab57e1464fd84ebe66d84db4bf81fbc6d6f21ee
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/BOnMBe9t/fabric-api-0.97.0%2B1.20.5.jar
+  0.97.1+1.20.4:
+    sha1: 37e7e83a2cea7b8717f798e30c5a288d840b4244
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/tAwdMmKY/fabric-api-0.97.1%2B1.20.4.jar
+  0.97.1+1.20.5:
+    sha1: ee6aeb31adcaaa7a6e11d71dd0042c2e9f5fb59a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/za8EviCq/fabric-api-0.97.1%2B1.20.5.jar
+  0.97.2+1.20.4:
+    sha1: a959c2b9379d13c0f2098102d1a43fc6e2eef5e3
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/QVBohPm2/fabric-api-0.97.2%2B1.20.4.jar
+  0.97.2+1.20.5:
+    sha1: bd94235be4c726111bdbf3c278da35a8ce9f172a
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/qhBAD6lk/fabric-api-0.97.2%2B1.20.5.jar
+  0.97.3+1.20.4:
+    sha1: a21f3c7e700b9fc3a28e896979a07ec489507143
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/BPX6fK06/fabric-api-0.97.3%2B1.20.4.jar
+  0.97.3+1.20.5:
+    sha1: 6ec8588cd8f7601fbeca5294a21ec8a451642606
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ouNIk6kN/fabric-api-0.97.3%2B1.20.5.jar
+  0.97.4+1.20.5:
+    sha1: 22acd561b0889ca109a42e7dadc895a87857618d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/cM9AhPFx/fabric-api-0.97.4%2B1.20.5.jar
+  0.97.5+1.20.5:
+    sha1: bfebb6d380037d26c3646a52248ec55e344249be
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/zrJxy4cn/fabric-api-0.97.5%2B1.20.5.jar
+  0.97.6+1.20.5:
+    sha1: e6c468e5e1007e53b2495e08b1067c2e3a37be11
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/D7jXLoRF/fabric-api-0.97.6%2B1.20.5.jar
+  0.97.6+1.20.6:
+    sha1: ce79e55f40ee4d3680c1411a824a4285f39a7d6b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/94EiEX8x/fabric-api-0.97.6%2B1.20.6.jar
+  0.97.7+1.20.5:
+    sha1: a93b6975602153d527c9aa3ba7cad937fde5aa0f
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/tftr9Gex/fabric-api-0.97.7%2B1.20.5.jar
+  0.97.7+1.20.6:
+    sha1: 55d8baa39c0fc0b84d52113fecea32832a5e4126
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/w41vyG5F/fabric-api-0.97.7%2B1.20.6.jar
+  0.97.8+1.20.5:
+    sha1: cbfa74cd136f0391e8713651a80fdc9f7358c0e0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/GCdY4I8I/fabric-api-0.97.8%2B1.20.5.jar
+  0.97.8+1.20.6:
+    sha1: 6d7a34b8448259688e0833c02be3e28763acec65
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/kAQqRNrK/fabric-api-0.97.8%2B1.20.6.jar
+  0.97.9+1.21:
+    sha1: 1b86166d0a9d8795824f09a2d567641b3c07b032
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/bWfIZwG6/fabric-api-0.97.9%2B1.21.jar
+  0.98.0+1.20.6:
+    sha1: e40b6bd8dacc35ef729544c823d118a6beb35987
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/191HCCtF/fabric-api-0.98.0%2B1.20.6.jar
+  0.98.0+1.21:
+    sha1: 5418bdadc7e9faf0d991819cc75e1a15f052dd56
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/AVWxA6CK/fabric-api-0.98.0%2B1.21.jar
+  0.98.1+1.21:
+    sha1: 162481ede68f36f5b1ecd89651951c13ccaf9552
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/RMl45Lr7/fabric-api-0.98.1%2B1.21.jar
+  0.98.2+1.21:
+    sha1: 14e5d7d7f8c8dc6b3c7896e9e0ebd7b193aef4ad
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ik31TLQH/fabric-api-0.98.2%2B1.21.jar
+  0.99.0+1.20.6:
+    sha1: 32b13b08e6c6a4a4cd8a51515751e7bf15bf523d
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/sswM8UzU/fabric-api-0.99.0%2B1.20.6.jar
+  0.99.0+1.21:
+    sha1: 29f0a19f9a76aff8aa7373d08090d65e4f711b4b
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ICmfMxxh/fabric-api-0.99.0%2B1.21.jar
+  0.99.1+1.21:
+    sha1: ee9b3e32502d4ffbf42a1e6ecc944ad0b4999912
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/auwFTj9W/fabric-api-0.99.1%2B1.21.jar
+  0.99.2+1.21:
+    sha1: e08e1e0164c6c0bbbe372449e7758d852bb51ecb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/v9iq0iHT/fabric-api-0.99.2%2B1.21.jar
+  0.99.3+1.20.6:
+    sha1: 953df785a5eed75a439395324945240e70283647
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/1uMtrDCU/fabric-api-0.99.3%2B1.20.6.jar
+  0.99.3+1.21:
+    sha1: 6e8159ef5c99a05af1d12e8c7de6023c4e56d0a0
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/ZrFtKs5T/fabric-api-0.99.3%2B1.21.jar
+  0.99.4+1.20.6:
+    sha1: 43154bdc2096c5d5e4b3769ac11bd0e0c2b88fbb
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/MtIGbixh/fabric-api-0.99.4%2B1.20.6.jar
+  0.99.4+1.21:
+    sha1: e769d3ace3bc9aecafb81b1008c9173b14db67c4
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/FXHCHBBg/fabric-api-0.99.4%2B1.21.jar
+  0.99.5+1.21:
+    sha1: 7f6d6ed8a9dd5d2fc94402c0202e57cbf2c8ed05
+    url: https://cdn.modrinth.com/data/P7dR8mSH/versions/U6iuRBNQ/fabric-api-0.99.5%2B1.21.jar

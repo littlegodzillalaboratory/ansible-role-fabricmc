@@ -1,0 +1,5 @@
+---
+handlers: 'stream'
+datefmt: "%Y%m%d%H%M%S"
+format: "[gen-vars-file] [%(levelname)s] [%(asctime)s] %(message)s"
+level: "debug"
