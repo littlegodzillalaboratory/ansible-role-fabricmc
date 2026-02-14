@@ -94,6 +94,27 @@
     msg: "Downloaded Fabric API jar file checksum {{ fabric_api_jar_file.stat.checksum }} does not match the expected checksum {{ fabric_api_versions[fabmc_fabric_api_version]['sha1'] }}"
   when: not fabric_api_version_jar_file.stat.exists and fabric_api_jar_file.stat.checksum != fabric_api_versions[fabmc_fabric_api_version]['sha1']
 
+- name: Register Fabric mods directory
+  ansible.builtin.find:
+    paths: "{{ fabmc_install_dir }}/workspace/mods/"
+    recurse: false
+  register: fabric_mods_dir
+
+- name: Delete unexpected Fabric mods
+  ansible.builtin.file:
+    path: "{{ item.path }}"
+    state: absent
+  loop: "{{ fabric_mods_dir.files }}"
+  when:
+    - item.path | basename is not match('^fabric-api-')
+    - item.path | basename is not search(fabmc_fabric_mods | join('|'))
+
+- name: Install Fabric mods
+  fabric_mods:
+    mods: "{{ fabmc_fabric_mods }}"
+    minecraft_version: "{{ fabmc_minecraft_version }}"
+    install_dir: "{{ fabmc_install_dir }}"
+
 # Minecraft server would add any missing properties with default values
 # hence it's not necessary to specify all properties in fabmc_server_properties.
 - name: "Set Minecraft server configuration values"

@@ -3,6 +3,10 @@ fabmc_minecraft_version: '1.21.4'
 fabmc_fabric_loader_version: '0.16.10'
 fabmc_installer_version: '1.0.1'
 fabmc_fabric_api_version: '0.119.4+1.21.4'
+fabmc_fabric_mods:
+  - sodium
+  # - ferrite-core
+  # - lithium
 fabmc_install_dir: /opt/fabricmc
 fabmc_install_id: fabricmc
 fabmc_os_user: fabricmc

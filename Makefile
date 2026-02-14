@@ -1,13 +1,13 @@
 ################################################################
-# MDH: Makefile for building Ansible roles
-# https://github.com/cliffano/mdh
+# Cobbler: Makefile for building Ansible roles
+# https://github.com/cliffano/cobbler
 ################################################################
 
-# MDH's version number
-MDH_VERSION = 1.0.0
+# Cobbler's version number
+COBBLER_VERSION = 2.0.0
 
 $(info ################################################################)
-$(info Building Ansible role using MDH:)
+$(info Building Ansible role using Cobbler:)
 
 define python_venv
 	. .venv/bin/activate && $(1)
@@ -50,20 +50,15 @@ test:
 	$(call python_venv,molecule test)
 
 # Update Makefile to the latest version tag
-update-to-latest: TARGET_MDH_VERSION = $(shell curl -s https://api.github.com/repos/cliffano/mdh/tags | jq -r '.[0].name')
+update-to-latest: TARGET_COBBLER_VERSION = $(shell curl -s https://api.github.com/repos/cliffano/cobbler/tags | jq -r '.[0].name')
 update-to-latest: update-to-version
 
 # Update Makefile to the main branch
 update-to-main:
-	curl https://raw.githubusercontent.com/cliffano/mdh/main/src/Makefile-mdh -o Makefile
+	curl https://raw.githubusercontent.com/cliffano/cobbler/main/src/Makefile-cobbler -o Makefile
 
-# Update Makefile to the version defined in TARGET_MDH_VERSION parameter
+# Update Makefile to the version defined in TARGET_COBBLER_VERSION parameter
 update-to-version:
-	curl https://raw.githubusercontent.com/cliffano/mdh/$(TARGET_MDH_VERSION)/src/Makefile-mdh -o Makefile
+	curl https://raw.githubusercontent.com/cliffano/cobbler/$(TARGET_COBBLER_VERSION)/src/Makefile-cobbler -o Makefile
 
-################################################################
-
-x-gen-vars-file:
-	$(call python_venv,python3 scripts/gen-vars-file.py)
-
-.PHONY: ci all clean rmdeps deps deps-upgrade lint test update-to-latest update-to-main update-to-version stage x-gen-vars-file
+.PHONY: ci all clean rmdeps deps deps-upgrade lint test update-to-latest update-to-main update-to-version stage
