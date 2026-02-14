@@ -7,6 +7,7 @@ fabmc_fabric_mods:
   - sodium
   - ferrite-core
   - lithium
+  - starlight
 fabmc_install_dir: /opt/fabricmc
 fabmc_install_id: fabricmc
 fabmc_os_user: fabricmc
