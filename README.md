@@ -40,6 +40,22 @@ Or alternatively, as a task using import role:
 
       tasks:
 
+        - ansible.builtin.pip:
+            name: pip
+            virtualenv: "{{ ansible_user_dir }}/.virtualenvs/fabricmc"
+            virtualenv_command: python3 -m venv
+            state: latest
+          run_once: true
+
+        - ansible.builtin.pip:
+            name:
+              - conflog
+              - modrinth-api-wrapper
+              - requests
+            virtualenv: "{{ ansible_user_dir }}/.virtualenvs/fabricmc"
+            state: present
+          run_once: true
+          
         - ansible.builtin.import_role:
             name: littlegodzillalaboratory.fabricmc
           vars:
@@ -58,6 +74,9 @@ Or alternatively, as a task using import role:
             fabmc_eula_accepted: true
             fabmc_server_properties:
               motd: "A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC"
+          environment:
+            PATH: "{{ ansible_user_dir }}/.virtualenvs/fabricmc/bin:{{ ansible_env.PATH }}"
+            VIRTUAL_ENV: "{{ ansible_user_dir }}/.virtualenvs/fabricmc"
 
 On machines with systemd, a `<fabmc_install_id>` service will be provisioned so you can use systemctl to manage the server.
 
