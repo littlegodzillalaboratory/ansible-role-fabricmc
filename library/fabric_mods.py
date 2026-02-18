@@ -1,5 +1,15 @@
 #!/usr/bin/python
 
+DOCUMENTATION = r'''
+---
+module: fabric_mods
+short_description: Install Fabric mods
+requirements:
+  - conflog
+  - modrinth-api-wrapper
+  - requests
+'''
+
 from conflog import Conflog
 from ansible.module_utils.basic import AnsibleModule
 from modrinth_api_wrapper import Client

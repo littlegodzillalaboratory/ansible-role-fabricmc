@@ -41,6 +41,14 @@ Or alternatively, as a task using import role:
 
       tasks:
 
+      - ansible.builtin.pip:
+          name:
+            - conflog
+            - modrinth-api-wrapper
+            - requests
+          state: present
+        run_once: true
+
         - ansible.builtin.import_role:
             name: littlegodzillalaboratory.fabricmc
           vars:

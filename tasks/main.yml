@@ -109,6 +109,15 @@
     - item.path | basename is not match('^fabric-api-')
     - item.path | basename | replace('-', '') is not search(fabmc_fabric_mods | map('replace', '-', '') | join('|'))
 
+- name: Ensure Python dependencies for fabric_mods module
+  ansible.builtin.pip:
+    name:
+      - conflog
+      - modrinth-api-wrapper
+      - requests
+    state: present
+  run_once: true
+
 - name: Install Fabric mods
   fabric_mods:
     mods: "{{ fabmc_fabric_mods }}"
