@@ -15,6 +15,7 @@ from ansible.module_utils.basic import AnsibleModule
 from modrinth_api_wrapper import Client
 import os
 import requests
+import time
 
 conf_dict={
     'handlers': 'stream',
@@ -86,12 +87,14 @@ def main():
     module_args = dict(
         minecraft_version=dict(type="str", required=True),
         mods=dict(type="list", elements="str", required=True),
+        mods_download_delay=dict(type="int", required=False, default=2),
         install_dir=dict(type="str", required=True),
     )
     module = AnsibleModule(argument_spec=module_args, supports_check_mode=True)
 
     minecraft_version = module.params["minecraft_version"]
     mods = module.params["mods"]
+    mods_download_delay = module.params["mods_download_delay"]
     install_dir = module.params["install_dir"]
 
     logger.info(f"'{len(mods)}' Fabric mod(s) to be installed for Minecraft version '{minecraft_version}'...")
@@ -104,6 +107,7 @@ def main():
         logger.info(f"Installing Fabric mod '{mod}'...")
         if download_mod(client, mod, "fabric", minecraft_version, mods_dir):
             changed = True
+        time.sleep(mods_download_delay)
 
     result = {
         "changed": changed,
