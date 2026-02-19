@@ -112,6 +112,7 @@
 - name: Install Fabric mods
   fabric_mods:
     mods: "{{ fabmc_fabric_mods }}"
+    mods_download_delay: "{{ fabmc_fabric_mods_download_delay }}"
     minecraft_version: "{{ fabmc_minecraft_version }}"
     install_dir: "{{ fabmc_install_dir }}"
 

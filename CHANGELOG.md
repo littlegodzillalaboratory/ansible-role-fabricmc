@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ### Added
-- Add mods_download_delay parameter to fabric_mods module
+- Add fabmc_fabric_mods_download_delay config
 
 ### Changed
 - Improve mods cleanup prior to installation
