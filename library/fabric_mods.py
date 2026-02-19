@@ -87,7 +87,7 @@ def main():
     module_args = dict(
         minecraft_version=dict(type="str", required=True),
         mods=dict(type="list", elements="str", required=True),
-        mods_download_delay=dict(type="int", required=False, default=2),
+        mods_download_delay=dict(type="int", required=False, default=10),
         install_dir=dict(type="str", required=True),
     )
     module = AnsibleModule(argument_spec=module_args, supports_check_mode=True)
