@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add mods_download_delay parameter to fabric_mods module
 
+### Changed
+- Improve mods cleanup prior to installation
+
 ## 1.1.0 - 2026-02-18
 ### Added
 - Add Fabric API provisioning support

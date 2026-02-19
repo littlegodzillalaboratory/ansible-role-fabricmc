@@ -107,7 +107,7 @@
   loop: "{{ fabric_mods_dir.files }}"
   when:
     - item.path | basename is not match('^fabric-api-')
-    - item.path | basename | replace('-', '') is not search(fabmc_fabric_mods | map('replace', '-', '') | join('|'))
+    - item.path | basename | lower | regex_replace('[^a-z]', '') is not search(fabmc_fabric_mods | map('lower') | map('regex_replace', '[^a-z]', '') | join('|'))
 
 - name: Install Fabric mods
   fabric_mods:
