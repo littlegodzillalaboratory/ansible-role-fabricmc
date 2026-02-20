@@ -25,6 +25,7 @@ Use the role in your playbook:
           - sodium
           - ferrite-core
           - lithium
+        fabmc_fabric_mods_download_delay: 2
         fabmc_install_dir: /opt/fabricmc
         fabmc_install_id: minecraft-java
         fabmc_os_user: minecraft
@@ -67,6 +68,7 @@ Or alternatively, as a task using import role:
               - sodium
               - ferrite-core
               - lithium
+            fabmc_fabric_mods_download_delay: 2
             fabmc_install_dir: /opt/fabricmc
             fabmc_install_id: minecraft-java
             fabmc_os_user: minecraft
@@ -105,6 +107,7 @@ Config
 | fabmc_installer_version | [Fabric installer version number](https://maven.fabricmc.net/net/fabricmc/fabric-installer/) | `1.0.1` |  `1.1.0` |
 | fabmc_fabric_api_version | [Fabric API version number](https://modrinth.com/mod/fabric-api) | `0.119.4+1.21.4` |  `0.105.4+1.21.2` |
 | fabmc_fabric_mods | [Fabric mods](https://modrinth.com/discover/mods) | - sodium<br/>- ferrite-core<br/>- lithium | |
+| fabmc_fabric_mods_download_delay | Delay period (in seconds) between Fabric mod file downloads | 2 | 10 |
 | fabmc_install_id | Minecraft Fabric mod loader installation ID, useful to distinguish multiple installations on the same machine | `fabricmc` | `fabricmc-1` |
 | fabmc_install_dir | Minecraft Fabric mod loader installation directory | `/opt/fabricmc` | `/some/other/path` |
 | fabmc_os_user | System user which the Java process runs under | `fabricmc` | `someuser` |
