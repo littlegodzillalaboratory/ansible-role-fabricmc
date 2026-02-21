@@ -153,6 +153,7 @@
 - name: Install Fabric datapacks per world
   fabric_datapacks:
     datapacks: "{{ item.datapacks }}"
+    datapacks_download_delay: "{{ fabmc_fabric_datapacks_download_delay }}"
     world: "{{ item.world }}"
     minecraft_version: "{{ fabmc_minecraft_version }}"
     install_dir: "{{ fabmc_install_dir }}"

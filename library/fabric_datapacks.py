@@ -15,6 +15,7 @@ from ansible.module_utils.basic import AnsibleModule
 from modrinth_api_wrapper import Client
 import os
 import requests
+import time
 
 conf_dict={
     'handlers': 'stream',
@@ -87,6 +88,7 @@ def main():
     module_args = dict(
         minecraft_version=dict(type="str", required=True),
         datapacks=dict(type="list", elements="str", required=True),
+        datapacks_download_delay=dict(type="int", required=True),
         world=dict(type="str", required=True),
         install_dir=dict(type="str", required=True),
     )
@@ -94,6 +96,7 @@ def main():
 
     minecraft_version = module.params["minecraft_version"]
     datapacks = module.params["datapacks"]
+    datapacks_download_delay = module.params["datapacks_download_delay"]
     world = module.params["world"]
     install_dir = module.params["install_dir"]
 
@@ -110,6 +113,7 @@ def main():
         logger.info(f"Installing Fabric datapack '{datapack}' for world '{world}'...")
         if download_datapack(client, datapack, minecraft_version, datapacks_dir):
             changed = True
+        time.sleep(datapacks_download_delay)
 
     result = {
         "changed": changed,
