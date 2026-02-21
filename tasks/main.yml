@@ -116,6 +116,52 @@
     minecraft_version: "{{ fabmc_minecraft_version }}"
     install_dir: "{{ fabmc_install_dir }}"
 
+- name: Ensure world datapacks directories existence
+  ansible.builtin.file:
+    path: "{{ fabmc_install_dir }}/workspace/{{ item.world }}/datapacks"
+    state: directory
+    mode: "0755"
+  loop: "{{ fabmc_fabric_datapacks }}"
+  when:
+    - item.world is defined
+    - item.datapacks is defined
+    - item.datapacks | length > 0
+
+- name: Register Fabric datapack files
+  ansible.builtin.find:
+    paths: "{{ fabmc_install_dir }}/workspace/{{ item.world }}/datapacks"
+    recurse: false
+    file_type: file
+  loop: "{{ fabmc_fabric_datapacks }}"
+  register: fabric_datapack_files
+  when:
+    - item.world is defined
+    - item.datapacks is defined
+    - item.datapacks | length > 0
+
+- name: Delete unexpected Fabric datapacks
+  ansible.builtin.file:
+    path: "{{ item.1.path }}"
+    state: absent
+  loop: "{{ query('subelements', fabric_datapack_files.results, 'files', {'skip_missing': True}) }}"
+  when:
+    - >-
+      item.1.path | basename | lower | regex_replace('[^a-z]', '') is not
+      search(item.0.item.datapacks | map('lower') |
+      map('regex_replace', '[^a-z]', '') | join('|'))
+
+- name: Install Fabric datapacks per world
+  fabric_datapacks:
+    datapacks: "{{ item.datapacks }}"
+    world: "{{ item.world }}"
+    minecraft_version: "{{ fabmc_minecraft_version }}"
+    install_dir: "{{ fabmc_install_dir }}"
+  loop: "{{ fabmc_fabric_datapacks }}"
+  when:
+    - item.world is defined
+    - item.datapacks is defined
+    - item.datapacks | length > 0
+
 # Minecraft server would add any missing properties with default values
 # hence it's not necessary to specify all properties in fabmc_server_properties.
 - name: "Set Minecraft server configuration values"

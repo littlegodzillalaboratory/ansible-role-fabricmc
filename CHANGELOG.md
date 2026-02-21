@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Add fabmc_fabric_mods_download_delay config
+- Add datapacks provisioning support
+- Add fabmc_fabric_datapacks config
 
 ### Changed
 - Improve mods cleanup prior to installation

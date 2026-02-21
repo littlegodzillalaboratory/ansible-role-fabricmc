@@ -6,4 +6,5 @@ molecule
 PyYAML
 pytest
 pytest-testinfra
+requests
 yamllint
