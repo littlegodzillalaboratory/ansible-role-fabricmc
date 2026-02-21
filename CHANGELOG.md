@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+- Add fabmc_provision_server config to enable/disable server provisioning
+
 ## 1.2.0 - 2026-02-21
 ### Added
 - Add fabmc_fabric_mods_download_delay config

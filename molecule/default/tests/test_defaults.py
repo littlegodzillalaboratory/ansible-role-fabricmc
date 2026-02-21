@@ -34,6 +34,23 @@ def test_server_launcher_jar_symlink(host):
     assert server_jar_symlink.exists
     assert server_jar_symlink.is_symlink
 
+def test_eula_file(host):
+
+    eula_file = host.file('/opt/fabricmc/workspace/eula.txt')
+    assert eula_file.exists
+    assert eula_file.is_file
+    assert eula_file.mode == 0o644
+    assert eula_file.contains('eula=true')
+
+def test_server_launcher_properties_file(host):
+
+    server_properties_file = host.file('/opt/fabricmc/workspace/server.properties')
+    assert server_properties_file.exists
+    assert server_properties_file.is_file
+    assert server_properties_file.mode == 0o644
+    assert server_properties_file.contains('motd=A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC')
+
+
 def test_server_launcher_start_script(host):
 
     server_start_script = host.file('/opt/fabricmc/bin/start.sh')
@@ -41,6 +58,32 @@ def test_server_launcher_start_script(host):
     assert server_start_script.is_file
     assert server_start_script.mode == 0o755
     assert server_start_script.contains('java -Xmx2048M -Xms1024M -jar /opt/fabricmc/bin/minecraft_server_launcher.jar nogui')
+
+def test_server_launcher_service_file(host):
+
+    server_service_file = host.file('/etc/systemd/system/fabricmc.service')
+    assert server_service_file.exists
+    assert server_service_file.is_file
+    assert server_service_file.mode == 0o644
+    assert server_service_file.contains('Description=Minecraft Java with Fabric')
+    assert server_service_file.contains('User=fabricmc')
+    assert server_service_file.contains('ExecStart=/opt/fabricmc/bin/start.sh')
+
+def test_fabric_launcher_service(host):
+    fabric_service = host.service('fabricmc')
+    # Can't test service enabled state due to test running within container
+    # assert fabric_service.is_enabled
+    assert not fabric_service.is_running
+
+def test_aliases_for_minecraft_server_generic_utilities(host):
+
+    # TODO: Update file path when test container switches to non-root user
+    aliases_file = host.file('/root/.bash_aliases')
+    assert aliases_file.exists
+    assert aliases_file.is_file
+    assert aliases_file.mode == 0o644
+    assert aliases_file.contains('alias fabricmc-conf="vi /opt/fabricmc/workspace/server.properties"')
+    assert aliases_file.contains('alias fabricmc-log="tail -f /opt/fabricmc/workspace/logs/latest.log"')
 
 def test_fabric_api_mod_file(host):
 
