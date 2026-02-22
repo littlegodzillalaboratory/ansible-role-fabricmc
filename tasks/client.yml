@@ -69,11 +69,6 @@
     dest: "{{ fabmc_client_dir }}/bin/fabric-installer.jar"
     state: link
 
-- name: Get the status of Fabric Installer install script file
-  ansible.builtin.stat:
-    path: "{{ fabmc_client_dir }}/bin/install.sh"
-  register: fabric_installer_install_script_file
-
 - name: Create Fabric Installer install script
   ansible.builtin.copy:
     content: |
