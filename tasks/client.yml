@@ -1,0 +1,107 @@
+---
+- name: Ensure client install directory existence
+  ansible.builtin.file:
+    path: "{{ fabmc_client_dir }}"
+    state: directory
+    mode: "0755"
+
+- name: Ensure sub directories existence
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+    mode: "0755"
+  loop:
+    - "{{ fabmc_client_dir }}/bin"
+    - "{{ fabmc_client_dir }}/mods"
+
+- name: "Get the status of Fabric Installer {{ fabmc_installer_version }} jar file"
+  ansible.builtin.stat:
+    path: "{{ fabmc_client_dir }}/bin/fabric-installer-{{ fabmc_installer_version }}.jar"
+  register: fabric_installer_version_jar_file
+
+- name: Download Fabric Installer jar file
+  ansible.builtin.get_url:
+    url: "https://maven.fabricmc.net/net/fabricmc/fabric-installer/{{ fabmc_installer_version }}/fabric-installer-{{ fabmc_installer_version }}.jar"
+    dest: "{{ fabmc_client_dir }}/bin/installer.jar"
+    mode: "0644"
+  when: not fabric_installer_version_jar_file.stat.exists
+
+- name: Get the status of Fabric Installer jar file
+  ansible.builtin.stat:
+    path: "{{ fabmc_client_dir }}/bin/installer.jar"
+    checksum_algorithm: sha1
+  register: fabric_installer_jar_file
+  when: not fabric_installer_version_jar_file.stat.exists
+
+# TODO: need to build an API client for automating checksum provisioning into vars
+# - name: Fail if downloaded Fabric Installer jar file checksum does not match
+#   ansible.builtin.fail:
+#     msg: "Downloaded Fabric Installer jar file checksum {{ fabric_installer_jar_file.stat.checksum }} does not match the expected checksum {{ fabric_installer_versions[fabmc_installer_version]['sha1'] }}"
+#   when: not fabric_installer_version_jar_file.stat.exists and fabric_installer_jar_file.stat.checksum != fabric_installer_versions[fabmc_installer_version]['sha1']
+
+- name: "Copy downloaded Fabric Installer jar file as Fabric Installer {{ fabmc_installer_version }} jar file"
+  ansible.builtin.copy:
+    remote_src: true
+    src: "{{ fabmc_client_dir }}/bin/installer.jar"
+    dest: "{{ fabmc_client_dir }}/bin/fabric-installer-{{ fabmc_installer_version }}.jar"
+    mode: "0644"
+  when: not fabric_installer_version_jar_file.stat.exists and fabric_installer_jar_file.stat.exists
+
+- name: Delete downloaded Fabric Installer jar file
+  ansible.builtin.file:
+    path: "{{ fabmc_client_dir }}/bin/installer.jar"
+    state: absent
+
+- name: "Get the status of Fabric Installer jar file"
+  ansible.builtin.stat:
+    path: "{{ fabmc_client_dir }}/bin/fabric-installer.jar"
+  register: fabric_installer_jar_file
+
+- name: "Ensure Fabric Installer jar file or symlink does not exist"
+  ansible.builtin.file:
+    path: "{{ fabmc_client_dir }}/bin/fabric-installer.jar"
+    state: absent
+  when: not fabric_installer_jar_file.stat.exists
+
+- name: Create symbolic link for Fabric Installer jar file
+  ansible.builtin.file:
+    src: "{{ fabmc_client_dir }}/bin/fabric-installer-{{ fabmc_installer_version }}.jar"
+    dest: "{{ fabmc_client_dir }}/bin/fabric-installer.jar"
+    state: link
+
+- name: Get the status of Fabric Installer install script file
+  ansible.builtin.stat:
+    path: "{{ fabmc_client_dir }}/bin/install.sh"
+  register: fabric_installer_install_script_file
+
+- name: Create Fabric Installer install script
+  ansible.builtin.copy:
+    content: |
+      #!/bin/bash
+      java -jar "{{ fabmc_client_dir }}/bin/fabric-installer.jar" client -mcversion {{ fabmc_minecraft_version }} -dir "{{ fabmc_client_dir }}"
+    dest: "{{ fabmc_client_dir }}/bin/install.sh"
+    mode: "0755"
+
+- name: "Get the status of Fabric API {{ fabmc_fabric_api_version }} jar file"
+  ansible.builtin.stat:
+    path: "{{ fabmc_client_dir }}/mods/fabric-api-{{ fabmc_fabric_api_version }}.jar"
+  register: fabric_api_version_jar_file
+
+- name: Download Fabric API jar file
+  ansible.builtin.get_url:
+    url: "{{ fabric_api_versions[fabmc_fabric_api_version]['url'] }}"
+    dest: "{{ fabmc_client_dir }}/mods/fabric-api-{{ fabmc_fabric_api_version }}.jar"
+    mode: "0644"
+  when: not fabric_api_version_jar_file.stat.exists
+
+- name: Get the status of downloaded Fabric API jar file
+  ansible.builtin.stat:
+    path: "{{ fabmc_client_dir }}/mods/fabric-api-{{ fabmc_fabric_api_version }}.jar"
+    checksum_algorithm: sha1
+  register: fabric_api_jar_file
+  when: not fabric_api_version_jar_file.stat.exists
+
+- name: Fail if downloaded Fabric API jar file checksum does not match
+  ansible.builtin.fail:
+    msg: "Downloaded Fabric API jar file checksum {{ fabric_api_jar_file.stat.checksum }} does not match the expected checksum {{ fabric_api_versions[fabmc_fabric_api_version]['sha1'] }}"
+  when: not fabric_api_version_jar_file.stat.exists and fabric_api_jar_file.stat.checksum != fabric_api_versions[fabmc_fabric_api_version]['sha1']

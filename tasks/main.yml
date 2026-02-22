@@ -2,3 +2,7 @@
 - name: Provision FabricMC server
   ansible.builtin.include_tasks: server.yml
   when: fabmc_provision_server
+
+- name: Provision FabricMC client
+  ansible.builtin.include_tasks: client.yml
+  when: fabmc_provision_client

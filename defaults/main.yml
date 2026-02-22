@@ -1,8 +1,13 @@
 ---
 fabmc_provision_server: true
+fabmc_provision_client: true
+
+# Common configurations
 fabmc_minecraft_version: '1.21.4'
-fabmc_fabric_loader_version: '0.16.10'
 fabmc_installer_version: '1.0.1'
+
+# Server configurations
+fabmc_fabric_loader_version: '0.16.10'
 fabmc_fabric_api_version: '0.119.4+1.21.4'
 fabmc_fabric_mods:
   - sodium
@@ -22,3 +27,6 @@ fabmc_java_opts: -Xmx2048M -Xms1024M
 fabmc_eula_accepted: true
 fabmc_server_properties:
   motd: "A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC"
+
+# Client configurations
+fabmc_client_dir: "~/.minecraft/"
