@@ -1,7 +1,7 @@
 ---
 - name: Converge
   hosts: localhost
-  gather_facts: false
+  gather_facts: true
   tasks:
     - name: "Include workspace"
       ansible.builtin.include_role:
