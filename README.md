@@ -12,15 +12,19 @@ Ansible Role FabricMC is an Ansible role for provisioning [Fabric loader](https:
 Usage
 -----
 
+### Server provisioning
+
 Use the role in your playbook:
 
     - hosts: all
 
       vars:
+        fabmc_provision_server: true
+        fabmc_provision_client: false
         fabmc_minecraft_version: '1.21.4'
-        fabmc_fabric_loader_version: '0.16.10'
         fabmc_installer_version: '1.0.1'
         fabmc_fabric_api_version: '0.119.4+1.21.4'
+        fabmc_fabric_loader_version: '0.16.10'
         fabmc_fabric_mods:
           - sodium
           - ferrite-core
@@ -65,10 +69,12 @@ Or alternatively, as a task using import role:
         - ansible.builtin.import_role:
             name: littlegodzillalaboratory.fabricmc
           vars:
+            fabmc_provision_server: true
+            fabmc_provision_client: false
             fabmc_minecraft_version: '1.21.4'
-            fabmc_fabric_loader_version: '0.16.10'
             fabmc_installer_version: '1.0.1'
             fabmc_fabric_api_version: '0.119.4+1.21.4'
+            fabmc_fabric_loader_version: '0.16.10'
             fabmc_fabric_mods:
               - sodium
               - ferrite-core
@@ -90,6 +96,39 @@ Or alternatively, as a task using import role:
             PATH: "{{ ansible_user_dir }}/.virtualenvs/fabricmc/bin:{{ ansible_env.PATH }}"
             VIRTUAL_ENV: "{{ ansible_user_dir }}/.virtualenvs/fabricmc"
 
+### Client provisioning
+
+Use the role in your playbook:
+
+    - hosts: all
+
+      vars:
+        fabmc_provision_server: false
+        fabmc_provision_client: true
+        fabmc_minecraft_version: '1.21.4'
+        fabmc_installer_version: '1.0.1'
+        fabmc_fabric_api_version: '0.119.4+1.21.4'
+        fabmc_client_dir: '~/.minecraft'
+
+      roles:
+        - littlegodzillalaboratory.fabricmc
+
+Or alternatively, as a task using import role:
+
+      tasks:
+
+        - ansible.builtin.import_role:
+            name: littlegodzillalaboratory.fabricmc
+          vars:
+            fabmc_provision_server: false
+            fabmc_provision_client: true
+            fabmc_minecraft_version: '1.21.4'
+            fabmc_installer_version: '1.0.1'
+            fabmc_fabric_api_version: '0.119.4+1.21.4'
+            fabmc_client_dir: '~/.minecraft'
+
+### Utilities
+
 On machines with systemd, a `<fabmc_install_id>` service will be provisioned so you can use systemctl to manage the server.
 
     systemctl start <fabmc_install_id>.service
@@ -110,19 +149,32 @@ The following aliases are also provisioned to simplify the maintenance of Fabric
 Config
 ------
 
+### Common configurations
+
 | Variable | Description | Default | Example |
 |----------|-------------|---------|---------|
 | fabmc_minecraft_version | [Supported Minecraft version number](https://github.com/littlegodzillalaboratory/ansible-role-minecraft-java/blob/main/vars/main.yml#L2) | `1.21` |  `1.21.10` |
-| fabmc_fabric_loader_version | [Fabric loader version number](https://maven.fabricmc.net/net/fabricmc/fabric-loader/) | `0.16.10` |  `1.18.1` |
 | fabmc_installer_version | [Fabric installer version number](https://maven.fabricmc.net/net/fabricmc/fabric-installer/) | `1.0.1` |  `1.1.0` |
 | fabmc_fabric_api_version | [Fabric API version number](https://modrinth.com/mod/fabric-api) | `0.119.4+1.21.4` |  `0.105.4+1.21.2` |
+
+### Server configurations
+
+| Variable | Description | Default | Example |
+|----------|-------------|---------|---------|
+| fabmc_fabric_loader_version | [Fabric loader version number](https://maven.fabricmc.net/net/fabricmc/fabric-loader/) | `0.16.10` |  `1.18.1` |
 | fabmc_fabric_mods | [Fabric mods](https://modrinth.com/discover/mods) | - sodium<br/>- ferrite-core<br/>- lithium | |
 | fabmc_fabric_mods_download_delay | Delay period (in seconds) between Fabric mod file downloads | 2 | 10 |
 | fabmc_fabric_datapacks_download_delay | Delay period (in seconds) between Fabric datapack file downloads | 2 | 10 |
 | fabmc_install_id | Minecraft Fabric loader installation ID, useful to distinguish multiple installations on the same machine | `fabricmc` | `fabricmc-1` |
-| fabmc_install_dir | Minecraft Fabric loader installation directory | `/opt/fabricmc` | `/some/other/path` |
+| fabmc_install_dir | Minecraft server installation directory | `/opt/fabricmc` | `/some/other/path` |
 | fabmc_os_user | System user which the Java process runs under | `fabricmc` | `someuser` |
 | fabmc_env_path | To be used as the [environment PATH](https://en.wikipedia.org/wiki/PATH_(variable)) which the FabricMC server runs with. Must have `java` command under one of the path values. | `/usr/local/sbin:/usr/local/bin:`<br/>`/usr/sbin:/usr/bin:/sbin:/bin` | `/home/someuser/.sdkman/candidates/java/current/bin:`<br/>`/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin` |
 | fabmc_java_opts | Server [Java options](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/jvm-options-java-parameters-command-line-environment-variable-list-xms-xmx-memory) | `-Xmx2048M -Xms1024M` | `-Xmx2048M -Xms1024M` |
 | fabmc_eula_accepted | Accept the Minecraft [EULA](https://nodecraft.com/support/games/minecraft/general/minecraft-eula) when set to true | `true` | `false` |
 | fabmc_server_properties | Minecraft [server properties](https://minecraft.fandom.com/wiki/Server.properties) key-value pairs. | `motd: "A Minecraft Server with Fabric loader managed by Ansible Role FabricMC"` | `difficulty: normal`<br/>`gamemode: survival`<br/>`hardcore: "false"` |
+
+### Client configurations
+
+| Variable | Description | Default | Example |
+|----------|-------------|---------|---------|
+| fabmc_install_dir | Minecraft client installation directory | `~/.minecraft` | `/some/other/path` |
