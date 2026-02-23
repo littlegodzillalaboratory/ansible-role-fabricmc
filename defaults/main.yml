@@ -5,10 +5,10 @@ fabmc_provision_client: true
 # Common configurations
 fabmc_minecraft_version: '1.21.4'
 fabmc_installer_version: '1.0.1'
+fabmc_fabric_api_version: '0.119.4+1.21.4'
 
 # Server configurations
 fabmc_fabric_loader_version: '0.16.10'
-fabmc_fabric_api_version: '0.119.4+1.21.4'
 fabmc_fabric_mods:
   - sodium
   - ferrite-core
