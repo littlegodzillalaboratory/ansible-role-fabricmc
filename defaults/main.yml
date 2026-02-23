@@ -26,7 +26,7 @@ fabmc_env_path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 fabmc_java_opts: -Xmx2048M -Xms1024M
 fabmc_eula_accepted: true
 fabmc_server_properties:
-  motd: "A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC"
+  motd: "A Minecraft Server with Fabric loader managed by Ansible Role FabricMC"
 
 # Client configurations
 fabmc_client_dir: "~/.minecraft/"

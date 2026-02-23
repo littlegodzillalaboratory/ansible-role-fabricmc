@@ -48,7 +48,7 @@ def test_server_launcher_properties_file(host):
     assert server_properties_file.exists
     assert server_properties_file.is_file
     assert server_properties_file.mode == 0o644
-    assert server_properties_file.contains('motd=A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC')
+    assert server_properties_file.contains('motd=A Minecraft Server with Fabric loader managed by Ansible Role FabricMC')
 
 
 def test_server_launcher_start_script(host):

@@ -7,7 +7,7 @@
 Ansible Role FabricMC
 ---------------------
 
-Ansible Role FabricMC is an Ansible role for provisioning [Fabric mod loader](https://fabricmc.net/) for Minecraft .
+Ansible Role FabricMC is an Ansible role for provisioning [Fabric loader](https://fabricmc.net/) for Minecraft .
 
 Usage
 -----
@@ -37,7 +37,7 @@ Use the role in your playbook:
         fabmc_java_opts: -Xmx2048M -Xms1024M
         fabmc_eula_accepted: true
         fabmc_server_properties:
-          motd: "A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC"
+          motd: "A Minecraft Server with Fabric loader managed by Ansible Role FabricMC"
 
       roles:
         - littlegodzillalaboratory.fabricmc
@@ -85,7 +85,7 @@ Or alternatively, as a task using import role:
             fabmc_java_opts: -Xmx2048M -Xms1024M
             fabmc_eula_accepted: true
             fabmc_server_properties:
-              motd: "A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC"
+              motd: "A Minecraft Server with Fabric loader managed by Ansible Role FabricMC"
           environment:
             PATH: "{{ ansible_user_dir }}/.virtualenvs/fabricmc/bin:{{ ansible_env.PATH }}"
             VIRTUAL_ENV: "{{ ansible_user_dir }}/.virtualenvs/fabricmc"
@@ -119,10 +119,10 @@ Config
 | fabmc_fabric_mods | [Fabric mods](https://modrinth.com/discover/mods) | - sodium<br/>- ferrite-core<br/>- lithium | |
 | fabmc_fabric_mods_download_delay | Delay period (in seconds) between Fabric mod file downloads | 2 | 10 |
 | fabmc_fabric_datapacks_download_delay | Delay period (in seconds) between Fabric datapack file downloads | 2 | 10 |
-| fabmc_install_id | Minecraft Fabric mod loader installation ID, useful to distinguish multiple installations on the same machine | `fabricmc` | `fabricmc-1` |
-| fabmc_install_dir | Minecraft Fabric mod loader installation directory | `/opt/fabricmc` | `/some/other/path` |
+| fabmc_install_id | Minecraft Fabric loader installation ID, useful to distinguish multiple installations on the same machine | `fabricmc` | `fabricmc-1` |
+| fabmc_install_dir | Minecraft Fabric loader installation directory | `/opt/fabricmc` | `/some/other/path` |
 | fabmc_os_user | System user which the Java process runs under | `fabricmc` | `someuser` |
 | fabmc_env_path | To be used as the [environment PATH](https://en.wikipedia.org/wiki/PATH_(variable)) which the FabricMC server runs with. Must have `java` command under one of the path values. | `/usr/local/sbin:/usr/local/bin:`<br/>`/usr/sbin:/usr/bin:/sbin:/bin` | `/home/someuser/.sdkman/candidates/java/current/bin:`<br/>`/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin` |
 | fabmc_java_opts | Server [Java options](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/jvm-options-java-parameters-command-line-environment-variable-list-xms-xmx-memory) | `-Xmx2048M -Xms1024M` | `-Xmx2048M -Xms1024M` |
 | fabmc_eula_accepted | Accept the Minecraft [EULA](https://nodecraft.com/support/games/minecraft/general/minecraft-eula) when set to true | `true` | `false` |
-| fabmc_server_properties | Minecraft [server properties](https://minecraft.fandom.com/wiki/Server.properties) key-value pairs. | `motd: "A Minecraft Server with Fabric mod loader managed by Ansible Role FabricMC"` | `difficulty: normal`<br/>`gamemode: survival`<br/>`hardcore: "false"` |
+| fabmc_server_properties | Minecraft [server properties](https://minecraft.fandom.com/wiki/Server.properties) key-value pairs. | `motd: "A Minecraft Server with Fabric loader managed by Ansible Role FabricMC"` | `difficulty: normal`<br/>`gamemode: survival`<br/>`hardcore: "false"` |

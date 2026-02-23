@@ -6,7 +6,7 @@ galaxy_info:
   namespace: littlegodzillalaboratory
   role_name: fabricmc
   author: Little Godzilla Laboratory <blah+lgl@cliffano.com>
-  description: Ansible role for provisioning Fabric mod loader for Minecraft
+  description: Ansible role for provisioning Fabric loader for Minecraft
   license: "license (MIT)"
   min_ansible_version: 10.3.0
   galaxy_tags:
