@@ -1,5 +1,8 @@
 import pytest
 
+def get_home_dir(host):
+    return host.check_output("printf %s \"$HOME\"").strip()
+
 def test_fabricmc_install_dir(host):
 
     fabmc_install_dir = host.file('/opt/fabricmc')
@@ -50,7 +53,6 @@ def test_server_launcher_properties_file(host):
     assert server_properties_file.mode == 0o644
     assert server_properties_file.contains('motd=A Minecraft Server with Fabric loader managed by Ansible Role FabricMC')
 
-
 def test_server_launcher_start_script(host):
 
     server_start_script = host.file('/opt/fabricmc/bin/start.sh')
@@ -78,7 +80,7 @@ def test_fabric_launcher_service(host):
 def test_aliases_for_minecraft_server_generic_utilities(host):
 
     # TODO: Update file path when test container switches to non-root user
-    aliases_file = host.file('/root/.bash_aliases')
+    aliases_file = host.file(f"{get_home_dir(host)}/.bash_aliases")
     assert aliases_file.exists
     assert aliases_file.is_file
     assert aliases_file.mode == 0o644

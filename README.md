@@ -24,12 +24,12 @@ Use the role in your playbook:
         fabmc_minecraft_version: '1.21.4'
         fabmc_installer_version: '1.0.1'
         fabmc_fabric_api_version: '0.119.4+1.21.4'
-        fabmc_fabric_loader_version: '0.16.10'
         fabmc_fabric_mods:
           - sodium
           - ferrite-core
           - lithium
         fabmc_fabric_mods_download_delay: 2
+        fabmc_fabric_loader_version: '0.16.10'
         fabmc_fabric_datapacks:
           - world: world
             datapacks:
@@ -74,12 +74,12 @@ Or alternatively, as a task using import role:
             fabmc_minecraft_version: '1.21.4'
             fabmc_installer_version: '1.0.1'
             fabmc_fabric_api_version: '0.119.4+1.21.4'
-            fabmc_fabric_loader_version: '0.16.10'
             fabmc_fabric_mods:
               - sodium
               - ferrite-core
               - lithium
             fabmc_fabric_mods_download_delay: 2
+            fabmc_fabric_loader_version: '0.16.10'
             fabmc_fabric_datapacks:
               - world: world
                 datapacks:
@@ -108,6 +108,11 @@ Use the role in your playbook:
         fabmc_minecraft_version: '1.21.4'
         fabmc_installer_version: '1.0.1'
         fabmc_fabric_api_version: '0.119.4+1.21.4'
+        fabmc_fabric_mods:
+          - sodium
+          - ferrite-core
+          - lithium
+        fabmc_fabric_mods_download_delay: 2
         fabmc_client_dir: '~/.minecraft'
 
       roles:
@@ -117,6 +122,22 @@ Or alternatively, as a task using import role:
 
       tasks:
 
+        - ansible.builtin.pip:
+            name: pip
+            virtualenv: "{{ ansible_user_dir }}/.virtualenvs/fabricmc"
+            virtualenv_command: python3 -m venv
+            state: latest
+          run_once: true
+
+        - ansible.builtin.pip:
+            name:
+              - conflog
+              - modrinth-api-wrapper
+              - requests
+            virtualenv: "{{ ansible_user_dir }}/.virtualenvs/fabricmc"
+            state: present
+          run_once: true
+          
         - ansible.builtin.import_role:
             name: littlegodzillalaboratory.fabricmc
           vars:
@@ -125,7 +146,15 @@ Or alternatively, as a task using import role:
             fabmc_minecraft_version: '1.21.4'
             fabmc_installer_version: '1.0.1'
             fabmc_fabric_api_version: '0.119.4+1.21.4'
+            fabmc_fabric_mods:
+              - sodium
+              - ferrite-core
+              - lithium
+            fabmc_fabric_mods_download_delay: 2
             fabmc_client_dir: '~/.minecraft'
+          environment:
+            PATH: "{{ ansible_user_dir }}/.virtualenvs/fabricmc/bin:{{ ansible_env.PATH }}"
+            VIRTUAL_ENV: "{{ ansible_user_dir }}/.virtualenvs/fabricmc"
 
 ### Utilities
 
@@ -156,14 +185,14 @@ Config
 | fabmc_minecraft_version | [Supported Minecraft version number](https://github.com/littlegodzillalaboratory/ansible-role-minecraft-java/blob/main/vars/main.yml#L2) | `1.21` |  `1.21.10` |
 | fabmc_installer_version | [Fabric installer version number](https://maven.fabricmc.net/net/fabricmc/fabric-installer/) | `1.0.1` |  `1.1.0` |
 | fabmc_fabric_api_version | [Fabric API version number](https://modrinth.com/mod/fabric-api) | `0.119.4+1.21.4` |  `0.105.4+1.21.2` |
+| fabmc_fabric_mods | [Fabric mods](https://modrinth.com/discover/mods) | - sodium<br/>- ferrite-core<br/>- lithium | |
+| fabmc_fabric_mods_download_delay | Delay period (in seconds) between Fabric mod file downloads | 2 | 10 |
 
 ### Server configurations
 
 | Variable | Description | Default | Example |
 |----------|-------------|---------|---------|
 | fabmc_fabric_loader_version | [Fabric loader version number](https://maven.fabricmc.net/net/fabricmc/fabric-loader/) | `0.16.10` |  `1.18.1` |
-| fabmc_fabric_mods | [Fabric mods](https://modrinth.com/discover/mods) | - sodium<br/>- ferrite-core<br/>- lithium | |
-| fabmc_fabric_mods_download_delay | Delay period (in seconds) between Fabric mod file downloads | 2 | 10 |
 | fabmc_fabric_datapacks_download_delay | Delay period (in seconds) between Fabric datapack file downloads | 2 | 10 |
 | fabmc_install_id | Minecraft Fabric loader installation ID, useful to distinguish multiple installations on the same machine | `fabricmc` | `fabricmc-1` |
 | fabmc_install_dir | Minecraft server installation directory | `/opt/fabricmc` | `/some/other/path` |

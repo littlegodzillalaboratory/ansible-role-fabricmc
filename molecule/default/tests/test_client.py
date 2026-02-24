@@ -40,7 +40,7 @@ def test_fabric_installer_install_script(host):
     assert install_script.exists
     assert install_script.is_file
     assert install_script.mode == 0o755
-    assert install_script.contains('java -jar "~/.minecraft//bin/fabric-installer.jar" client -mcversion 1.21.4 -dir "~/.minecraft/"')
+    assert install_script.contains('java -jar "/root/.minecraft//bin/fabric-installer.jar" client -mcversion 1.21.4 -dir "/root/.minecraft/"')
 
 def test_fabric_api_mod_file(host):
 
@@ -56,3 +56,41 @@ def test_fabric_api_mod_file(host):
     assert fabric_api_mod_file.exists
     assert fabric_api_mod_file.is_file
     assert fabric_api_mod_file.mode == 0o644
+
+
+def test_fabric_mods_files(host):
+
+    result = host.run(
+        "find /root/.minecraft/mods -maxdepth 1 -type f -name '*.jar' ! -name 'fabric-api-*.jar'"
+    )
+    assert result.rc == 0
+
+    mod_paths = [path for path in result.stdout.splitlines() if path]
+    assert len(mod_paths) > 0
+
+    default_mod_slugs = [
+        'sodium',
+        'ferrite-core',
+        'lithium',
+    ]
+
+    def normalize_letters(value):
+        return ''.join(ch for ch in value.lower() if ch.isalpha())
+
+    normalized_default_mod_slugs = [
+        normalize_letters(mod_slug)
+        for mod_slug in default_mod_slugs
+    ]
+
+    for mod_path in mod_paths:
+        mod_file = host.file(mod_path)
+        assert mod_file.exists
+        assert mod_file.is_file
+        assert mod_file.mode == 0o644
+
+        mod_name = mod_path.rsplit('/', 1)[-1].rsplit('.', 1)[0]
+        normalized_mod_name = normalize_letters(mod_name)
+        assert any(
+            normalized_mod_name.startswith(default_mod_slug)
+            for default_mod_slug in normalized_default_mod_slugs
+        ), f"Unexpected Fabric mod file: {mod_path}"

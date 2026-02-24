@@ -145,6 +145,7 @@ def main():
         mods=dict(type="list", elements="str", required=True),
         mods_download_delay=dict(type="int", required=True),
         install_dir=dict(type="str", required=True),
+        mods_dir=dict(type="str", required=True),
     )
     module = AnsibleModule(argument_spec=module_args, supports_check_mode=True)
 
@@ -152,11 +153,10 @@ def main():
     mods = module.params["mods"]
     mods_download_delay = module.params["mods_download_delay"]
     install_dir = module.params["install_dir"]
-
+    mods_dir = module.params["mods_dir"]
     logger.info(f"'{len(mods)}' Fabric mod(s) to be installed for Minecraft version '{minecraft_version}'...")
 
     client = Client()
-    mods_dir = os.path.join(install_dir, "workspace", "mods")
 
     changed = False
     for mod in mods:

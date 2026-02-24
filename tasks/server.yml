@@ -115,6 +115,7 @@
     mods_download_delay: "{{ fabmc_fabric_mods_download_delay }}"
     minecraft_version: "{{ fabmc_minecraft_version }}"
     install_dir: "{{ fabmc_install_dir }}"
+    mods_dir: "{{ fabmc_install_dir }}/workspace/mods"
 
 - name: Ensure world datapacks directories existence
   ansible.builtin.file:

@@ -6,13 +6,13 @@ fabmc_provision_client: true
 fabmc_minecraft_version: '1.21.4'
 fabmc_installer_version: '1.0.1'
 fabmc_fabric_api_version: '0.119.4+1.21.4'
-
-# Server configurations
-fabmc_fabric_loader_version: '0.16.10'
 fabmc_fabric_mods:
   - sodium
   - ferrite-core
   - lithium
+
+# Server configurations
+fabmc_fabric_loader_version: '0.16.10'
 fabmc_fabric_mods_download_delay: 2
 fabmc_fabric_datapacks:
   - world: world
@@ -29,4 +29,4 @@ fabmc_server_properties:
   motd: "A Minecraft Server with Fabric loader managed by Ansible Role FabricMC"
 
 # Client configurations
-fabmc_client_dir: "~/.minecraft/"
+fabmc_client_dir: "{{ ansible_user_dir }}/.minecraft/"
