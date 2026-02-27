@@ -12,11 +12,16 @@ requirements:
 
 from conflog import Conflog
 from ansible.module_utils.basic import AnsibleModule
-from modrinth_api_wrapper import Client
 import hashlib
 import os
 import requests
+import sys
 import time
+
+if sys.version_info[:2] == (3, 8):
+    from modrinth_api_wrapper_pakkunbot import Client
+else:
+    from modrinth_api_wrapper import Client
 
 conf_dict={
     'handlers': 'stream',
