@@ -1,0 +1,13 @@
+---
+package_name: fabricmc
+author: Little Godzilla Laboratory
+generator:
+  component: ansible-role
+  inputs:
+    project_id: fabricmc
+    project_name: Ansible Role FabricMC
+    project_desc: Ansible role for provisioning Fabric loader for Minecraft
+    author_name: Little Godzilla Laboratory
+    author_email: blah+lgl@cliffano.com
+    github_id: littlegodzillalaboratory
+    github_repo: ansible-role-fabricmc
