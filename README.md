@@ -1,16 +1,13 @@
-<img align="right" src="https://raw.github.com/littlegodzillalaboratory/ansible-role-fabricmc/main/avatar.jpg" alt="Avatar"/>
+![Avatar](avatar.jpg)
 
 [![Build Status](https://github.com/littlegodzillalaboratory/ansible-role-fabricmc/workflows/CI/badge.svg)](https://github.com/littlegodzillalaboratory/ansible-role-fabricmc/actions?query=workflow%3ACI)
 [![Security Status](https://snyk.io/test/github/cliffano/ansible-role-fabricmc/badge.svg)](https://snyk.io/test/github/cliffano/ansible-role-fabricmc)
-<br/>
 
-Ansible Role FabricMC
----------------------
+# Ansible Role FabricMC
 
 Ansible Role FabricMC is an Ansible role for provisioning [Fabric loader](https://fabricmc.net/) for Minecraft .
 
-Usage
------
+## Usage
 
 ### Server provisioning
 
@@ -175,8 +172,7 @@ The following aliases are also provisioned to simplify the maintenance of Fabric
 | <fabmc_install_id>-status | `systemctl status <fabmc_install_id>.service` | Check the status of the server |
 | <fabmc_install_id>-start-log | `journalctl -u <fabmc_install_id>` | Show the server start log |
 
-Config
-------
+## Config
 
 ### Common configurations
 
