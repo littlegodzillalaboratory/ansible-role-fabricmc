@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+- Add example usage
+
 ## 2.0.0 - 2026-02-24
 ### Added
 - Add fabmc_provision_server config to enable/disable server provisioning

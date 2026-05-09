@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+
+  vars:
+    c3_gog_setup_version: '3_1.0.1.0_(76354)'
+    c3_gog_setup_dir: /tmp
+    c3_install_dir: /opt/caesar3
+    c3_julius_app_version: '1.7.0'
+
+  roles:
+
+    - role: littlegodzillalaboratory.caesar3
