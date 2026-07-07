@@ -1,0 +1,401 @@
+
+playbook: /opt/workspace/molecule/default/converge.yml
+
+PLAY [Converge] ****************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [Include workspace] *******************************************************
+included: littlegodzillalaboratory.fabricmc for localhost
+
+TASK [ansible-roles.bash_aliases : Bash aliases | Add aliases] *****************
+skipping: [localhost] => (item=False)
+skipping: [localhost]
+
+TASK [ansible-roles.bash_aliases : Bash aliases | Add extra] *******************
+skipping: [localhost] => (item=False)
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Provision FabricMC server] ***********
+included: /opt/workspace/tasks/server.yml for localhost
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure install directory existence] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure sub directories existence] ****
+changed: [localhost] => (item=/opt/fabricmc/bin)
+changed: [localhost] => (item=/opt/fabricmc/workspace)
+changed: [localhost] => (item=/opt/fabricmc/workspace/mods)
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Minecraft Server Launcher 1.21.4 Fabric Loader 0.16.10 Installer 1.0.1 jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Download Minecraft Server Launcher jar file] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Minecraft Server Launcher jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Copy downloaded Minecraft Server Launcher jar file as Minecraft Server Launcher 1.21.4 jar file] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Delete downloaded Minecraft Server Launcher jar file] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Minecraft Server Launcher jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure Minecraft Server Launcher jar file or symlink does not exist] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Create symbolic link for Minecraft Server Launcher jar file] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Fabric API 0.119.4+1.21.4 jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Download Fabric API jar file] ********
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of downloaded Fabric API jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Fail if downloaded Fabric API jar file checksum does not match] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Register Fabric mods directory] ******
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Delete unexpected Fabric mods] *******
+skipping: [localhost] => (item={'path': '/opt/fabricmc/workspace/mods/fabric-api-0.119.4+1.21.4.jar', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 2149128, 'inode': 9699422, 'dev': 48, 'nlink': 1, 'atime': 1783428346.7127352, 'mtime': 1783428346.7107353, 'ctime': 1783428346.7117352, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False})
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Install Fabric mods] *****************
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure world datapacks directories existence] ***
+changed: [localhost] => (item={'world': 'world', 'datapacks': ['terralith']})
+
+TASK [littlegodzillalaboratory.fabricmc : Register Fabric datapack files] ******
+ok: [localhost] => (item={'world': 'world', 'datapacks': ['terralith']})
+
+TASK [littlegodzillalaboratory.fabricmc : Delete unexpected Fabric datapacks] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Install Fabric datapacks per world] ***
+changed: [localhost] => (item={'world': 'world', 'datapacks': ['terralith']})
+
+TASK [littlegodzillalaboratory.fabricmc : Set Minecraft server configuration values] ***
+changed: [localhost] => (item={'key': 'motd', 'value': 'A Minecraft Server with Fabric loader managed by Ansible Role FabricMC'})
+
+TASK [littlegodzillalaboratory.fabricmc : Create Minecraft Server Launcher start script] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Create Minecraft Server service file] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Check init system] *******************
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Enable Mincraft Server service with systemd] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Accept Minecraft EULA] ***************
+changed: [localhost]
+
+TASK [Create aliases for Minecraft Server generic utilities] *******************
+included: ansible-roles.bash_aliases for localhost
+
+TASK [ansible-roles.bash_aliases : Bash aliases | Add aliases] *****************
+changed: [localhost] => (item={'alias': 'fabricmc-conf', 'command': 'vi /opt/fabricmc/workspace/server.properties'})
+changed: [localhost] => (item={'alias': 'fabricmc-log', 'command': 'tail -f /opt/fabricmc/workspace/logs/latest.log'})
+
+TASK [ansible-roles.bash_aliases : Bash aliases | Add extra] *******************
+skipping: [localhost] => (item=False)
+skipping: [localhost]
+
+TASK [Create aliases for Minecraft Server systemd utilities] *******************
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Provision FabricMC client] ***********
+included: /opt/workspace/tasks/client.yml for localhost
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure client install directory existence] ***
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: INJECT_FACTS_AS_VARS default to `True` is deprecated, top-level facts will not be auto injected after the change. This feature will be removed from ansible-core version 2.24.
+Origin: /opt/workspace/defaults/main.yml:32:19
+
+30
+31 # Client configurations
+32 fabmc_client_dir: "{{ ansible_user_dir }}/.minecraft/"
+                     ^ column 19
+
+Use `ansible_facts["fact_name"]` (no `ansible_` prefix) instead.
+
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure sub directories existence] ****
+changed: [localhost] => (item=/root/.minecraft//bin)
+changed: [localhost] => (item=/root/.minecraft//mods)
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Fabric Installer 1.0.1 jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Download Fabric Installer jar file] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Fabric Installer jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Copy downloaded Fabric Installer jar file as Fabric Installer 1.0.1 jar file] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Delete downloaded Fabric Installer jar file] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Fabric Installer jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure Fabric Installer jar file or symlink does not exist] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Create symbolic link for Fabric Installer jar file] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Create Fabric Installer install script] ***
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Fabric API 0.119.4+1.21.4 jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Download Fabric API jar file] ********
+changed: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of downloaded Fabric API jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Fail if downloaded Fabric API jar file checksum does not match] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Register Fabric mods directory] ******
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Delete unexpected Fabric mods] *******
+skipping: [localhost] => (item={'path': '/root/.minecraft/mods/fabric-api-0.119.4+1.21.4.jar', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 2149128, 'inode': 9699453, 'dev': 48, 'nlink': 1, 'atime': 1783428365.6296616, 'mtime': 1783428365.6269622, 'ctime': 1783428365.6289623, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False})
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Install Fabric mods] *****************
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=45   changed=24   unreachable=0    failed=0    skipped=10   rescued=0    ignored=0
+
+
+PLAY [Converge] ****************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [Include workspace] *******************************************************
+included: littlegodzillalaboratory.fabricmc for localhost
+
+TASK [ansible-roles.bash_aliases : Bash aliases | Add aliases] *****************
+skipping: [localhost] => (item=False)
+skipping: [localhost]
+
+TASK [ansible-roles.bash_aliases : Bash aliases | Add extra] *******************
+skipping: [localhost] => (item=False)
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Provision FabricMC server] ***********
+included: /opt/workspace/tasks/server.yml for localhost
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure install directory existence] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure sub directories existence] ****
+ok: [localhost] => (item=/opt/fabricmc/bin)
+ok: [localhost] => (item=/opt/fabricmc/workspace)
+ok: [localhost] => (item=/opt/fabricmc/workspace/mods)
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Minecraft Server Launcher 1.21.4 Fabric Loader 0.16.10 Installer 1.0.1 jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Download Minecraft Server Launcher jar file] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Minecraft Server Launcher jar file] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Copy downloaded Minecraft Server Launcher jar file as Minecraft Server Launcher 1.21.4 jar file] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Delete downloaded Minecraft Server Launcher jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Minecraft Server Launcher jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure Minecraft Server Launcher jar file or symlink does not exist] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Create symbolic link for Minecraft Server Launcher jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Fabric API 0.119.4+1.21.4 jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Download Fabric API jar file] ********
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of downloaded Fabric API jar file] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Fail if downloaded Fabric API jar file checksum does not match] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Register Fabric mods directory] ******
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Delete unexpected Fabric mods] *******
+skipping: [localhost] => (item={'path': '/opt/fabricmc/workspace/mods/lithium-fabric-0.15.3+mc1.21.4.jar', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 797555, 'inode': 9699429, 'dev': 48, 'nlink': 1, 'atime': 1783428353.3868155, 'mtime': 1783428353.3978157, 'ctime': 1783428353.3978157, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False})
+skipping: [localhost] => (item={'path': '/opt/fabricmc/workspace/mods/sodium-fabric-0.6.13+mc1.21.4.jar', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 1306799, 'inode': 9699427, 'dev': 48, 'nlink': 1, 'atime': 1783428348.5337572, 'mtime': 1783428348.6157582, 'ctime': 1783428348.6157582, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False})
+skipping: [localhost] => (item={'path': '/opt/fabricmc/workspace/mods/fabric-api-0.119.4+1.21.4.jar', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 2149128, 'inode': 9699422, 'dev': 48, 'nlink': 1, 'atime': 1783428346.7127352, 'mtime': 1783428346.7107353, 'ctime': 1783428346.7117352, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False})
+skipping: [localhost] => (item={'path': '/opt/fabricmc/workspace/mods/ferritecore-7.1.3-fabric.jar', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 109879, 'inode': 9699428, 'dev': 48, 'nlink': 1, 'atime': 1783428350.9747865, 'mtime': 1783428350.9767866, 'ctime': 1783428350.9767866, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False})
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Install Fabric mods] *****************
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure world datapacks directories existence] ***
+ok: [localhost] => (item={'world': 'world', 'datapacks': ['terralith']})
+
+TASK [littlegodzillalaboratory.fabricmc : Register Fabric datapack files] ******
+ok: [localhost] => (item={'world': 'world', 'datapacks': ['terralith']})
+
+TASK [littlegodzillalaboratory.fabricmc : Delete unexpected Fabric datapacks] ***
+skipping: [localhost] => (item=[{'changed': False, 'msg': 'All paths examined', 'matched': 1, 'examined': 1, 'skipped_paths': {}, 'invocation': {'module_args': {'file_type': 'file', 'paths': ['/opt/fabricmc/workspace/world/datapacks'], 'recurse': False, 'patterns': ['*'], 'read_whole_file': False, 'age_stamp': 'mtime', 'hidden': False, 'follow': False, 'get_checksum': False, 'checksum_algorithm': 'sha1', 'use_regex': False, 'exact_mode': True, 'excludes': None, 'contains': None, 'age': None, 'size': None, 'depth': None, 'mode': None, 'encoding': None, 'limit': None}}, 'failed': False, 'item': {'world': 'world', 'datapacks': ['terralith']}, 'ansible_loop_var': 'item'}, {'path': '/opt/fabricmc/workspace/world/datapacks/Terralith_1.21_v2.5.8.zip', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 3112105, 'inode': 9699434, 'dev': 48, 'nlink': 1, 'atime': 1783428357.0168593, 'mtime': 1783428357.2378619, 'ctime': 1783428357.2378619, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False}])
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Install Fabric datapacks per world] ***
+ok: [localhost] => (item={'world': 'world', 'datapacks': ['terralith']})
+
+TASK [littlegodzillalaboratory.fabricmc : Set Minecraft server configuration values] ***
+ok: [localhost] => (item={'key': 'motd', 'value': 'A Minecraft Server with Fabric loader managed by Ansible Role FabricMC'})
+
+TASK [littlegodzillalaboratory.fabricmc : Create Minecraft Server Launcher start script] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Create Minecraft Server service file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Check init system] *******************
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Enable Mincraft Server service with systemd] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Accept Minecraft EULA] ***************
+ok: [localhost]
+
+TASK [Create aliases for Minecraft Server generic utilities] *******************
+included: ansible-roles.bash_aliases for localhost
+
+TASK [ansible-roles.bash_aliases : Bash aliases | Add aliases] *****************
+ok: [localhost] => (item={'alias': 'fabricmc-conf', 'command': 'vi /opt/fabricmc/workspace/server.properties'})
+ok: [localhost] => (item={'alias': 'fabricmc-log', 'command': 'tail -f /opt/fabricmc/workspace/logs/latest.log'})
+
+TASK [ansible-roles.bash_aliases : Bash aliases | Add extra] *******************
+skipping: [localhost] => (item=False)
+skipping: [localhost]
+
+TASK [Create aliases for Minecraft Server systemd utilities] *******************
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Provision FabricMC client] ***********
+included: /opt/workspace/tasks/client.yml for localhost
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure client install directory existence] ***
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: INJECT_FACTS_AS_VARS default to `True` is deprecated, top-level facts will not be auto injected after the change. This feature will be removed from ansible-core version 2.24.
+Origin: /opt/workspace/defaults/main.yml:32:19
+
+30
+31 # Client configurations
+32 fabmc_client_dir: "{{ ansible_user_dir }}/.minecraft/"
+                     ^ column 19
+
+Use `ansible_facts["fact_name"]` (no `ansible_` prefix) instead.
+
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure sub directories existence] ****
+ok: [localhost] => (item=/root/.minecraft//bin)
+ok: [localhost] => (item=/root/.minecraft//mods)
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Fabric Installer 1.0.1 jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Download Fabric Installer jar file] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Fabric Installer jar file] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Copy downloaded Fabric Installer jar file as Fabric Installer 1.0.1 jar file] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Delete downloaded Fabric Installer jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Fabric Installer jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Ensure Fabric Installer jar file or symlink does not exist] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Create symbolic link for Fabric Installer jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Create Fabric Installer install script] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of Fabric API 0.119.4+1.21.4 jar file] ***
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Download Fabric API jar file] ********
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Get the status of downloaded Fabric API jar file] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Fail if downloaded Fabric API jar file checksum does not match] ***
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Register Fabric mods directory] ******
+ok: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Delete unexpected Fabric mods] *******
+skipping: [localhost] => (item={'path': '/root/.minecraft/mods/lithium-fabric-0.15.3+mc1.21.4.jar', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 797555, 'inode': 9699456, 'dev': 48, 'nlink': 1, 'atime': 1783428372.031039, 'mtime': 1783428372.0430393, 'ctime': 1783428372.0430393, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False})
+skipping: [localhost] => (item={'path': '/root/.minecraft/mods/sodium-fabric-0.6.13+mc1.21.4.jar', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 1306799, 'inode': 9699454, 'dev': 48, 'nlink': 1, 'atime': 1783428367.265982, 'mtime': 1783428367.355983, 'ctime': 1783428367.355983, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False})
+skipping: [localhost] => (item={'path': '/root/.minecraft/mods/fabric-api-0.119.4+1.21.4.jar', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 2149128, 'inode': 9699453, 'dev': 48, 'nlink': 1, 'atime': 1783428365.6296616, 'mtime': 1783428365.6269622, 'ctime': 1783428365.6289623, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False})
+skipping: [localhost] => (item={'path': '/root/.minecraft/mods/ferritecore-7.1.3-fabric.jar', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 109879, 'inode': 9699455, 'dev': 48, 'nlink': 1, 'atime': 1783428369.6740108, 'mtime': 1783428369.6760108, 'ctime': 1783428369.6760108, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False})
+skipping: [localhost]
+
+TASK [littlegodzillalaboratory.fabricmc : Install Fabric mods] *****************
+ok: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=33   changed=0    unreachable=0    failed=0    skipped=22   rescued=0    ignored=0
+
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /
+plugins: testinfra-10.2.2, anyio-4.12.1
+collected 22 items
+
+tests/test_client.py ........                                            [ 36%]
+tests/test_server.py ..............                                      [100%]
+
+============================== 22 passed in 9.36s ==============================
