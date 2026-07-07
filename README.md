@@ -1,7 +1,11 @@
+<!-- BEGIN:AVATAR -->
 ![Avatar](avatar.jpg)
+<!-- END:AVATAR -->
 
+<!-- BEGIN:BADGES -->
 [![Build Status](https://github.com/littlegodzillalaboratory/ansible-role-fabricmc/workflows/CI/badge.svg)](https://github.com/littlegodzillalaboratory/ansible-role-fabricmc/actions?query=workflow%3ACI)
-[![Security Status](https://snyk.io/test/github/cliffano/ansible-role-fabricmc/badge.svg)](https://snyk.io/test/github/cliffano/ansible-role-fabricmc)
+[![Security Status](https://snyk.io/test/github/littlegodzillalaboratory/ansible-role-fabricmc/badge.svg)](https://snyk.io/test/github/littlegodzillalaboratory/ansible-role-fabricmc)
+<!-- END:BADGES -->
 
 # Ansible Role FabricMC
 
@@ -203,3 +207,17 @@ The following aliases are also provisioned to simplify the maintenance of Fabric
 | Variable | Description | Default | Example |
 |----------|-------------|---------|---------|
 | fabmc_install_dir | Minecraft client installation directory | `~/.minecraft` | `/some/other/path` |
+
+## Colophon
+
+<!-- BEGIN:DEVELOPERS_GUIDE -->
+[Developer's Guide](https://littlegodzillalaboratory.github.io/developers-guide-ansible.html)
+<!-- END:DEVELOPERS_GUIDE -->
+
+<!-- BEGIN:BUILD_REPORTS -->
+Build reports:
+
+* [Lint report](https://littlegodzillalaboratory.github.io/ansible-role-fabricmc/lint/ansible-lint.txt)
+* [Test report](https://littlegodzillalaboratory.github.io/ansible-role-fabricmc/test/molecule.txt)
+
+<!-- END:BUILD_REPORTS -->
